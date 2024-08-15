@@ -9,14 +9,6 @@ import axios from "@/api/axios";
 import { isAxiosError } from "axios";
 
 
-export const description =
-    "A login page with two columns. The first column has the login form with email and password. There's a Forgot your passwork link and a link to sign up if you do not have an account. The second column has a cover image."
-
-export const iframeHeight = "800px"
-
-export const containerClassName = "w-full h-full p-4 lg:p-0"
-
-
 const ResetPasswordConfirm = () => {
     const [new_password, setNewPassword] = useState<string>('');
     const [re_new_password, setReNewPassword] = useState<string>('');
@@ -39,7 +31,7 @@ const ResetPasswordConfirm = () => {
                         },
                     };
 
-                    const response = await axios.post('/api/auth/users/reset_password_confirm/', { uid, token, new_password, re_new_password }, config);
+                    await axios.post('/api/auth/users/reset_password_confirm/', { uid, token, new_password, re_new_password }, config);
                     setIsLoading(false);
                     navigate('/login');
                     toast({

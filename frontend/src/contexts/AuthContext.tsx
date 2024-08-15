@@ -107,7 +107,6 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
 
     const checkAuthenticated = async () => {
-        console.log('inside checkAuthenticated')
         if (cookies.access) {
             const config = {
                 headers: {
@@ -119,8 +118,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
             const body = JSON.stringify({ token: cookies.access });
 
             try {
-                const response = await axios.post('/api/auth/jwt/verify/', body, config);
-                console.log('response from checkAuthenticated: ', response);
+                await axios.post('/api/auth/jwt/verify/', body, config);
                 setIsLoggedIn(true);
             } catch (err: unknown) {
                 setIsLoggedIn(false);
@@ -140,14 +138,6 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
             load_user();
         }
     }, [cookies]);
-
-    useEffect(() => {
-        console.log('isLoggedin: ', isLoggedIn);
-    }, [isLoggedIn]);
-
-    useEffect(() => {
-        console.log('user: ', user);
-    }, [user])
 
     return (
         <AuthContext.Provider value={{ isLoggedIn, login, user, access, refresh, checkAuthenticated, logout, load_user, isLoading, }}>
