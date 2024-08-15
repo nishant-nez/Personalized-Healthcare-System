@@ -45,8 +45,7 @@ const ResetPassword = () => {
             const body = JSON.stringify({ email });
             setIsLoading(true);
             try {
-                const response = await axios.post('/api/auth/users/reset_password/', body, config);
-                console.log('response: ', response);
+                await axios.post('/api/auth/users/reset_password/', body, config);
                 setIsOpen(true);
             } catch (error: unknown) {
                 console.log('error:', error)

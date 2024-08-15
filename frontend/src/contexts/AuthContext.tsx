@@ -6,9 +6,10 @@ import { useToast } from "@/components/ui/use-toast";
 
 interface IUser {
     id: number;
-    name: string;
+    first_name: string;
+    last_name: string;
     email: string;
-    is_staff: boolean;
+    is_superuser: boolean;
 };
 
 interface AuthContextProps {
@@ -18,6 +19,7 @@ interface AuthContextProps {
     logout: () => void;
     checkAuthenticated: () => Promise<void>;
     load_user: () => Promise<void>;
+    googleAuthenticate: (state: string, code: string) => Promise<void>;
     // register: (name: string, email: string, password: string, re_pasword: string) => Promise<void>;
     access: string;
     refresh: string;
@@ -129,6 +131,31 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
         }
     };
 
+    const googleAuthenticate = async (state: string, code: string) => {
+        if (state && code && !cookies.access) {
+            const config = {
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                }
+            };
+
+            const details = {
+                'state': state,
+                'code': code
+            };
+            const formBody = Object.keys(details).map(key => encodeURIComponent(key) + '=' + encodeURIComponent(details[key as keyof typeof details])).join('&');
+
+            try {
+                const response = await axios.post(`/api/auth/o/google-oauth2/?${formBody}`, config);
+                setValues(true, response.data.access, response.data.refresh);
+            } catch (err) {
+                setValues(false, '', '');
+                console.log('err from googleAuthenticate', err);
+            }
+        }
+    };
+
+
     const logout = () => {
         setValues(false, '', '');
     };
@@ -139,8 +166,13 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
         }
     }, [cookies]);
 
+
+    // useEffect(() => {
+    //     console.log('user:', user)
+    // }, [user])
+
     return (
-        <AuthContext.Provider value={{ isLoggedIn, login, user, access, refresh, checkAuthenticated, logout, load_user, isLoading, }}>
+        <AuthContext.Provider value={{ isLoggedIn, login, user, access, refresh, checkAuthenticated, logout, load_user, isLoading, googleAuthenticate }}>
             {children}
         </AuthContext.Provider>
     );

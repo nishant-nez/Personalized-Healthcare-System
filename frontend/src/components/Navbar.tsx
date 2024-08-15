@@ -1,8 +1,14 @@
 import { useAuth } from "@/contexts/AuthContext";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const { logout, isLoggedIn, user } = useAuth();
+  const navigate = useNavigate();
+
+  const logout_user = () => {
+    logout();
+    navigate('/');
+  }
 
   const guestLinks = () => (
     <>
@@ -13,13 +19,13 @@ const Navbar = () => {
 
   const authLinks = () => (
     <>
-      <div onClick={logout}>Logout</div>
+      <div onClick={logout_user}>Logout</div>
     </>
   );
 
   return (
     <>
-      <div>Navbar</div>
+      <div>Navbar - {user && (user.first_name + ' ' + user.email)}</div>
       <div>
         <Link to={'/'}>Home</Link>
 

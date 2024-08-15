@@ -9,6 +9,7 @@ urlpatterns = [
     path('api/auth/', include('djoser.urls.jwt')),
     path('api/schema/', SpectacularAPIView.as_view(), name="schema"),
     path('api/schema/docs/', SpectacularSwaggerView.as_view(url_name="schema")),
+    path('api/auth/', include('djoser.social.urls')),
     # Blogs
     path('api/blogs/', include('blogs.urls'))
 ]
