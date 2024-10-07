@@ -158,6 +158,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
     const logout = () => {
         setValues(false, '', '');
+        setUser(null);
     };
 
     useEffect(() => {

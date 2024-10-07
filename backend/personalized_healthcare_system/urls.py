@@ -11,7 +11,9 @@ urlpatterns = [
     path('api/schema/docs/', SpectacularSwaggerView.as_view(url_name="schema")),
     path('api/auth/', include('djoser.social.urls')),
     # Blogs
-    path('api/blogs/', include('blogs.urls'))
+    path('api/blogs/', include('blogs.urls')),
+    # Disease
+    path('api/diseases/', include('diseases.urls')),
 ]
 
 urlpatterns += [re_path(r'^.*', TemplateView.as_view(template_name='index.html'))]
