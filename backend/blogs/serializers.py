@@ -15,6 +15,7 @@ class BlogSerializer(serializers.Serializer):
     title = serializers.CharField(max_length=255)
     content = serializers.CharField()
     author = serializers.PrimaryKeyRelatedField(queryset=UserAccount.objects.all(), required=True)
+    image_url = serializers.ImageField(required=False)
     updated_at = serializers.DateTimeField(read_only=True)
     created_at = serializers.DateTimeField(read_only=True)
     categories = serializers.PrimaryKeyRelatedField(many=True, queryset=Category.objects.all(), required=True)

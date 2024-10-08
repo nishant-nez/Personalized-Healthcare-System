@@ -1,3 +1,4 @@
+import ast
 from rest_framework import serializers
 from .models import DiseaseHistory
 from accounts.models import UserAccount
@@ -11,6 +12,10 @@ class DiseaseHistorySerializer(serializers.ModelSerializer):
     user = serializers.PrimaryKeyRelatedField(queryset=UserAccount.objects.all(), required=True)
     updated_at = serializers.DateTimeField(read_only=True)
     created_at = serializers.DateTimeField(read_only=True)
+
+    class Meta:
+        model = DiseaseHistory
+        fields = ['id', 'name', 'symptoms', 'user', 'updated_at', 'created_at']
 
     def create(self, validated_data):
         """
@@ -37,9 +42,19 @@ class DiseaseHistorySerializer(serializers.ModelSerializer):
     
     def to_representation(self, instance):
         """
-        Convert the instance into a JSON-serializable format.
+        Convert the instance into a JSON-serializable format and convert symptoms to a list.
         """
         representation = super().to_representation(instance)
+
+        # Convert symptoms from string to list when fetching data
+        try:
+            # Safely convert the string representation of the list to an actual list
+            representation['symptoms'] = ast.literal_eval(instance.symptoms)
+            if not isinstance(representation['symptoms'], list):
+                raise ValueError("Symptoms is not a valid list.")
+        except (ValueError, SyntaxError):
+            # If any issue during conversion, just return the original string
+            representation['symptoms'] = instance.symptoms
 
         # Convert user to full details for GET requests
         representation['user'] = UserAccountSerializer(instance.user).data

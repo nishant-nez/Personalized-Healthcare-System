@@ -7,6 +7,8 @@ from django.http import Http404
 from django.views.decorators.csrf import csrf_exempt
 from personalized_healthcare_system.settings.base import BASE_DIR
 from .serializers import DiseaseHistorySerializer
+from .models import DiseaseHistory
+from .permissions import IsOwnerOrReadOnly, IsAdminOrReadOnly, IsOwnerOrAdmin
 import os
 
 import pandas as pd
@@ -222,7 +224,7 @@ class PredictDisease(APIView):
         if request.user.is_authenticated:
             data = {
                 "name": disease,
-                "symptoms": request.data["symptoms"],
+                "symptoms": str(request.data["symptoms"]),
                 "user": request.user.id,
             }
             serializer = DiseaseHistorySerializer(data=data)
@@ -232,3 +234,29 @@ class PredictDisease(APIView):
                 print(serializer.errors)
         
         return Response(result)
+
+
+class DiseaseList(generics.ListAPIView):
+    """
+    List all disease history instances.
+    """
+    queryset = DiseaseHistory.objects.all()
+    serializer_class = DiseaseHistorySerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get_queryset(self):
+        if self.request.user.is_staff:
+            return DiseaseHistory.objects.all()
+        return DiseaseHistory.objects.filter(user=self.request.user)
+
+
+class DiseaseHistoryDetail(generics.RetrieveUpdateDestroyAPIView):
+    """
+    Retrieve, update or delete a disease history instance.
+    """
+    queryset = DiseaseHistory.objects.all()
+    serializer_class = DiseaseHistorySerializer
+    permission_classes = [IsOwnerOrAdmin]
+
+    def get_queryset(self):
+        return DiseaseHistory.objects.filter(user=self.request.user)

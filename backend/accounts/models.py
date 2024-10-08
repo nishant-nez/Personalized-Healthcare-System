@@ -29,12 +29,16 @@ class UserAccountManager(BaseUserManager):
 
 
 class UserAccount(AbstractBaseUser, PermissionsMixin):
+    def upload_to(instance, filename):
+        return 'profile/{filename}'.format(filename=filename)
+    
     email = models.EmailField(max_length=255, unique=True)
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
     is_superuser = models.BooleanField(default=False)
+    image = models.ImageField(upload_to=upload_to, default='profile/default.jpg')
 
     objects = UserAccountManager()
 

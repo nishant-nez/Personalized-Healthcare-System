@@ -2,6 +2,7 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework import mixins, generics, permissions
+from rest_framework.parsers import MultiPartParser, FormParser
 from django.http import Http404
 from django.views.decorators.csrf import csrf_exempt
 from .models import Category, Blog
@@ -71,6 +72,7 @@ class BlogList(generics.ListCreateAPIView):
     queryset = Blog.objects.all()
     serializer_class = BlogSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+    parser_classes = (MultiPartParser, FormParser)
 
 
 class BlogDetail(generics.RetrieveUpdateDestroyAPIView):
@@ -80,3 +82,4 @@ class BlogDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Blog.objects.all()
     serializer_class = BlogSerializer
     permission_classes = [IsOwnerOrReadOnly]
+    parser_classes = (MultiPartParser, FormParser)

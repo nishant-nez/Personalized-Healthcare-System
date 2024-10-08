@@ -90,3 +90,7 @@ local_settings.py
 db.sqlite3
 
 guide.txt
+
+personalized_healthcare_system/media/blogs/*
+personalized_healthcare_system/media/profile/*
+!personalized_healthcare_system/media/profile/default.jpg
