@@ -10,6 +10,7 @@ interface IUser {
     last_name: string;
     email: string;
     is_superuser: boolean;
+    image: string;
 };
 
 interface AuthContextProps {

@@ -6,6 +6,7 @@ urlpatterns = [
     path('predict/', views.PredictDisease.as_view()),
     path('history/<int:pk>/', views.DiseaseHistoryDetail.as_view()),
     path('history/all/', views.DiseaseList.as_view()),
+    path('symptoms/', views.DiseaseSymptoms.as_view()),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)

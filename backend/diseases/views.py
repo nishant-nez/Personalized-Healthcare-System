@@ -9,12 +9,13 @@ from personalized_healthcare_system.settings.base import BASE_DIR
 from .serializers import DiseaseHistorySerializer
 from .models import DiseaseHistory
 from .permissions import IsOwnerOrReadOnly, IsAdminOrReadOnly, IsOwnerOrAdmin
+from rest_framework.exceptions import ValidationError
 import os
 
 import pandas as pd
 import pickle
 import numpy as np
-# import sklearn
+import math
 
 major_symptoms = [
     "itching",
@@ -183,6 +184,29 @@ def helper(disease):
     return desc, pre, med, die, workouts
 
 
+# Utility function to validate and clean the float values
+def clean_float_value(value):
+    """
+    Ensure that the value is JSON serializable (i.e., not NaN or Inf).
+    Replace invalid float values with None (or a safe default if needed).
+    """
+    if isinstance(value, float):
+        if not math.isfinite(value):  # Check for NaN, Inf, -Inf
+            return None
+    return value
+
+# Function to clean the entire response dictionary
+def clean_response_data(data):
+    """
+    Recursively clean the response data for any invalid float values.
+    """
+    if isinstance(data, dict):
+        return {k: clean_response_data(v) for k, v in data.items()}
+    elif isinstance(data, list):
+        return [clean_response_data(i) for i in data]
+    else:
+        return clean_float_value(data)
+
 
 class PredictDisease(APIView):
     """
@@ -192,23 +216,31 @@ class PredictDisease(APIView):
     permission_classes = []
 
     def post(self, request, format=None):
-
         symptoms_list = np.zeros(len(major_symptoms))
         symptom_severity = {}
 
         for symp in request.data["symptoms"]:
             symp = symp.lower().replace(' ', '_')
-            major_symptoms_1d = np.atleast_1d(major_symptoms)  # Ensure it's at least 1D to avoid value error
-
+            major_symptoms_1d = np.atleast_1d(major_symptoms)  # Ensure it's 1D
+            
             indx = np.where(major_symptoms_1d == symp)[0]
             if indx.size > 0:
                 symptoms_list[indx] = 1
 
             symptom_weight = symptom_sev[symptom_sev['Symptom'] == symp]['weight'].values
             if symptom_weight.size > 0:
-                symptom_severity[symp] = symptom_weight[0]
+                weight = symptom_weight[0]
+                
+                # Replace invalid float values in symptom severity with 0 or None
+                symptom_severity[symp.replace('_', ' ').capitalize()] = clean_float_value(weight)
 
-        disease = svc.predict(symptoms_list.reshape(1, -1))[0]
+        # Predict the disease
+        try:
+            disease = svc.predict(symptoms_list.reshape(1, -1))[0]
+        except Exception as e:
+            return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+        # Get additional disease info
         disease_info = helper(disease)
 
         result = {
@@ -221,6 +253,10 @@ class PredictDisease(APIView):
             "Severity": symptom_severity,
         }
 
+        # Clean the entire result before sending the response
+        cleaned_result = clean_response_data(result)
+
+        # Save disease history if user is authenticated
         if request.user.is_authenticated:
             data = {
                 "name": disease,
@@ -232,8 +268,8 @@ class PredictDisease(APIView):
                 serializer.save()
             else:
                 print(serializer.errors)
-        
-        return Response(result)
+
+        return Response(cleaned_result)
 
 
 class DiseaseList(generics.ListAPIView):
@@ -260,3 +296,15 @@ class DiseaseHistoryDetail(generics.RetrieveUpdateDestroyAPIView):
 
     def get_queryset(self):
         return DiseaseHistory.objects.filter(user=self.request.user)
+
+
+class DiseaseSymptoms(APIView):
+    """
+    List all major symptoms.
+    """
+
+    permission_classes = []
+
+    def get(self, request, format=None):
+        updated_symptoms = [symptom.replace('_', ' ') for symptom in major_symptoms]
+        return Response(major_symptoms)

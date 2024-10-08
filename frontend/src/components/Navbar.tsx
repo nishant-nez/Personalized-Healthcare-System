@@ -3,6 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { NavigationMenu, NavigationMenuList, NavigationMenuLink } from "@/components/ui/navigation-menu";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+
 
 const Navbar = () => {
   const { logout, isLoggedIn, user } = useAuth();
@@ -12,20 +14,6 @@ const Navbar = () => {
     logout();
     navigate('/');
   }
-
-  const guestLinks = () => (
-    <>
-      <Link to={'/login'}>Login</Link>
-      <Link to={'/signup'}>Signup</Link>
-    </>
-  );
-
-
-  const authLinks = () => (
-    <>
-      <div onClick={logout_user}>Logout</div>
-    </>
-  );
 
   return (
     <>
@@ -63,11 +51,24 @@ const Navbar = () => {
                 <NavigationMenuLink asChild>
                   <Link
                     to={'/'}
-                    className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus:bg-gray-800 dark:focus:text-gray-50 dark:data-[active]:bg-gray-800/50 dark:data-[state=open]:bg-gray-800/50"
+                    className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50"
                   >
                     Home
                   </Link>
                 </NavigationMenuLink>
+                {isLoggedIn &&
+                  <>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        to={'/'}
+                        className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50"
+                      >
+                        History
+                      </Link>
+                    </NavigationMenuLink>
+
+                  </>
+                }
               </NavigationMenuList>
 
             </NavigationMenu>
@@ -75,7 +76,13 @@ const Navbar = () => {
 
           {isLoggedIn
             ?
-            <Button onClick={logout_user}>Logout</Button>
+            <div className="flex gap-3 cursor-pointer">
+              <Button onClick={logout_user}>Logout</Button>
+              <Avatar>
+                <AvatarImage src={user?.image} />
+                <AvatarFallback>CN</AvatarFallback>
+              </Avatar>
+            </div>
             :
             <div className="flex gap-4">
               <Link to={'/login'}>
