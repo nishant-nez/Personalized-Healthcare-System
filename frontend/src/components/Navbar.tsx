@@ -3,7 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { NavigationMenu, NavigationMenuList, NavigationMenuLink } from "@/components/ui/navigation-menu";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { SVGProps } from "react";
 
 
 const Navbar = () => {
@@ -54,6 +55,15 @@ const Navbar = () => {
                     className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50"
                   >
                     Home
+                  </Link>
+                </NavigationMenuLink>
+                {/* map */}
+                <NavigationMenuLink asChild>
+                  <Link
+                    to={'/hospitals'}
+                    className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50"
+                  >
+                    Hospitals
                   </Link>
                 </NavigationMenuLink>
                 {isLoggedIn &&
@@ -112,7 +122,7 @@ export default Navbar;
 
 
 
-function MenuIcon(props: any) {
+function MenuIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -134,7 +144,7 @@ function MenuIcon(props: any) {
 }
 
 
-function MountainIcon(props: any) {
+function MountainIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}

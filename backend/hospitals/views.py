@@ -32,19 +32,18 @@ def search_hospitals(keyword, hospitals):
     return matching_hospitals
 
 
-def nearest_hospital_by_coordinates(lat, lng, hospitals):
-    nearest_hospital = None
-    nearest_distance = float('inf')
+def nearest_hospitals_by_coordinates(lat, lng, hospitals):
+    # Create a new list of hospitals with their distances
+    hospitals_with_distance = [(hospital, math.sqrt((lat - hospital['geometry']['location']['lat']) ** 2 + (lng - hospital['geometry']['location']['lng']) ** 2)) for hospital in hospitals]
 
-    for hospital in hospitals:
-        hospital_lat = hospital['geometry']['location']['lat']
-        hospital_lng = hospital['geometry']['location']['lng']
-        distance = math.sqrt((lat - hospital_lat) ** 2 + (lng - hospital_lng) ** 2)
-        if distance < nearest_distance:
-            nearest_distance = distance
-            nearest_hospital = hospital
+    # Sort the hospitals based on their distance
+    hospitals_with_distance.sort(key=lambda x: x[1])
 
-    return nearest_hospital
+    # Create a new list of hospitals without the distance
+    nearest_hospitals = [hospital for hospital, distance in hospitals_with_distance]
+
+    return nearest_hospitals
+
 
 
 class HospitalList(APIView):
@@ -74,6 +73,7 @@ class NearestHospital(APIView):
         lat = request.query_params.get('lat', None)
         lng = request.query_params.get('lng', None)
         type = request.query_params.get('type', None)
+        limit = request.query_params.get('limit', None)
 
         filtered_hospitals = hospitals
 
@@ -86,19 +86,28 @@ class NearestHospital(APIView):
                 filtered_hospitals = hospitals
         # if request.query_params.get('limit'):
         #     filtered_hospitals = filtered_hospitals[:int(request.query_params.get('limit'))]
-        nearest_hospital = nearest_hospital_by_coordinates(float(lat), float(lng), filtered_hospitals) 
+        nearest_hospitals = nearest_hospitals_by_coordinates(float(lat), float(lng), filtered_hospitals)
+        
+        if limit:
+            limit = int(limit)
+            nearest_hospitals = nearest_hospitals[:int(limit + 5)]
 
         # Calculate distance matrix from Maps API
-        if nearest_hospital:
-            url = f'https://maps.googleapis.com/maps/api/distancematrix/json?origins={lat},{lng}&destinations={nearest_hospital["geometry"]["location"]["lat"]},{nearest_hospital["geometry"]["location"]["lng"]}&key={os.environ.get("GOOGLE_MAP_API_KEY")}'
-            response = requests.get(url)
-            data = response.json()
+        if nearest_hospitals:
+            for i in range(0, len(nearest_hospitals)):
+                url = f'https://maps.googleapis.com/maps/api/distancematrix/json?origins={lat},{lng}&destinations={nearest_hospitals[i]["geometry"]["location"]["lat"]},{nearest_hospitals[i]["geometry"]["location"]["lng"]}&key={os.environ.get("GOOGLE_MAP_API_KEY")}'
+                response = requests.get(url)
+                data = response.json()
 
-            if data['status'] != 'OK':
-                raise ValidationError('Failed to calculate distance matrix.')
-            nearest_hospital['origin_address'] = data['origin_addresses']
-            nearest_hospital['destination_address'] = data['destination_addresses']
-            nearest_hospital['distance'] = data['rows'][0]['elements'][0]['distance']
-            nearest_hospital['duration'] = data['rows'][0]['elements'][0]['duration']
+                if data['status'] != 'OK':
+                    raise ValidationError('Failed to calculate distance matrix.')
+                nearest_hospitals[i]['origin_address'] = data['origin_addresses']
+                nearest_hospitals[i]['destination_address'] = data['destination_addresses']
+                nearest_hospitals[i]['distance'] = data['rows'][0]['elements'][0]['distance']
+                nearest_hospitals[i]['duration'] = data['rows'][0]['elements'][0]['duration']
+        
+        nearest_hospitals.sort(key=lambda x: x['distance']['value'])
+        if limit:
+            nearest_hospitals = nearest_hospitals[:int(limit)]
 
-        return Response(nearest_hospital, status=status.HTTP_200_OK)
+        return Response(nearest_hospitals, status=status.HTTP_200_OK)

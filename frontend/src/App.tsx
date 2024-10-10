@@ -6,6 +6,7 @@ import Login from './pages/Login'
 import ResetPassword from './pages/ResetPassword'
 import ResetPasswordConfirm from './pages/ResetPasswordConfirm'
 import Signup from './pages/Signup'
+import Hospitals from './pages/Hospitals'
 
 import Layout from './hocs/Layout'
 
@@ -15,6 +16,7 @@ const App = () => (
     <Layout>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/hospitals' element={<Hospitals />} />
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
         <Route path='/reset-password' element={<ResetPassword />} />

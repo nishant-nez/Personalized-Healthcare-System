@@ -8,17 +8,8 @@ import axios from "@/api/axios";
 import { StylesConfig } from 'react-select';
 import { AxiosError } from "axios";
 import DiseasePredictionModal from "@/components/DiseasePredictionModal";
+import { IDiseasePrediction } from "@/interfaces/IDiseasePrediction";
 
-
-export interface DiseasePredictionI {
-    Disease: string;
-    Description: string;
-    Diet: string[];
-    Medications: string[];
-    Precautions: string[];
-    Severity: string[];
-    Workouts: string[];
-};
 
 const selectStyles: StylesConfig<{ value: string; label: string }, true> = {
     control: (base) => ({
@@ -48,7 +39,7 @@ const Home = () => {
     const [selectedOption, setSelectedOption] = useState<{ value: string; label: string }[] | null>(null);
     const [symptoms, setSymptoms] = useState<{ value: string; label: string }[] | null>(null);
     const [modalOpen, setModalOpen] = useState<boolean>(false);
-    const [prediction, setPrediction] = useState<DiseasePredictionI | null>(null);
+    const [prediction, setPrediction] = useState<IDiseasePrediction | null>(null);
     const { toast } = useToast();
 
     const config = {
@@ -118,7 +109,7 @@ const Home = () => {
         <>
             <div className="h-[60vh] flex flex-col content-center items-center justify-center">
                 <div className="p-4 w-[45%]">
-                    <h1 className="text-4xl font-bold text-center">Disease Prediction</h1>
+                    <h1 className="text-4xl font-bold text-center">Personalized Healthcare System</h1>
                     <p className="text-lg font-light pt-3 pb-4">
                         Get prediction for diseases along with description, precautions, preventive measures and possible medications.
                         {user && 'Your diagnostic history will automatically be saved to the database.'}
