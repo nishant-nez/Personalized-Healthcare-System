@@ -17,6 +17,8 @@ urlpatterns = [
     path('api/blogs/', include('blogs.urls')),
     # Disease
     path('api/diseases/', include('diseases.urls')),
+    # Hospitals
+    path('api/hospitals/', include('hospitals.urls')),
 ] + static(MEDIA_URL, document_root=MEDIA_ROOT)
 
 urlpatterns += [re_path(r'^.*', TemplateView.as_view(template_name='index.html'))]

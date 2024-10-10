@@ -1,0 +1,2698 @@
+{
+  "results": [
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "चाबहिल सडक, Kathmandu 44602, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7214203,
+          "lng": 85.3448044
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.72293417989272,
+            "lng": 85.34615102989271
+          },
+          "southwest": {
+            "lat": 27.72023452010727,
+            "lng": 85.34345137010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Om Hospital & Research Centre Pvt. Ltd.",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1923,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/118253579374466853593\"\u003eA Google User\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DO8JRfL-qPV_RDL_qd2t_AOHxMWHlG-AdssDjahARRdrvd9kIz7wTfwDjIzvfMlXn--fE0pKyJo6KXA_I3OxXf96dgJmDIVv073c435o5Tv6EIx0W4QEimYSCQKxPmZbgFpxelk6jMA5nLHttD4ku1tJn2rkrgFayuA206XUMdNZraS",
+          "width": 2599
+        }
+      ],
+      "place_id": "ChIJ4RWYhmUZ6zkRhSuw7gimqGE",
+      "plus_code": {
+        "compound_code": "P8CV+HW Kathmandu",
+        "global_code": "7MV7P8CV+HW"
+      },
+      "rating": 3.3,
+      "reference": "ChIJ4RWYhmUZ6zkRhSuw7gimqGE",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 412
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Dakshina Murti Marga, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.711635,
+          "lng": 85.3454864
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.71306942989272,
+            "lng": 85.34687437989271
+          },
+          "southwest": {
+            "lat": 27.71036977010728,
+            "lng": 85.34417472010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Nepal-Bharat Maitri Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2448,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/116812440949347578086\"\u003eSuzyan Shah\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DMplCm71GU7lTdv28EuLV-PysyCnHktSXNiMEZfV6X4TFJiy-kR8dX9K5hHyaSfXgVHipnlTCDVN5f0nAgkmWW_71m1RAstd7KeZ2d7xsYRDAJilyR5tb4YU3vL_TKu1j1VwD4c9TQBl2N5Oj8EfkaYvqnwfmocsPu58WBcppRrkhbk",
+          "width": 3264
+        }
+      ],
+      "place_id": "ChIJB6FGQHoZ6zkRjI6BWHi9IKM",
+      "plus_code": {
+        "compound_code": "P86W+M5 Kathmandu",
+        "global_code": "7MV7P86W+M5"
+      },
+      "rating": 2.6,
+      "reference": "ChIJB6FGQHoZ6zkRjI6BWHi9IKM",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 38
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7183619,
+          "lng": 85.34650449999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.71972832989272,
+            "lng": 85.34793247989272
+          },
+          "southwest": {
+            "lat": 27.71702867010728,
+            "lng": 85.34523282010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Medicare Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3120,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/118284287215985845885\"\u003eMilan Ghimire\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DM9nvTkW6WWrjAas7abFyUO4ZCV3pBFghAqHvVs0QqG_KObnK-C_cYC5neHTuskX2ZcEYgMGRJHSEx3w1vfu1zV-q_BnZ1aAS-GtJ0lqjfrmn99llXDo2vqB2XGOppAE5d4Sd7IsnCy2S5GCR8KdMO2tOVu516oEJzn566BT9qJ96DZ",
+          "width": 4160
+        }
+      ],
+      "place_id": "ChIJo7VDyXoZ6zkRC6qOihCtfHs",
+      "plus_code": {
+        "compound_code": "P89W+8J Kathmandu",
+        "global_code": "7MV7P89W+8J"
+      },
+      "rating": 2.7,
+      "reference": "ChIJo7VDyXoZ6zkRC6qOihCtfHs",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 183
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Minbhawan Marg, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6867689,
+          "lng": 85.33895840000001
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.68820717989272,
+            "lng": 85.34033067989273
+          },
+          "southwest": {
+            "lat": 27.68550752010728,
+            "lng": 85.33763102010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Civil Service Hospital of Nepal",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2250,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/100422865361877362576\"\u003eBishowvijaya Pandey\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DNubWiF-emiPdAKD1IMGdw4lX4WCAPwaVIucplMENX2gO82P6kMA-0lVr55bauhg0sUw3XHa8Br6uwMhW5MlJNFMBjFLnrUUkuRgpF9dMkflt6yviOUrCjeMA1JLtM81fSvywSvWh96HmNORkYXw_ilEfrR_VW-hN6OM1nPfBLHRUZo",
+          "width": 4000
+        }
+      ],
+      "place_id": "ChIJn8GadpQZ6zkR7dsEu9rdFQ0",
+      "plus_code": {
+        "compound_code": "M8PQ+PH Kathmandu",
+        "global_code": "7MV7M8PQ+PH"
+      },
+      "rating": 3.6,
+      "reference": "ChIJn8GadpQZ6zkR7dsEu9rdFQ0",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 587
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Mandikhatar Road, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7333877,
+          "lng": 85.34633869999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.73478682989272,
+            "lng": 85.34757842989272
+          },
+          "southwest": {
+            "lat": 27.73208717010728,
+            "lng": 85.34487877010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "HAMS Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3000,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/107867238520970231812\"\u003eDr. kundan thakur\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DO0No1QhyOJwboTv-RTwJ9_FyifU4yq8qVy5yPqib2COgN9eDiLcvY5wdp_MoMgbXA-4SsGv3HfP1V_dSnOwMywJqbpg5eX1X26nMEgFrpeVlf9B4e9giinnv30ZK0BRYBL1GU5FTrS54fgrweejH11xTqrkBIoS6K3k7hmwWm1mmKT",
+          "width": 4000
+        }
+      ],
+      "place_id": "ChIJRaf_Kb8Z6zkReRezznK3Sio",
+      "plus_code": {
+        "compound_code": "P8MW+9G Kathmandu",
+        "global_code": "7MV7P8MW+9G"
+      },
+      "rating": 3.2,
+      "reference": "ChIJRaf_Kb8Z6zkReRezznK3Sio",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 413
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Rishi Bhakta Marg, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7198912,
+          "lng": 85.34580579999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.72128532989272,
+            "lng": 85.34730122989272
+          },
+          "southwest": {
+            "lat": 27.71858567010727,
+            "lng": 85.34460157010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Helping Hands Community Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/101663845424960341787\"\u003ekrishna jha\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DM7gXShN4y2VESJCN1LoWRNttRjJ7mKTFdsW4_4JYz3D3-VLLIeW-0mRJc6biPOob3HT3f1hFdj_AqHNEG_Npa6ULqofBgFshicOitonVaq6lVG9yJs4Tiz3v4A5fzjx0TWHY1la7PG38zn-qdHweQT7w6Ik8b_7_kj0uEmeqD6aAzB",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJk-2iyHoZ6zkRWtCoYc9tNak",
+      "plus_code": {
+        "compound_code": "P89W+X8 Kathmandu",
+        "global_code": "7MV7P89W+X8"
+      },
+      "rating": 2.9,
+      "reference": "ChIJk-2iyHoZ6zkRWtCoYc9tNak",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 147
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "P88V+2XP, Budhang Marg, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7145059,
+          "lng": 85.3451615
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.71579592989272,
+            "lng": 85.34656277989272
+          },
+          "southwest": {
+            "lat": 27.71309627010728,
+            "lng": 85.34386312010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Dirghayu Guru Hospital & Research Center",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3264,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/105064341010292647552\"\u003eBabin karki\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DMOSkbCQD2iAqNfmsA2dkUKcITcmhr3e_Eg7WKXWC2-Atij0h3mHWr31Jppp03Arcv2u8XsKBptEI_cRbVt98WdUIAY4A0Xb_pMYToBfeTkrO-7n5CELtRldBkPCiGDJJEb7rJ0pnc99yoQVL9ukfluO-C6Q-LmFTkG1lklug9Y1Yb1",
+          "width": 2448
+        }
+      ],
+      "place_id": "ChIJh0oFe3oZ6zkRCvFynz-dnF4",
+      "rating": 3.5,
+      "reference": "ChIJh0oFe3oZ6zkRCvFynz-dnF4",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 38
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "P8RQ+42C, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7394951,
+          "lng": 85.3372517
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.74099052989272,
+            "lng": 85.33870087989273
+          },
+          "southwest": {
+            "lat": 27.73829087010727,
+            "lng": 85.33600122010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Metro Kathmandu Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3648,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/113248749967160315583\"\u003eMetro Clinic Pvt. Ltd.\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DOi1DpYA0eQ7WzWwUnxtHCqdDBoLZj9iDOxvvIedFVvV-t0Rb1Lc5_B60Ph7D36X_dJB0SyVl6lxYNXPeDh0IDxFLUq6C64r3XaN39UXu6AqR_2OXhmP1r6UwGoUR3ChegQcOK_Iqy7-Ps2O-RBRkYxUDP7Mq8m8txzOw2x9ROpOY2E",
+          "width": 5472
+        }
+      ],
+      "place_id": "ChIJrc9CSkYZ6zkRXqfY6kZawbw",
+      "rating": 4,
+      "reference": "ChIJrc9CSkYZ6zkRXqfY6kZawbw",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 250
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Maharajgunj Sadak, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7359917,
+          "lng": 85.3302595
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.73740827989272,
+            "lng": 85.33163722989272
+          },
+          "southwest": {
+            "lat": 27.73470862010728,
+            "lng": 85.32893757010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "T.U. Teaching Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/107096889500574293805\"\u003eWitch Hunter\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DNsZ0u6vz81MPSXuAaDJSLUbtqhtVzNuyaGwNCFBDXxGFWhlvRP0SRTS6aX-9vWlKV3A41U17JXslGqO4mfTtBfDYDcgIR-ArF20h0g1plyOfXAp2UwtdEQDrMXiip7XjcutGebfvuJSA_Txse-esCnS8RzNXIfaEL_acJon-K3TFYu",
+          "width": 3024
+        }
+      ],
+      "place_id": "ChIJ19o9QzkZ6zkRJPwu2_pj3ns",
+      "plus_code": {
+        "compound_code": "P8PJ+94 Kathmandu",
+        "global_code": "7MV7P8PJ+94"
+      },
+      "rating": 3.7,
+      "reference": "ChIJ19o9QzkZ6zkRJPwu2_pj3ns",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 550
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Devkota Sadak, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6972168,
+          "lng": 85.33765179999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.69855082989272,
+            "lng": 85.33906767989271
+          },
+          "southwest": {
+            "lat": 27.69585117010728,
+            "lng": 85.33636802010726
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Venus Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2448,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/107149676226604435622\"\u003eAditya Sapkota\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DOMgqF68Ab7gv6ALwf2EaKRj4wT7Vxo_O_dzu9lddhZsqkMuDIK90vNbpP3HwazH1J3isCHFNBIWJzCt4SZonnJBTxKdWmyK1N8cKdOgoIN1Sj_3HUweO_KRJazBvrTskwPxstUqZ6M6AQSuAOGWXpMNGz69rm1-ZK-KPofU45DK7Y0",
+          "width": 2448
+        }
+      ],
+      "place_id": "ChIJUc_MCZkZ6zkRtfQ6ywdfah8",
+      "plus_code": {
+        "compound_code": "M8WQ+V3 Kathmandu",
+        "global_code": "7MV7M8WQ+V3"
+      },
+      "rating": 3.4,
+      "reference": "ChIJUc_MCZkZ6zkRtfQ6ywdfah8",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 108
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M8V6+MCJ, त्रिपुरेश्वर मार्ग, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.694219,
+          "lng": 85.3110179
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.69559797989272,
+            "lng": 85.31226022989273
+          },
+          "southwest": {
+            "lat": 27.69289832010728,
+            "lng": 85.30956057010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Kathmandu Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1536,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/118426012093272230661\"\u003eOur Culture\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DPfmSwpb1qGTzr_ncHyG5gDrhWoGJxNADDtuiQ9LJQSM3U2jqruI5Mz6yDmsiW-mDcuFl25rfG34faYcibePGzzWL98sQzIGPMx698w6KUv5oL4J7XkY_eLVhHGnidHlgclt8IQot5aVjBAVzcUM49tqRUEwVQOuafMcxFlJkiaikhM",
+          "width": 2048
+        }
+      ],
+      "place_id": "ChIJN5M3iFIY6zkR8HLFkBSec4E",
+      "rating": 3.7,
+      "reference": "ChIJN5M3iFIY6zkR8HLFkBSec4E",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 22
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Kanti Path, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7048249,
+          "lng": 85.3136514
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.70615662989272,
+            "lng": 85.31510772989272
+          },
+          "southwest": {
+            "lat": 27.70345697010727,
+            "lng": 85.31240807010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Bir Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2268,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/115084827819840443410\"\u003ehimal sagar\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DMor6h1skmmryMqb09WtULvBSb2f8JlGkRvHuBQLf8uM67mgytchEPqiUYCygHwSU4F64HbzL9aYLC0YRBo8CygHqzp8hRiH30btJhs5vJNHq8oC9IXMAtUN9X-rm6gZqca7C1-DNwDXyVblyKYnymqpDu-Z1V6vcflfVbX08EEP8pY",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJCyA3_P8Y6zkRvAaR6dNxxPw",
+      "plus_code": {
+        "compound_code": "P837+WF Kathmandu",
+        "global_code": "7MV7P837+WF"
+      },
+      "rating": 3.7,
+      "reference": "ChIJCyA3_P8Y6zkRvAaR6dNxxPw",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 535
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Thirbum Marg, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.710568,
+          "lng": 85.3284891
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.71194842989272,
+            "lng": 85.32967812989271
+          },
+          "southwest": {
+            "lat": 27.70924877010727,
+            "lng": 85.32697847010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Himal hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3456,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/117381795933006969160\"\u003eA Google User\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DOE6mY7rWlikiJT7oDmfYJ5t3STWBbG_yMA2lDUvBTmhxqbOe99XTURihVNy2RmQuOeoYkcJiL6RyAJrZUw9knyqjgEOMbP_Aj_dDXc2iPB-FbFo0MqvKEkXoQub-JeNinC9MoTf5GnbgZTYnpnQpZtXttnL3ye7znBG_UaMfEmA-5N",
+          "width": 4608
+        }
+      ],
+      "place_id": "ChIJH9chWwkZ6zkRYI-JyJol2Dk",
+      "plus_code": {
+        "compound_code": "P86H+69 Kathmandu",
+        "global_code": "7MV7P86H+69"
+      },
+      "rating": 2.9,
+      "reference": "ChIJH9chWwkZ6zkRYI-JyJol2Dk",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 107
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "P82C+XJX, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.702495,
+          "lng": 85.3216099
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.70384872989272,
+            "lng": 85.32292282989273
+          },
+          "southwest": {
+            "lat": 27.70114907010727,
+            "lng": 85.32022317010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Capital Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/103595500359141666173\"\u003eDhiraj Pradhananga\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DNKSpIU4Jw2V7Sl-CDgkZr12G6rGZ4KygWUhARu8u--iT6kEMgEgfIu4QtqJn26tApzA0w_2jr8U7jJaei-6ZdWmdoPIAb4cRi4qpB_nKi-DOvtCEol9QXi_oVG2lH1T7dyVOEw0SZk_BhJsuRWY1TDrs9LEclWm0fkfQZHJvbOZ01H",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJkV0OV6gZ6zkRc5coCBEdx3Q",
+      "rating": 3,
+      "reference": "ChIJkV0OV6gZ6zkRc5coCBEdx3Q",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 30
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "P83P+MH7, Rudra Mati Marg, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7041699,
+          "lng": 85.33640989999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.70552647989272,
+            "lng": 85.33770107989271
+          },
+          "southwest": {
+            "lat": 27.70282682010728,
+            "lng": 85.33500142010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Swacon International Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2592,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/115033811850283700437\"\u003eA Google User\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DOueqpS-vZPYPBHJoHv_N5nGoR9arDxt8wx5nq4f3VYc0qvTeNUsM-mGLgSlAX0AWaP0EaVfpP0anSN_klSfY1FEwDFojUB3sOHbBygv_rnucxbbuX5Tvof0IMKHF_JB8xGuA6f5K_ayhPz9FfmUjQ6PrOo99Cnh5P6Q40tiTgLGMiE",
+          "width": 4608
+        }
+      ],
+      "place_id": "ChIJcfIrt58Z6zkRIdqnMnyiiKA",
+      "rating": 3.9,
+      "reference": "ChIJcfIrt58Z6zkRIdqnMnyiiKA",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 73
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Kathmandu 44617, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6899471,
+          "lng": 85.3192466
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.69126967989272,
+            "lng": 85.32041012989272
+          },
+          "southwest": {
+            "lat": 27.68857002010728,
+            "lng": 85.31771047010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Norvic International Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 370,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/117999796443703383864\"\u003eA Google User\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DP4KeK6iEmjOtaEYSqzRdi6jSN43rHzNmKnsQNsDH6E7m1Z9jrzLfMELFH-STxiJsrcXVlpY73x8UkC0aCFHxV92uc5QhuJPXgPrhppoGfHdrjTcKjvpDloFjWwQWsZZE7ZafCIMEjxjGlVYDHbl0YpZI7ErdX6P4Sx5l6IhNhRC7mW",
+          "width": 841
+        }
+      ],
+      "place_id": "ChIJmZNSY7EZ6zkRuQ-sNEd_LlI",
+      "plus_code": {
+        "compound_code": "M8Q9+XM Kathmandu",
+        "global_code": "7MV7M8Q9+XM"
+      },
+      "rating": 3.2,
+      "reference": "ChIJmZNSY7EZ6zkRuQ-sNEd_LlI",
+      "types": ["hospital", "local_government_office", "store", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 674
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M9WC+934, Jagatjung marga, kadaghari kathmandu Kageshwori manohara 9, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6965687,
+          "lng": 85.36831339999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.69791682989272,
+            "lng": 85.36970147989273
+          },
+          "southwest": {
+            "lat": 27.69521717010728,
+            "lng": 85.36700182010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Gandhi Tulasi Manohara Community Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1849,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/118363652233622405877\"\u003eAjay Yadav\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DMsJkCYrWITQARhYPWogbF60cJsGB24W4uztph26TbiWN7f6FmAX9Qr-aFDJa1kHXViFMZJGMcwzm5L6D8a3LiftC65GdZG7Uem9owAwzCuTrBM_M6I3FeFIapE0MrHx73rPIWFON3-6EsaJ9ojNLIjsAB5vYZ636NzBS7mbJQPF6RK",
+          "width": 1683
+        }
+      ],
+      "place_id": "ChIJwX71ijAa6zkRlYSO6uYKeMw",
+      "rating": 4.5,
+      "reference": "ChIJwX71ijAa6zkRlYSO6uYKeMw",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 15
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7263967,
+          "lng": 85.3231646
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.72774117989272,
+            "lng": 85.32452902989272
+          },
+          "southwest": {
+            "lat": 27.72504152010728,
+            "lng": 85.32182937010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Inova Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3214,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/113017095520058565764\"\u003eA Google User\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DPruBnazCvHsd1nNHItE8m7xS09fbzweBIribtU23GF2E9yhv6HmoeK4x3VAvSSGiJ6mbvWlGfiPaOtNToC4tR7HWFNiGqZGCNoXwSGSve80IGfrrNes0JMPHBbdfI6LNcuYx2oS2cYgubtiuEbY1nv0nviQBSreMQoefThEon9Is3P",
+          "width": 3024
+        }
+      ],
+      "place_id": "ChIJDx56a6cZ6zkRGeDf5Rl4aeI",
+      "plus_code": {
+        "compound_code": "P8GF+H7 Kathmandu",
+        "global_code": "7MV7P8GF+H7"
+      },
+      "rating": 5,
+      "reference": "ChIJDx56a6cZ6zkRGeDf5Rl4aeI",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 39
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Boudhadwar Marg, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7165047,
+          "lng": 85.35730909999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.71785417989272,
+            "lng": 85.35871047989272
+          },
+          "southwest": {
+            "lat": 27.71515452010728,
+            "lng": 85.35601082010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Samata Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1080,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/102268300812390962627\"\u003eAbhi Pdl\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DMd1qsMncMehFaMGE7f1JLkqGn2jDc_TbKDk1Pe1-DIy5UjNUMIiVYMPGzQ68kRUwdHvsBZZIO4edFtpexkTV3PPyYdqqLG4uN63s7CmEeYOzxchq4xiP7fi71lq9mdbK4SZz_k4cdQGAU71fct63Di2RN0bryN2n5mUEydCa68btnD",
+          "width": 1920
+        }
+      ],
+      "place_id": "ChIJW0bjrtcb6zkR7opz9mA8bg4",
+      "plus_code": {
+        "compound_code": "P984+JW Kathmandu",
+        "global_code": "7MV7P984+JW"
+      },
+      "rating": 3.7,
+      "reference": "ChIJW0bjrtcb6zkR7opz9mA8bg4",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 47
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Red Cross Marg, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7025533,
+          "lng": 85.32008610000001
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.70390827989272,
+            "lng": 85.32153212989272
+          },
+          "southwest": {
+            "lat": 27.70120862010728,
+            "lng": 85.31883247010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Kathmandu Model Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/108538120644633786729\"\u003eA Google User\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DPTd9_i6EgOiljeAZIjihb0r22S43D6kIZmgLn1IsHpxWgOivf0q4bHDfjnT11vfzP5yCK_UW7DBdWsFEhVAM9jzdZHCGta_6clogtxmLPO2ubs98-l_EU79clw0FboSzMALd01Wd6hIxvegK6GN1eDWiPLFZiJNHeCFaiuS-qKwmg-",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJ7SngQzEZ6zkRVbHHY3UnlLI",
+      "plus_code": {
+        "compound_code": "P83C+22 Kathmandu",
+        "global_code": "7MV7P83C+22"
+      },
+      "rating": 3.5,
+      "reference": "ChIJ7SngQzEZ6zkRVbHHY3UnlLI",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 64
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Tokha Rd, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.752876,
+          "lng": 85.32588899999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.75419217989272,
+            "lng": 85.32726327989273
+          },
+          "southwest": {
+            "lat": 27.75149252010727,
+            "lng": 85.32456362010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Grande International Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/106396292830766708911\"\u003eSuman Gaudel\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DPLB82BzOEhngj9kH9xBwHifAcxfBK99eaWvy81p8j2uhrrd39jJoMrEXkTPfKYKbV9_fY-ECs7EAiFtLGcLo2L33D2V6yEN2NPoOz6WogWsuVqk8iiI95xmlkE2Vjn5NAX9Eae2bugclYMbjc-okUNM7GW2xOTaT3HVQ08AT6Di3dA",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJ98DoN80e6zkRTRu-tHvRZ3o",
+      "plus_code": {
+        "compound_code": "Q83G+59 Kathmandu",
+        "global_code": "7MV7Q83G+59"
+      },
+      "rating": 4,
+      "reference": "ChIJ98DoN80e6zkRTRu-tHvRZ3o",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 716
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Battishputali-9, 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7058485,
+          "lng": 85.34273259999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.70724567989272,
+            "lng": 85.34394482989272
+          },
+          "southwest": {
+            "lat": 27.70454602010728,
+            "lng": 85.34124517010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Akhanda Medical Centre Pvt.Ltd",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 540,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/110833715533871885927\"\u003eArun Shah\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DNFM1eQB3VPn7d8TXXZdUNY_JO0Hp17UfyyVp_zPv2T2z0OHYnGhqjtQ1Mx8sjQefmt8Ypg-_6unybpJPo4tMsqmHp8VPYJE8r0nRauy0QViC8m2as9WIbsqK22IEtSigws0Od9-rpAslo3S65niHeAlfgOh_oLZbcxZlAneO50Lfin",
+          "width": 540
+        }
+      ],
+      "place_id": "ChIJa89cfJ0Z6zkRqM-Rk0FWDqE",
+      "plus_code": {
+        "compound_code": "P84V+83 Kathmandu",
+        "global_code": "7MV7P84V+83"
+      },
+      "rating": 5,
+      "reference": "ChIJa89cfJ0Z6zkRqM-Rk0FWDqE",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 229
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7025058,
+          "lng": 85.33844719999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.70381312989272,
+            "lng": 85.33993077989273
+          },
+          "southwest": {
+            "lat": 27.70111347010728,
+            "lng": 85.33723112010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Frontline Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 893,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/117268225628691132534\"\u003eA Google User\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DOfXLKeY0uH9jfnVAMvXSd7Z4aWNpmSmd_pnJ8DbuAz1pLMNUZeO3uUtuazm3mEwRS80BGsiNYbCasnpa46QUi8O438vwspC9VoachYR08LYN2cmC5VXbYE9xnZ0cdJkC4T9RQH3FV-DzyzdBau9zEu54gAUPecb-ov6FyC_JesmJkz",
+          "width": 1588
+        }
+      ],
+      "place_id": "ChIJg9f3QYUZ6zkRQv-lItdsNwc",
+      "plus_code": {
+        "compound_code": "P83Q+29 Kathmandu",
+        "global_code": "7MV7P83Q+29"
+      },
+      "rating": 3.5,
+      "reference": "ChIJg9f3QYUZ6zkRQv-lItdsNwc",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 84
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Devkota Sadak, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6943332,
+          "lng": 85.33707219999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.69567692989272,
+            "lng": 85.33846547989272
+          },
+          "southwest": {
+            "lat": 27.69297727010727,
+            "lng": 85.33576582010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Bharosa Hospital Pvt.Ltd",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2340,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/107960079709649983420\"\u003eUmesh Ghimire\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DOD7Jj3e_xl8Uo7skqjtFB327JyFZRWAI33azO_I54fEn7ForZyL7MwoRqUBjMHPCLPNRc6PwYV8_vCOKV3Mm7hgJAMtHsGEgg9ZnlpAOWfydJuDwd_LgyvpUgjPuWmHR_M_0lnagNyTuTRvai3A_1Dyu-tZHPnl8V9G4-5A92dVHk6",
+          "width": 4160
+        }
+      ],
+      "place_id": "ChIJa3h01ZkZ6zkRoi01Mm2lenI",
+      "plus_code": {
+        "compound_code": "M8VP+PR Kathmandu",
+        "global_code": "7MV7M8VP+PR"
+      },
+      "rating": 3,
+      "reference": "ChIJa3h01ZkZ6zkRoi01Mm2lenI",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 69
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6841753,
+          "lng": 85.298451
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.68548307989272,
+            "lng": 85.29966227989273
+          },
+          "southwest": {
+            "lat": 27.68278342010728,
+            "lng": 85.29696262010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Vayodha Hospitals",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1080,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/113034066836644601841\"\u003eNamaste Nepal\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DO2-RsV-Sgfj1BkxS3TU6ZLF8ecsgsGg4ZrCqWLMPRUMBsRaq9KVkL-MEnbf8qd3EG0EW84SMmLVuoCi3fUAv4ja_i4qU1kSxNROq0BTRaAW2b045d0aLdz4Z52ntVxmlyBCBjUHmHpc8ME-oIMz4OAnoO_XCdKi4FxAbJECB4-JqvO",
+          "width": 1763
+        }
+      ],
+      "place_id": "ChIJay5xSg8Z6zkRNe3ZAWfAD44",
+      "plus_code": {
+        "compound_code": "M7MX+M9 Kathmandu",
+        "global_code": "7MV7M7MX+M9"
+      },
+      "rating": 3.7,
+      "reference": "ChIJay5xSg8Z6zkRNe3ZAWfAD44",
+      "types": ["hospital", "doctor", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 232
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "P.O. Box No. 3168, Tripura Marg, 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6937201,
+          "lng": 85.3151991
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.69513087989272,
+            "lng": 85.31653637989272
+          },
+          "southwest": {
+            "lat": 27.69243122010728,
+            "lng": 85.31383672010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Blue Cross Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1080,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/113037541371348852537\"\u003eGopal Rasaily\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DOj7ulyDATIeSRWtmNQaSDRAvCtk8NrE7wACi9Zb2JxPkSjloigQeNPDpyL0_q5OVds2VCCFZdajaYH4cw3v7K-s2ZAq4qETGqld903H9QBVf5EbLZIWUk9KOX3ehTOpVQXAn1ynhJ1Jgug4OwPybnaBZU50_r06gxPRZ2lrUPO_-Rw",
+          "width": 1920
+        }
+      ],
+      "place_id": "ChIJzbtiYa0Z6zkRUeh9OVTgtm8",
+      "plus_code": {
+        "compound_code": "M8V8+F3 Kathmandu",
+        "global_code": "7MV7M8V8+F3"
+      },
+      "rating": 2.8,
+      "reference": "ChIJzbtiYa0Z6zkRUeh9OVTgtm8",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 126
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Kapurdhara Marg, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7204,
+          "lng": 85.317739
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.72174582989272,
+            "lng": 85.31901802989273
+          },
+          "southwest": {
+            "lat": 27.71904617010728,
+            "lng": 85.31631837010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "CIWEC Hospital Pvt. Ltd.",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1492,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/111672994515255368869\"\u003ekumar m\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DNmzxyHo1-toc1RHn3LMikluj6ETJeIPvRXpbajy2n_6W9qzevbxzA4dzUBrV9HFPrOKpSfi8n5TBbVWeP6oIjHM2Ln9B5HhhjgBw2HQlpOY22mmRy2TOROtHQUxFhBNcUMwHOE11_LYSQaaqic1RFzokZBbg6XTjbT3NU6zyCmgdSx",
+          "width": 2448
+        }
+      ],
+      "place_id": "ChIJaVO1ZhwZ6zkRkhEtRp5q-FQ",
+      "plus_code": {
+        "compound_code": "P8C9+53 Kathmandu",
+        "global_code": "7MV7P8C9+53"
+      },
+      "rating": 4.7,
+      "reference": "ChIJaVO1ZhwZ6zkRkhEtRp5q-FQ",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 161
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M8QM+94X, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6884982,
+          "lng": 85.332863
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.68997017989272,
+            "lng": 85.33424557989272
+          },
+          "southwest": {
+            "lat": 27.68727052010728,
+            "lng": 85.33154592010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Everest Hospital Pvt. Ltd.",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3000,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/117644155817573208512\"\u003eDev\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DPAOISy7OHHO2S4d2LjKslpJcnjnC0UVZCDWmd_7tHkEj99EzXi2vOB0_XvEPOTEnp7w4yuzoQcj71NCK3ZkPuqC3BRl2yp-85SYmud4LsGdZimool4VAjxDlrmApfEskU6FyMFivWYbtkzbGsjHX5FUcs70bJWi5cFnD9yhC-k7XTb",
+          "width": 3000
+        }
+      ],
+      "place_id": "ChIJDfFD3r0Z6zkR2PBgtkGagps",
+      "rating": 3.3,
+      "reference": "ChIJDfFD3r0Z6zkR2PBgtkGagps",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 71
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "लेखनाथ मार्ग, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.728307,
+          "lng": 85.30372
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.72971047989272,
+            "lng": 85.30529732989272
+          },
+          "southwest": {
+            "lat": 27.72701082010727,
+            "lng": 85.30259767010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Silverline hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3468,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/111971931385730660071\"\u003esudarshan\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DO5jTzL5G90K-ev-VB8n1t4QluwVyHhsh7kD6nEvq6fgbs17SJzqZmO2tDLtsCPU25iycIN0wOyNWnjoxL96vl_M5lE2sg0IOrAKts68W2nwRtOd0WpOOCPn7_ytpxooNAtt64iHU04qnmEgtR4X8PHchx8HYGSRcRjiWoAwfLNoFoa",
+          "width": 4624
+        }
+      ],
+      "place_id": "ChIJPTglVt0Y6zkRnhBGA2dFo1E",
+      "plus_code": {
+        "compound_code": "P8H3+8F Kathmandu",
+        "global_code": "7MV7P8H3+8F"
+      },
+      "rating": 3.7,
+      "reference": "ChIJPTglVt0Y6zkRnhBGA2dFo1E",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 66
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "माइतीघर मण्डला, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6947558,
+          "lng": 85.3214996
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.69608607989273,
+            "lng": 85.32291687989272
+          },
+          "southwest": {
+            "lat": 27.69338642010728,
+            "lng": 85.32021722010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Annapurna Neuro Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4640,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/116325705698031818585\"\u003eSangam Dhakal\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DNPoSBgy4TTmaSKFhCf3d_GHosn2zktdODQNvDZe3MB3bilfpB-XrcY1yJoZOETDj6hDFBqYy9PAe6ycJ9fJ4pcVCfcvc7evKTRzv-KPDUZV9h09cjyoGRM5MdqdoTbxFEkvR8Mzz23z7M08rNMcOFbSJ2Dm5Q3G_rGQAuCJnYRMsy9",
+          "width": 3480
+        }
+      ],
+      "place_id": "ChIJmUX1zK8Z6zkRxpq5iU9FvJM",
+      "plus_code": {
+        "compound_code": "M8VC+WH Kathmandu",
+        "global_code": "7MV7M8VC+WH"
+      },
+      "rating": 3.9,
+      "reference": "ChIJmUX1zK8Z6zkRxpq5iU9FvJM",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 376
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Pandol Marga, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7254628,
+          "lng": 85.3236514
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.72684312989272,
+            "lng": 85.32494137989271
+          },
+          "southwest": {
+            "lat": 27.72414347010728,
+            "lng": 85.32224172010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Shreedhi International Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4000,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/109855298008820548712\"\u003eA Google User\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DOS2-ID2qfWL9iXZmDL7wgzYQhPbKI05N0mS_eyZRTAWB9-SC09e14GYt1BLlM6iDQfkB31iJ_UQT45a1F5sYPuE5KVafwmXMqtWDkew1-azShAOcaeMwkVCtbep9THWeIL_KGpatknqtvYbe6pT4di1bHpNthOyuW-cgACb29dn7jK",
+          "width": 6000
+        }
+      ],
+      "place_id": "ChIJMyR8JRkZ6zkRgXYwDWvdha4",
+      "plus_code": {
+        "compound_code": "P8GF+5F Kathmandu",
+        "global_code": "7MV7P8GF+5F"
+      },
+      "rating": 4.6,
+      "reference": "ChIJMyR8JRkZ6zkRgXYwDWvdha4",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 45
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "P865+798, Gangalal Marg, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7106607,
+          "lng": 85.3084547
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.71202252989272,
+            "lng": 85.30973507989272
+          },
+          "southwest": {
+            "lat": 27.70932287010728,
+            "lng": 85.30703542010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Chhatrapati Free Clinic Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3472,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/111101130830289453207\"\u003elynn\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DM68bmYgOHTKjap11CJApRBxY3SXFqTZmvC5oFz5z312wMKuyyaZ3tAsu1Cs4rge8l7BMkglFCDtw-UapPE2U0uUtEAW7AZDP78oGUfdbthBVH6Yv11e1_hcOPhm_Ra4WtZ1JnPPYNEtckM_rFugUsCHm166DgrlW9i5Lqisvx_JW6R",
+          "width": 4640
+        }
+      ],
+      "place_id": "ChIJe9nWqv4Y6zkRUxjphOzzNhg",
+      "rating": 2.9,
+      "reference": "ChIJe9nWqv4Y6zkRUxjphOzzNhg",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 102
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Bhaktapur Road, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6894119,
+          "lng": 85.35979789999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.69079182989272,
+            "lng": 85.36117577989272
+          },
+          "southwest": {
+            "lat": 27.68809217010728,
+            "lng": 85.35847612010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Motherland Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 964,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/103666434957680590193\"\u003eA Google User\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DNB_IMATSCnBW8i0rZ0gzWQADvchO2iXCa75i7mWGhQoyiLjHha_kUPgPtALPCdFp1FbHg0kKtrrq0HbciKRrD8_SjVMwWpdgmCd_hsBx7nOZzkxJCYjjw9oUsnBwdG6vyUqeiu1Pwt4wLoxiFHt9wx1OdRSkuR3wuaDt8_pMBsiMBS",
+          "width": 720
+        }
+      ],
+      "place_id": "ChIJ_9NwrCYa6zkRpS1qmefNWxE",
+      "plus_code": {
+        "compound_code": "M9Q5+QW Kathmandu",
+        "global_code": "7MV7M9Q5+QW"
+      },
+      "rating": 3.2,
+      "reference": "ChIJ_9NwrCYa6zkRpS1qmefNWxE",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 32
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Shri Ganesh Marg, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6855939,
+          "lng": 85.34479829999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.68696937989272,
+            "lng": 85.34608182989271
+          },
+          "southwest": {
+            "lat": 27.68426972010728,
+            "lng": 85.34338217010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Kantipur Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3480,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/100281773469575957823\"\u003ePratik Basyal\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DN1yefki5l_eOhswG53So_hz4ybHPQz4TM8o5VK7naHKOZisvXHfCsWkyHNQEKC66aPkdGBmffbt620ispd75I1antni36zw8sshDhV_2trU03GO471YSGCSRnLXlYsHaJCvmPaN-CrUxywJT7Ro0Uu0hzuWBssYtOzy0BiFEEdr18",
+          "width": 4640
+        }
+      ],
+      "place_id": "ChIJH-3EeI0Z6zkRMzMxsyy2YdA",
+      "plus_code": {
+        "compound_code": "M8PV+6W Kathmandu",
+        "global_code": "7MV7M8PV+6W"
+      },
+      "rating": 3.1,
+      "reference": "ChIJH-3EeI0Z6zkRMzMxsyy2YdA",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 109
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Tokha Rd 5, Tokha, Basundhara, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7445113,
+          "lng": 85.3329892
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.74584732989272,
+            "lng": 85.33444182989273
+          },
+          "southwest": {
+            "lat": 27.74314767010728,
+            "lng": 85.33174217010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Ishan Children & Women's Hospital Pvt. Ltd.",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4480,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/112795869800790319081\"\u003eA Google User\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DNrmc2o80ixnr0hFMr5P89rf50PuBicMPdl0_GwMWcvSDGed-WsfalIu1wGT8hM6JWOB-oqkcdQDoeDmQxDzUNK-yMKNFzCKcGi0oF3DZlkzNNyBWa6ldrtbms_Nezx3AbmmRy4wvPADc5vRUyf4-VJLwVINXDVrg2mmCguzV7LuV67",
+          "width": 6720
+        }
+      ],
+      "place_id": "ChIJaQYlvjcZ6zkRQ_M_NK6AfEQ",
+      "plus_code": {
+        "compound_code": "P8VM+R5 Kathmandu",
+        "global_code": "7MV7P8VM+R5"
+      },
+      "rating": 3.3,
+      "reference": "ChIJaQYlvjcZ6zkRQ_M_NK6AfEQ",
+      "types": ["hospital", "physiotherapist", "doctor", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 161
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Ring Rd, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7056123,
+          "lng": 85.3504537
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.70693882989272,
+            "lng": 85.35171687989272
+          },
+          "southwest": {
+            "lat": 27.70423917010728,
+            "lng": 85.34901722010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Tilganga Institute of Ophthalmology",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 681,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/100039457990897647756\"\u003eA Google User\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DMs1hu-Bhi1pGRGargiH-_5U6Dz76k8e7c1LmDcCigwIt92bu8q51G5PPfLIyrCvg6mI11xbTEJHollOUpz_dGR38R2LFORtp_UPdt1haBIZC48eY7QJOrGyLU6tlOcRwuFoXOu03ofMvUGecNL4SgECVW4AFFybtmeUEWnseDknbSc",
+          "width": 1024
+        }
+      ],
+      "place_id": "ChIJYdkU8YEZ6zkRNA4FdTPztNQ",
+      "plus_code": {
+        "compound_code": "P942+65 Kathmandu",
+        "global_code": "7MV7P942+65"
+      },
+      "rating": 4,
+      "reference": "ChIJYdkU8YEZ6zkRNA4FdTPztNQ",
+      "types": ["hospital", "doctor", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 510
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "पानीपोखरी मार्ग, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7311856,
+          "lng": 85.3233487
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.73240642989272,
+            "lng": 85.32506372989273
+          },
+          "southwest": {
+            "lat": 27.72970677010728,
+            "lng": 85.32236407010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Nepal Police Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1440,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/104508981308436294485\"\u003eDinesh Bohara\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DMNLUkQX6p_LekOdmkxckIqbmkK40Db-fIO6vKGbh-HRrJJiWIct6Jr8xD7K6EeNlWJxwE4F3hb-PEGEXaCVJUsNbNCQlFB_A_uj3OWi2knm-nVYzQRtCXrjYJqYnTWtWxuzf4oHGPZ72pgFkyOq1uvYZOItaCmdxP6sol-4BfrrTp_",
+          "width": 2560
+        }
+      ],
+      "place_id": "ChIJH7w4NT0Z6zkR1Bsu0nJbKx0",
+      "plus_code": {
+        "compound_code": "P8JF+F8 Kathmandu",
+        "global_code": "7MV7P8JF+F8"
+      },
+      "rating": 4.1,
+      "reference": "ChIJH7w4NT0Z6zkR1Bsu0nJbKx0",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 101
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "P76R+GG6, Chhauni Hospital Rd, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7112877,
+          "lng": 85.2912673
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.71281752989272,
+            "lng": 85.29244162989272
+          },
+          "southwest": {
+            "lat": 27.71011787010728,
+            "lng": 85.28974197010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/civic_building-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/civic-bldg_pinlet",
+      "name": "Birendra Military Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/110631419570710288110\"\u003eSabita Basnet\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DOu0ezRk2tGKjOOB6LI-X1Z7JvlJJDD8Ej3QHZDazjgsDP3bMI05I4eaJ4tjTf5zgYcJn0kJmw35hAPEjCtUSXMp5MOru5rW-ublXXQAWuz0b8dpywsbSj_KX0KFnrVJ9xcvXrr3KRoTSoBFczKVgCtC9g0s4PcD64aAvWWS94TuFZP",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJc1IZyfQY6zkRoYcErhvdou0",
+      "rating": 4,
+      "reference": "ChIJc1IZyfQY6zkRoYcErhvdou0",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 166
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.664921,
+          "lng": 85.3292584
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66611622989272,
+            "lng": 85.33088512989272
+          },
+          "southwest": {
+            "lat": 27.66341657010728,
+            "lng": 85.32818547010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "B&B Hospital, Gwarko (Baidya & Banskota)",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/103588782621893680598\"\u003emanoj thapa\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DMC2smtrRBNufB7LLk9fGz6WJJrhWY5BIYSQX3jUl51w5rdp7knS27_W3nGExt0wiBrPCDTsm092pNT7gWPCxizaFVluBdt8_H4wtRmGiyYjko2unl3SMGegAMl_a5Zo7VvcLsJIilgHkSBb_70QSQY7mz_WwsdMyL3AzV_O1SUqBTI",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJP2JIqbIZ6zkRl5dtCm4mb2Q",
+      "plus_code": {
+        "compound_code": "M87H+XP Lalitpur",
+        "global_code": "7MV7M87H+XP"
+      },
+      "rating": 4,
+      "reference": "ChIJP2JIqbIZ6zkRl5dtCm4mb2Q",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 317
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "P867+CWV, Kanti Path, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7111011,
+          "lng": 85.31480619999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.71244572989272,
+            "lng": 85.31620052989273
+          },
+          "southwest": {
+            "lat": 27.70974607010728,
+            "lng": 85.31350087010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Grande City Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3000,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/108032628577968096344\"\u003eSijan Waiba\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DO9ThD4gfhAe_yTFFxHyZQjMZkpH6r9uQLW1FBrR6S2Ufp5vS2AJRL73gTIky4c5K-pw6xm6qs2Xu1cV9IzhIM1OsCf1rXQ2x0G8gzNr72k7061jHdh4F194vr0uM6DAZDsOkzH8j-r1Zm353x5bTPMU8U5XI1GP-OA5yiz-KFMSwgn",
+          "width": 4000
+        }
+      ],
+      "place_id": "ChIJAaRp8wEZ6zkRovp1XQGfd3o",
+      "rating": 3.2,
+      "reference": "ChIJAaRp8wEZ6zkRovp1XQGfd3o",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 83
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Pushpalal Path, Kathmandu 20206, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7193177,
+          "lng": 85.3091199
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.72060922989273,
+            "lng": 85.31049502989272
+          },
+          "southwest": {
+            "lat": 27.71790957010728,
+            "lng": 85.30779537010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "ERA INTERNATIONAL HOSPITAL Pvt. Ltd.",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/109375337708046470477\"\u003eujjwal subedi\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DO2XYCpti_vF6wz-_f7HvWjBZSCg73aFK_9k4rcXJ2tnhNpsOYzwbS2o7tBU4sU9oVMB8swwABVRJJPvWvm2_qg_xVPDq7XWUH83wZiHD-BgobKE--CiFL2epDvjqqKuooRRu_dcQ9Wub3wWl0oiVVxbol2vRAQuKoE8MguxDRcxpTg",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJFeOy-t8Z6zkRfyHpvhS4M1Q",
+      "plus_code": {
+        "compound_code": "P895+PJ Kathmandu",
+        "global_code": "7MV7P895+PJ"
+      },
+      "rating": 4.4,
+      "reference": "ChIJFeOy-t8Z6zkRfyHpvhS4M1Q",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 54
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6932674,
+          "lng": 85.3138735
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.69460702989273,
+            "lng": 85.31530972989272
+          },
+          "southwest": {
+            "lat": 27.69190737010728,
+            "lng": 85.31261007010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Nepal Eye Hospital.",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1365,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/114348136307118868793\"\u003eA Google User\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DNOJ7f_GSVLzfpQgnnAlTFBkwjOXrVuLBhxO2VWzngmQvM0-ligjeZyfR0exqpbR2ol0HP7OUX59LAnbG5I6tKqoN0gDZVt3j4UcXxGbRchdE4ob2CErZZbDv9gVHX3CtQMmGZsejAJZQsZQufHshbyNuWIdQPKNfdd99NA2MggjxXk",
+          "width": 2048
+        }
+      ],
+      "place_id": "ChIJ1VfyrLIZ6zkRAMWh1BBSlL0",
+      "plus_code": {
+        "compound_code": "M8V7+8G Kathmandu",
+        "global_code": "7MV7M8V7+8G"
+      },
+      "rating": 4.1,
+      "reference": "ChIJ1VfyrLIZ6zkRAMWh1BBSlL0",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 233
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Karyabinayak, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6619293,
+          "lng": 85.302661
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66321572989272,
+            "lng": 85.30409717989271
+          },
+          "southwest": {
+            "lat": 27.66051607010728,
+            "lng": 85.30139752010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Nepal Mediciti",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2250,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/107386264694387257000\"\u003ekamal paudel\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DOaSNVkpQgWtk4PzexI12I-vxuZ8zPRv4ZBaO1kboKmEcnOUWpQALhES5bE5kB1Bn-TUGcI0HhN1a_p6AfOHMfhqrutoygNAL_22pFikgXkvVyS5FgDn3Dj0JcjYP5dSpybEVZyDhNEIi0mYurHWq4ft_DB6zNYwovx52L49lDUUcV0",
+          "width": 4000
+        }
+      ],
+      "place_id": "ChIJIwNJICYY6zkR86b1T6OO-sU",
+      "plus_code": {
+        "compound_code": "M863+Q3 Lalitpur",
+        "global_code": "7MV7M863+Q3"
+      },
+      "rating": 3.7,
+      "reference": "ChIJIwNJICYY6zkR86b1T6OO-sU",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 879
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7420086,
+          "lng": 85.33857909999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.74342702989272,
+            "lng": 85.33992287989273
+          },
+          "southwest": {
+            "lat": 27.74072737010728,
+            "lng": 85.33722322010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Wellness Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3456,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/110542809014115059437\"\u003eG Digital Media Solutions India Pvt. Ltd.\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DPGUgRo51HqQW2dqA8A6040orD9meEA1tZ8a8CwRWG6hnNd9IJWlUDEFvkFtWgR8s_KC03rM9joJxpo34gMbEY_XJqdDXGr-bBSCvaTdDSarqXgAyGEUXh9dN_-vxDoI0qi2Yx-lhyO_KOHmEt5qezdOcyT68UNMJw-wDKj5ikA-Jjg",
+          "width": 5184
+        }
+      ],
+      "place_id": "ChIJSYFcGU8Z6zkRTObVLGqus-o",
+      "plus_code": {
+        "compound_code": "P8RQ+RC Kathmandu",
+        "global_code": "7MV7P8RQ+RC"
+      },
+      "rating": 4.9,
+      "reference": "ChIJSYFcGU8Z6zkRTObVLGqus-o",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 14
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Ring Rd, Tokha 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7372067,
+          "lng": 85.32294779999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.73846472989272,
+            "lng": 85.32436672989272
+          },
+          "southwest": {
+            "lat": 27.73576507010728,
+            "lng": 85.32166707010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Greencity Hospital Pvt.Ltd.",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 476,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/118002511300374326129\"\u003eGreen City Hospital\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DNWlsBNDnDdUbwwxmQrZQaRfBsOKUJGTu2KyVZTh9PuSF6CYFE7BxIaLZfBWp26d9JH6tN65TDSDD4S1kx7r_dlJCi8coWDImMOeBWYvYczxvPRi2zcllhLJL05aabDP_gxEJl38HM7v_vapvUmBTpC52DUXrajc-wvB0IWDiwoOlFr",
+          "width": 400
+        }
+      ],
+      "place_id": "ChIJV2l_2yQZ6zkR2C8PHC1_XKE",
+      "plus_code": {
+        "compound_code": "P8PF+V5 Tokha",
+        "global_code": "7MV7P8PF+V5"
+      },
+      "rating": 3,
+      "reference": "ChIJV2l_2yQZ6zkR2C8PHC1_XKE",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 212
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Bansbari Rd, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.74544,
+          "lng": 85.34410900000002
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.74685852989273,
+            "lng": 85.34536537989273
+          },
+          "southwest": {
+            "lat": 27.74415887010728,
+            "lng": 85.34266572010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Shahid Gangalal National Heart Centre",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2250,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/110019947451019888297\"\u003epream kshetry\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DMWPkuvyqnv1AmQsMnJi2nHdozu4Lq6lffdc7mnloh67SZJE3BxMcFa0U11KAXe8vvet0N6ykeRNM4PExkVPifGP-tjvJE6FfIJj4-TeyCGQC7az08PGV0cdI_OJUzmAXyLDvsKQdUpDT4zeT1IYJJTukPIicZhnsb5Mj3r6irnftDB",
+          "width": 4000
+        }
+      ],
+      "place_id": "ChIJsTPQFU4Z6zkRJHF3-vRSOTY",
+      "plus_code": {
+        "compound_code": "P8WV+5J Kathmandu",
+        "global_code": "7MV7P8WV+5J"
+      },
+      "rating": 4.1,
+      "reference": "ChIJsTPQFU4Z6zkRJHF3-vRSOTY",
+      "types": ["hospital", "point_of_interest", "doctor", "health", "establishment"],
+      "user_ratings_total": 512
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Await marg, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7037368,
+          "lng": 85.3182659
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.70504487989272,
+            "lng": 85.31961412989271
+          },
+          "southwest": {
+            "lat": 27.70234522010727,
+            "lng": 85.31691447010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Kathmandu ENT Hospital Pvt. Ltd.",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3468,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/100345005864726253505\"\u003eBimal Raj Paudel\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DMXCO46AXGg6x0u9tbu74xdOSwL6jZ85MfP7MK8iELXPoT7JreK1OIU48-947m5-uZmlUQumWsZgR5TAPSlUvxgY8QF-wCIImix8-mPG3UjCGUy7dwqhUA3_Ne0T2vhh6UANrMPssHEI1Y9ApkbHQNcXWB2uxS2917RWmIAlnqqs1np",
+          "width": 4624
+        }
+      ],
+      "place_id": "ChIJSX_a2VMZ6zkRcXflXAdWglA",
+      "plus_code": {
+        "compound_code": "P839+F8 Kathmandu",
+        "global_code": "7MV7P839+F8"
+      },
+      "rating": 3.5,
+      "reference": "ChIJSX_a2VMZ6zkRcXflXAdWglA",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 103
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7312206,
+          "lng": 85.3264439
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.73251797989272,
+            "lng": 85.32785222989273
+          },
+          "southwest": {
+            "lat": 27.72981832010728,
+            "lng": 85.32515257010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "International Friendship Children's Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4000,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/118303252156134265207\"\u003eA Google User\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DM2PdXMEYq7nm5DvMdJqyx6jy-9c4Sw5cDdja9kTZmAVuzVehErNwfh_cPzv6FTmQEz9qmq1ZJJDgQPiW88yr3dZjhuDPua8-RcDy3tfOm0_upsddPGWDvFtwJygdFUHLTW8aAQoDPvbcgtIY_8DvES0UaY0G-rCGo1QxU2XAwatW3k",
+          "width": 2250
+        }
+      ],
+      "place_id": "ChIJeQp2CD0Z6zkR2cpD1RZwT3M",
+      "plus_code": {
+        "compound_code": "P8JG+FH Kathmandu",
+        "global_code": "7MV7P8JG+FH"
+      },
+      "rating": 3.1,
+      "reference": "ChIJeQp2CD0Z6zkR2cpD1RZwT3M",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 145
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M8G2+4W, नयाँ बाटो, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.675545,
+          "lng": 85.3023769
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67690422989272,
+            "lng": 85.30355367989272
+          },
+          "southwest": {
+            "lat": 27.67420457010727,
+            "lng": 85.30085402010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Megha Hospital Pvt. Ltd.",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/103595500359141666173\"\u003eDhiraj Pradhananga\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DPEzvhjQFU9KcAod8k9rFgtBiUwFBfvJquY44TbNl6L4OKB4S0bmySkZU6fxOMm79-TdCWLGBt8m7t2Swaj3BrX6HpFk7_pSveoM-KWQklnfKgP2C3w4mpTD9h5XWcXsgVy0Wh86wcabRLKkJJ2zxuQl5TByGEJEtgE6IaestVGoOup",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJmcf1HToY6zkRnFPmH6pgv7A",
+      "rating": 4,
+      "reference": "ChIJmcf1HToY6zkRnFPmH6pgv7A",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 137
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Unnamed Road, Kathmandu 44600, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7402849,
+          "lng": 85.3318927
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.74159777989271,
+            "lng": 85.33333197989272
+          },
+          "southwest": {
+            "lat": 27.73889812010727,
+            "lng": 85.33063232010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "National Cardiac Centre",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2368,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/109988486318978718519\"\u003enabin chaudhary\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DO7a_N7bBGP5oyasXHqsFDZBfW7SN0PkV_O827ke-XG5iqJxJTix4OwlF3u0PJZcbaMbCzmQsbDmre-cqaukyHazX15HRlFAX-J5nVam4tdJQIRZpzF035EKkpqDumodpXj0tF7eXzCLJSev7XK6z4dDpFQFubRhK1HqyIUQY8mYjG6",
+          "width": 4208
+        }
+      ],
+      "place_id": "ChIJa_MT5qMZ6zkRsLKhqRC4qqQ",
+      "plus_code": {
+        "compound_code": "P8RJ+4Q Kathmandu",
+        "global_code": "7MV7P8RJ+4Q"
+      },
+      "rating": 4.9,
+      "reference": "ChIJa_MT5qMZ6zkRsLKhqRC4qqQ",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 707
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "P8MH+V9H, महाराजगन्ज सडक, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7346817,
+          "lng": 85.3284721
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.73621842989272,
+            "lng": 85.32987367989271
+          },
+          "southwest": {
+            "lat": 27.73351877010728,
+            "lng": 85.32717402010726
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Kanti Children's Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3000,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/112552113658760283245\"\u003eA Google User\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DOXrdKZa7srJLzMDQ6lT9eWu2kU7zkUOUT35XHNaBwRmiFq6hPn2252dSEbbEdv9zKF0guBBZsQZ6y4dFvGhiDtew61CtsIfnVcM3aCGAuoUeqH6t74_m0w2B1PuOIqPo-qoFfdi0VyskwRv99gt-A43eGvRkpO4ceQEMD6WAqFO1Vb",
+          "width": 4000
+        }
+      ],
+      "place_id": "ChIJKW4qBDwZ6zkRFzOfEMWJ8mQ",
+      "rating": 3.9,
+      "reference": "ChIJKW4qBDwZ6zkRFzOfEMWJ8mQ",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 229
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M8Q9+QJP, Maternity Hospital Road, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6894575,
+          "lng": 85.3190719
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.69088702989272,
+            "lng": 85.32045777989272
+          },
+          "southwest": {
+            "lat": 27.68818737010727,
+            "lng": 85.31775812010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Paropakar Maternity & Women's Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3468,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/106918180143590249449\"\u003eAjay Sharma\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DP4_MKbTRsKYSkgnDb_ExzWXobrp2iShUQIksgt8GlmiWskP3cw2YuJa-H6zLwPmZ70-lrzfJKxrhupObGJaZI08E5SdEuQIQzrBqnZ8ablc9yCBQu78GYS-hQF-wNQgocWvjXYsTCwnLwf2IVbttStS5xhHVCnNWypzBaVkeAkmg6Y",
+          "width": 4624
+        }
+      ],
+      "place_id": "ChIJWx5737MZ6zkRBTcmUwMK2io",
+      "rating": 3.6,
+      "reference": "ChIJWx5737MZ6zkRBTcmUwMK2io",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 125
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7183088,
+          "lng": 85.31171499999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.71960887989272,
+            "lng": 85.31305787989272
+          },
+          "southwest": {
+            "lat": 27.71690922010728,
+            "lng": 85.31035822010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Overseas Friendship International Hospital 华侨友好医院",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2084,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/115929052594612324045\"\u003eHarka Man Nepali\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DO1D-qSP7AQ_GQMu8P_ejximNPZ0GUgpy7f9mH80zZr1xIqYfP_LuC_NuHIYcLPffjtvqiUOCB4gIA1dd3lq4ZMx7LBHMigqPV4BAwk9vHwoOLSRk4izwBd8zKIMUA_pKUB9BfEejwV0xD2UFlJmGHlw2s4ZL7oNTl5sWa4vp-qevY2",
+          "width": 4624
+        }
+      ],
+      "place_id": "ChIJcwJFwOIY6zkRIY4qaZL3DoY",
+      "plus_code": {
+        "compound_code": "P896+8M Kathmandu",
+        "global_code": "7MV7P896+8M"
+      },
+      "rating": 4.3,
+      "reference": "ChIJcwJFwOIY6zkRIY4qaZL3DoY",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 59
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Ring Rd 640, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6812182,
+          "lng": 85.30286749999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.68257342989272,
+            "lng": 85.30407437989271
+          },
+          "southwest": {
+            "lat": 27.67987377010728,
+            "lng": 85.30137472010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Star Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2835,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/103183045429895137894\"\u003eVivek Chaudhary\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DP5cvt_cq088LkM9pnkkSDntiWA0nE5SFn77G8icfkrMWShzcY4zkOqtqDLPNYEw2te22M2NBvkh73fErbNfrUsEWseKOKwrJQHuR53lA4bUGzlhaAA8sgWm38jdVdKgmV40AKcK18pk5TzpwXvI6ME6I-rrk2Fc9zs3ATnS18erg3U",
+          "width": 3848
+        }
+      ],
+      "place_id": "ChIJ2yMGSzsZ6zkR1YznZ7UsVNc",
+      "plus_code": {
+        "compound_code": "M8J3+F4 Lalitpur",
+        "global_code": "7MV7M8J3+F4"
+      },
+      "rating": 3.4,
+      "reference": "ChIJ2yMGSzsZ6zkR1YznZ7UsVNc",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 272
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.695529,
+          "lng": 85.30629499999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.69689622989272,
+            "lng": 85.30759697989271
+          },
+          "southwest": {
+            "lat": 27.69419657010728,
+            "lng": 85.30489732010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Sukraraj Tropical & Infectious Disease Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2250,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/103513752841436779681\"\u003eHimal Raule\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DM5VkteVGaDCwmIoCzkxwbrB7ECqvFbA9BDYwgu6csnBjclPmxYIYoq9eKk7AB8L3NH4GE1JZOKJrZa7K9LVtpGcsus-pw_XR3NbwV1KdpMVfGZqbYOI05s0T0gRMfNZ_HpLx5gmJeLy5jtviM2UDKHZW84H8Jdkzm6lwpeQUopUi7v",
+          "width": 4000
+        }
+      ],
+      "place_id": "ChIJkb1ArlEY6zkRW9llXmZShb0",
+      "plus_code": {
+        "compound_code": "M8W4+6G Kathmandu",
+        "global_code": "7MV7M8W4+6G"
+      },
+      "rating": 3.7,
+      "reference": "ChIJkb1ArlEY6zkRW9llXmZShb0",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 153
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M8XX+7M2, Sinamangal Rd, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6979371,
+          "lng": 85.3481702
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.69933167989272,
+            "lng": 85.34945057989272
+          },
+          "southwest": {
+            "lat": 27.69663202010728,
+            "lng": 85.34675092010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Hope Hospital",
+      "opening_hours": {},
+      "photos": [
+        {
+          "height": 6936,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/100527687102900814574\"\u003eA Google User\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DP7Ep2dbQxxiDHIhicOdNggR9GZGxmSOR4WgLOztE8dmTDiYgyiVP7yyLHmERz1wfjOURXLAeUdnn0VzfhtpQTuHX7pehPi8xijdWdrH0Tsg1TBJXuiQ7ieEtnY0EXUKbM0SvPkLoA9uddrXFCsddHuEEUbCpgj_3CBWYl5hXva9158",
+          "width": 9248
+        }
+      ],
+      "place_id": "ChIJpc1USYQZ6zkRkH-BrllHBUA",
+      "rating": 3.3,
+      "reference": "ChIJpc1USYQZ6zkRkH-BrllHBUA",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 46
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Basundhara(Near Police Bit, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.7364805,
+          "lng": 85.3238023
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.73787382989272,
+            "lng": 85.32524707989272
+          },
+          "southwest": {
+            "lat": 27.73517417010728,
+            "lng": 85.32254742010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "KDC- General Hospital (P ) Ltd.",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 684,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/111242216496747922527\"\u003eA Google User\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DO7Y-QAvP0rznsfF23X6PPh7LhMvUQZHCzFtGsx1A3mp3ccA09ru9Kq6PV7oOLv-U8mBBNK33pSznWNyxKNaDa9kfCtly0s7sJAhSig1QBX_gY5wjKp7qN0Li62Dg9PmTnQRIp2rWwf9SCOUV85tmNzLx5SaKjPm3-BV2MA_0RqaDN2",
+          "width": 1024
+        }
+      ],
+      "place_id": "ChIJ3fyhT9cZ6zkRn5Z80mdbwuc",
+      "plus_code": {
+        "compound_code": "P8PF+HG Kathmandu",
+        "global_code": "7MV7P8PF+HG"
+      },
+      "rating": 3.8,
+      "reference": "ChIJ3fyhT9cZ6zkRn5Z80mdbwuc",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 15
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Ring Rd 44600, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.73326,
+          "lng": 85.3146986
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.73460832989272,
+            "lng": 85.31599507989273
+          },
+          "southwest": {
+            "lat": 27.73190867010728,
+            "lng": 85.31329542010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "All Nepal Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3840,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/103227974809174586804\"\u003eA Google User\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DOVhFFu1tna0A4mvDHfxowZA0eH2aESSJFa5_N9iUAtADkSZ4cMtBd_u9udyj6KC7xhZcsWVYkfshMscPmaWycKUFhJYsYbGEUeZWAQ5MHEakxzFiB_rWpPILV4Uxwro6x4u6PjVOu5m4n6czNzr2fbYfy3AFK94zfg3gavDW6IG0-t",
+          "width": 2160
+        }
+      ],
+      "place_id": "ChIJyaKJtCYZ6zkRKVyRkbw9ijk",
+      "plus_code": {
+        "compound_code": "P8M7+8V Kathmandu",
+        "global_code": "7MV7P8M7+8V"
+      },
+      "rating": 3.4,
+      "reference": "ChIJyaKJtCYZ6zkRKVyRkbw9ijk",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 30
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M8X6+P7C, बागदरबार मार्ग, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6993027,
+          "lng": 85.3106427
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.70065917989272,
+            "lng": 85.31199692989271
+          },
+          "southwest": {
+            "lat": 27.69795952010728,
+            "lng": 85.30929727010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Kathmandu Valley Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4000,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/102255010810414015363\"\u003epradeep amatya\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DPgASOP00I7Xdd4_DEzcz-GT_xYPHqCWotsmw7kMY0s2GA3hWFL408KNUKdF7ljldWK9kPw8r6HAfdnfNL0r8y737RNt2dJfVBcpfwp8LbdfddHokQC0E9XiJ6JDhJKwR9XKFTlQA4Xn35XvmwBpJQV7YGaRkPy8EHVipfqAbVU5LET",
+          "width": 3000
+        }
+      ],
+      "place_id": "ChIJReWoeFQY6zkR8maNjIaVMek",
+      "rating": 3.8,
+      "reference": "ChIJReWoeFQY6zkR8maNjIaVMek",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 18
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M7VJ+VQH, Kathmandu 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6946762,
+          "lng": 85.28198139999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.69601447989272,
+            "lng": 85.28332327989273
+          },
+          "southwest": {
+            "lat": 27.69331482010728,
+            "lng": 85.28062362010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Nepal National Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2268,
+          "html_attributions": [
+            "\u003ca href=\"https://maps.google.com/maps/contrib/100616281134699277261\"\u003ePrajwol Rana\u003c/a\u003e"
+          ],
+          "photo_reference": "AdCG2DO2C_ctEs3fh-H8EncX2iV2mqvtiIoExIgF6-nv4REkw-JSaWxKkOQIZDuXeUh33pkVAmrC7T00Q12p_g6-hoyQ7uX0AaG3Evo4_emCn3ETmco-24W-pNuQbSvULPysKICvFGBM_rUfl0BhLbfEUs9kAS4zwyD6WI1hbmaWjOSsO0t5",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJVVVVhXoY6zkRJxgZ4p5yzKw",
+      "rating": 3,
+      "reference": "ChIJVVVVhXoY6zkRJxgZ4p5yzKw",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 74
+    }
+  ]
+}

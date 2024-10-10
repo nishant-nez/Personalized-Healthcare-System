@@ -1,0 +1,3357 @@
+{
+  "results": [
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Karyabinayak, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6619293,
+          "lng": 85.302661
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66321572989272,
+            "lng": 85.30409717989271
+          },
+          "southwest": {
+            "lat": 27.66051607010728,
+            "lng": 85.30139752010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Nepal Mediciti",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2250,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107386264694387257000\">kamal paudel</a>"
+          ],
+          "photo_reference": "AdCG2DNyvsdbZ-B83HKmOimT2OrSqVzWI0SBwJiAsB5YRbiBHHsgdrTcLOXi5_C0oo22PZdHTsmy_d6FuQ8I749DJSvkULUrXNjoorus4WW1oKFHBXocNxGLWQby9aVQYiDEOCR_vEqbWlZqLnG2t_-V-no9YP_0rTVbnb9TTA8RZkzlppbu",
+          "width": 4000
+        }
+      ],
+      "place_id": "ChIJIwNJICYY6zkR86b1T6OO-sU",
+      "plus_code": {
+        "compound_code": "M863+Q3 Lalitpur",
+        "global_code": "7MV7M863+Q3"
+      },
+      "rating": 3.7,
+      "reference": "ChIJIwNJICYY6zkR86b1T6OO-sU",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 880
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Zoo Rd, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6734427,
+          "lng": 85.3116438
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67468637989272,
+            "lng": 85.31336372989273
+          },
+          "southwest": {
+            "lat": 27.67198672010728,
+            "lng": 85.31066407010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "अारोग्य स्वास्थ्‍य सदन नेपाल बाथरोग उपचार केन्द्र्‍ प्र्‍ाा.लि.",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3096,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108599877809442150134\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DO_M7pM5EMiIrVG2T2JPgGei0QjoOXbCvYaytXjs_UwLwLHBwOsP_7fumN7L7OhCUzeT3ZyZq_HEviOWSU2Yn06WWGYSJXafZVB4vYhAcg39vwIKNiIDB5dWRFuNndhOkEPvdk_bYJigM1UQACpRCLB-O2pXer48DzET7u0r5IvST-2",
+          "width": 4128
+        }
+      ],
+      "place_id": "ChIJ8eWmGjMY6zkRUue5ufTJRbE",
+      "plus_code": {
+        "compound_code": "M8F6+9M Lalitpur",
+        "global_code": "7MV7M8F6+9M"
+      },
+      "rating": 4.2,
+      "reference": "ChIJ8eWmGjMY6zkRUue5ufTJRbE",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 36
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M86M+WPG, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6623196,
+          "lng": 85.33432189999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66380357989272,
+            "lng": 85.33569777989271
+          },
+          "southwest": {
+            "lat": 27.66110392010728,
+            "lng": 85.33299812010726
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "KIST Teaching Hospital Ward Building",
+      "opening_hours": {},
+      "photos": [
+        {
+          "height": 4096,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115392988532883969985\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DO0w9Un6bVCqmxF540PV4v3TB7Ibf9q0slYS_V3-Nk1ugKJXzXTAzRWrPWS0FcUvBQAfKJRgjfzWZ1MTtu698bl1crNgDvOdK5XhwWLHy8311Bm4yqTACCFheV1OuWuLJPlzycQ34Ufmzls6bSos1VCw1pRTwRH9aaKRWYzCFyyjfqd",
+          "width": 3072
+        }
+      ],
+      "place_id": "ChIJRXn5YgAZ6zkRDaOAZB_XUsM",
+      "rating": 1,
+      "reference": "ChIJRXn5YgAZ6zkRDaOAZB_XUsM",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 1
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M8C3+R82, Ring Rd, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6720139,
+          "lng": 85.30325209999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67330047989272,
+            "lng": 85.30464542989272
+          },
+          "southwest": {
+            "lat": 27.67060082010728,
+            "lng": 85.30194577010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Skevin Nature Care Hospital, Bagdol Pattipa Height",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4128,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103263579106594919544\">VIJAYA MALLA</a>"
+          ],
+          "photo_reference": "AdCG2DMpLlhHulZpJ4h6dg0kaNIDOVj09_FI8CSnSMcvSrgBnQcmLY41lz7t4K35sZlaZxjInY7q5d6_J0ujHte7Yb30EF6wSqnQyYCoPd6mTSyoWGUUlsf-mHr4SEGsHlAu8jcT32_m2ZeaaSJ8uBuur6MSjAfZqWNDRWRgpc2nCMFmgTmd",
+          "width": 3096
+        }
+      ],
+      "place_id": "ChIJPSj1QXoZ6zkRonov5wmg3b0",
+      "rating": 4,
+      "reference": "ChIJPSj1QXoZ6zkRonov5wmg3b0",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 8
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M84G+VGX, Satdobato-Godavari Road, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6572262,
+          "lng": 85.3263674
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.65852457989272,
+            "lng": 85.32763942989271
+          },
+          "southwest": {
+            "lat": 27.65582492010728,
+            "lng": 85.32493977010726
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Gosaikunda Health Care Center",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105258897239904489931\">Raju Shrestha</a>"
+          ],
+          "photo_reference": "AdCG2DPI5tFPTZiqe8cta0GPCIi_eEv0fbhAKeTRSDMIi__yD7usmqp0yFYB6uoQ43TQONlwuf-mr-KEgJg59OcY0v1uuvdo2x9-wiNTu-E1DPOxJ3CI8py4m6-ygjBqxITix7kL5Fog-CBohbnHfauP61kxGJd1yk0omoYHFfbXDykdNmD5",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJZZsIFR8X6zkR655C9s0NzFA",
+      "rating": 5,
+      "reference": "ChIJZZsIFR8X6zkR655C9s0NzFA",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 3
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "19, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6707802,
+          "lng": 85.32118249999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67212882989272,
+            "lng": 85.32249747989272
+          },
+          "southwest": {
+            "lat": 27.66942917010728,
+            "lng": 85.31979782010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "DIYAS HOSPITAL PVT.LTD",
+      "opening_hours": {
+        "open_now": true
+      },
+      "place_id": "ChIJr0_rPNAZ6zkRKDltysTIrOo",
+      "plus_code": {
+        "compound_code": "M8CC+8F Lalitpur",
+        "global_code": "7MV7M8CC+8F"
+      },
+      "rating": 0,
+      "reference": "ChIJr0_rPNAZ6zkRKDltysTIrOo",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 0
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "J8V8+HX6, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6439084,
+          "lng": 85.31737769999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.64522897989272,
+            "lng": 85.31871327989272
+          },
+          "southwest": {
+            "lat": 27.64252932010728,
+            "lng": 85.31601362010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Anteem Bikalpa अन्तिम विकल्प",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114252405273406983543\">santosh bhusal</a>"
+          ],
+          "photo_reference": "AdCG2DPi2AP0q1_h08AfAiuRpH6I2hAVmUsWvqKKausJ1EmrRAp5QH98HX8fPLBEjmAuWvU6jQ-qznmLfzqlUEPVriIrhyEFH770gs9TMRsYD5F3tP6dIcl2YY34sVnVbGbWjOT-qvyyJ321kFRK-KslhDy5rkh6Cp76yu2-N7R5166X7FRf",
+          "width": 1920
+        }
+      ],
+      "place_id": "ChIJg083SJcX6zkRb4tkLMbnW4I",
+      "rating": 3.3,
+      "reference": "ChIJg083SJcX6zkRb4tkLMbnW4I",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 16
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Lagankhel Satdobato Rd 12, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6679059,
+          "lng": 85.3219326
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66922427989272,
+            "lng": 85.32323077989273
+          },
+          "southwest": {
+            "lat": 27.66652462010728,
+            "lng": 85.32053112010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Lagankhel Tangal-12",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2592,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113704832755224461408\">pramendra shakya</a>"
+          ],
+          "photo_reference": "AdCG2DPiUs5zoStbTe5SuSAEgW4hUU9iBiXR0GhT4HJyplCIvERMHOUOSQ83ticS2jCQJMPTXYbeUo6DZygmKXJMugAdORwVPo0EQ_rdmrmpb-doiJ-ZuvYwGlaG8kNs2YyXgOuI9N-BDyji5OY_ZMkjrqUtxdfetd835tD7pft8srjI1kjR",
+          "width": 1944
+        }
+      ],
+      "place_id": "ChIJm5gmUdAZ6zkRMyWJxnDiMJU",
+      "plus_code": {
+        "compound_code": "M89C+5Q Lalitpur",
+        "global_code": "7MV7M89C+5Q"
+      },
+      "rating": 5,
+      "reference": "ChIJm5gmUdAZ6zkRMyWJxnDiMJU",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 2
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M8CC+FPW, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.671228,
+          "lng": 85.321821
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67258082989272,
+            "lng": 85.32314562989272
+          },
+          "southwest": {
+            "lat": 27.66988117010728,
+            "lng": 85.32044597010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "DR. RAM CHHAYA MAN AMATYA",
+      "opening_hours": {
+        "open_now": true
+      },
+      "place_id": "ChIJjQhQzs8Z6zkR_LPESDTF5uk",
+      "rating": 5,
+      "reference": "ChIJjQhQzs8Z6zkR_LPESDTF5uk",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 2
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Banglamukhi road, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6743426,
+          "lng": 85.3243859
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67570572989272,
+            "lng": 85.32570682989272
+          },
+          "southwest": {
+            "lat": 27.67300607010728,
+            "lng": 85.32300717010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "patan heart clinic patko",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2184,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107590779608064236118\">ferus habitus</a>"
+          ],
+          "photo_reference": "AdCG2DNvW-91eyNiCS0d4E1pvFub2MsPcEieFypQqF1vH20VKChhjWdhY3LJaUjq7wDQz4guuSfGzKjxsP8bI6_21fVpVwSrp_cdG_W_-qadhPii7L7vL3UGAck3EDRa0r0aeH1ccbMEfCFutUk6_F57gLmDC-BTQhI60EApo2XMzVYpV3Qq",
+          "width": 4608
+        }
+      ],
+      "place_id": "ChIJp31iqdoZ6zkRn53iVOcrBf8",
+      "plus_code": {
+        "compound_code": "M8FF+PQ Lalitpur",
+        "global_code": "7MV7M8FF+PQ"
+      },
+      "rating": 5,
+      "reference": "ChIJp31iqdoZ6zkRn53iVOcrBf8",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 1
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Thasikhel, Lalitpur, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6635106,
+          "lng": 85.31481769999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66487052989272,
+            "lng": 85.31619987989272
+          },
+          "southwest": {
+            "lat": 27.66217087010727,
+            "lng": 85.31350022010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Himalaya Health Home",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 809,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109876860639846591559\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DNvloIJ8u83zaNC9Qp-ft98snSre2m39WnmmjoPSb4W1NsOG-C-Prx1Gr1PWH7sZ2dUN4LRgStsgRVZJ3wenm7iSc0okOWL5NBgAjelPh_PpDJAql-INgxVgYjyww2hKG_Br9ry7KH69_VU1cIuZxJE6rXAK1LFeTRUnpZdImh9SJQ0",
+          "width": 1440
+        }
+      ],
+      "place_id": "ChIJcTCmIOEZ6zkR-4I0RFe1vZg",
+      "plus_code": {
+        "compound_code": "M877+CW Lalitpur",
+        "global_code": "7MV7M877+CW"
+      },
+      "rating": 4,
+      "reference": "ChIJcTCmIOEZ6zkR-4I0RFe1vZg",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 2
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Kanthi lokpath, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6555607,
+          "lng": 85.3219984
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.65694777989272,
+            "lng": 85.32336107989273
+          },
+          "southwest": {
+            "lat": 27.65424812010728,
+            "lng": 85.32066142010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "G & k Health Centre",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 960,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114330186627808961701\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DNPvfoWvw8LGPnuF9fGRAxxv-2r-VqffI-mDRoASQPr-pkQF2LC8anUF5HEYzKbJ0m6JLzyraLmFsmY_IYVUOP6XW6Hdf3y5FeBkjC-jfKnS-FoOu6Stdl73Wm872gGcZzda4cui_6wTq6wk1pSYuK_LImbK8Vojovl8txTSt0yUaVG",
+          "width": 948
+        }
+      ],
+      "place_id": "ChIJ47rZoRMX6zkRXGamCrSgCWc",
+      "plus_code": {
+        "compound_code": "M84C+6Q Lalitpur",
+        "global_code": "7MV7M84C+6Q"
+      },
+      "rating": 5,
+      "reference": "ChIJ47rZoRMX6zkRXGamCrSgCWc",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 1
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M89P+MRQ, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6692093,
+          "lng": 85.33711479999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67064647989272,
+            "lng": 85.33839932989272
+          },
+          "southwest": {
+            "lat": 27.66794682010727,
+            "lng": 85.33569967010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Balkumari Medical Center",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2048,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/118443049142785482949\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DPJkBWTBIbFVXuSU39uezc8UQwNo2wS76g6v9i0YI1gABKeLCEm7ZmnJEujeaB-L90HoaImxjPxfWJbCe9BGBjckA5GCz2LXoXisonkXhXhzH63lEiUYo4kDC6vj-U77II-0YUysGdvq5ZO6VuSH9BNDpyRT5GF5tc5dq0c_ZAfCslK",
+          "width": 1536
+        }
+      ],
+      "place_id": "ChIJEypmtK4Z6zkRte4RJdFEUq0",
+      "rating": 0,
+      "reference": "ChIJEypmtK4Z6zkRte4RJdFEUq0",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 0
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M8F7+2F3, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6725006,
+          "lng": 85.31368209999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67383837989272,
+            "lng": 85.31499467989272
+          },
+          "southwest": {
+            "lat": 27.67113872010728,
+            "lng": 85.31229502010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "राष्ट्रिय वाथरोग केन्द्र",
+      "place_id": "ChIJ4yOzHp0Z6zkRznOkGK25CWk",
+      "rating": 0,
+      "reference": "ChIJ4yOzHp0Z6zkRznOkGK25CWk",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 0
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Ring Rd chowk, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6674823,
+          "lng": 85.3325533
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66881312989273,
+            "lng": 85.33392817989272
+          },
+          "southwest": {
+            "lat": 27.66611347010728,
+            "lng": 85.33122852010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Aadhya Neuro and Multispeciality Center",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1439,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100328031540382720493\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DP1JvnIzICz515rvurUr4rQChV7-SgQo13ket2t9nA3KqSuWrDS-81Fp59gzstw5XKvsbVQYd7tDzRCvPPWBW5Y0RvoCxC6HymIuYUiDG8k8-6FzoeG0NMWzphNSJIA9YBluGOnCkAYEp4wu4K_ZuWZd6bN0A3ZSqfllMLWFzNP4mye",
+          "width": 1079
+        }
+      ],
+      "place_id": "ChIJdZbeGV8Z6zkRkdXosagKk6g",
+      "plus_code": {
+        "compound_code": "M88M+X2 Lalitpur",
+        "global_code": "7MV7M88M+X2"
+      },
+      "rating": 4.3,
+      "reference": "ChIJdZbeGV8Z6zkRkdXosagKk6g",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 8
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Talchhikhel, Lalitpur, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6602864,
+          "lng": 85.32005699999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66162152989272,
+            "lng": 85.32139157989272
+          },
+          "southwest": {
+            "lat": 27.65892187010727,
+            "lng": 85.31869192010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "NEPAL CANCER CARE FOUNDATION",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107960079709649983420\">Umesh Ghimire</a>"
+          ],
+          "photo_reference": "AdCG2DOsSu3nv4XXdXdBA-CBK3jbrovNh7L2acQyI3T6i5gY91mX0FCeacBSSKWKoDXO3pkKLYHOTcnITvkuFW6UWRaAAvkzZ5m1kqePgxuYCmimqMLM2lQROMjcww2_wU-q_PnIl-8v_clXAZxeSUYrLPQorzYKMvLNz1RolpuZS2UxP6sJ",
+          "width": 3085
+        }
+      ],
+      "place_id": "ChIJBTprxrwZ6zkR3YcNtZ0Z1To",
+      "plus_code": {
+        "compound_code": "M86C+42 Lalitpur",
+        "global_code": "7MV7M86C+42"
+      },
+      "rating": 5,
+      "reference": "ChIJBTprxrwZ6zkR3YcNtZ0Z1To",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 4
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M84C+FC8, Satdobato Road, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.656327,
+          "lng": 85.32117799999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.65768777989272,
+            "lng": 85.32253397989271
+          },
+          "southwest": {
+            "lat": 27.65498812010728,
+            "lng": 85.31983432010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Satdobato",
+      "place_id": "ChIJeT9WNAAX6zkR8dIarvZR7Qk",
+      "rating": 0,
+      "reference": "ChIJeT9WNAAX6zkR8dIarvZR7Qk",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 0
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "J8MR+X44, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6348964,
+          "lng": 85.34032169999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.63621392989272,
+            "lng": 85.34165782989271
+          },
+          "southwest": {
+            "lat": 27.63351427010727,
+            "lng": 85.33895817010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Harisiddhi Health Post",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100040612525391261634\">Bidur Maharjan</a>"
+          ],
+          "photo_reference": "AdCG2DPy1-dqLnpb6WFiXR7sD-DO7iVEcGWpti4lKKcBuXE6BQtl_UHZ1_7yjk0R3HQuG1K-lXyTczo1ivgOm-NTeN9_nGB9SBcxQ-lxbN00E3ksfA-PbC-QT4EQwFbgA8tmcWGZw52majNDesXj5w-dWhtPbY-WiKK3dBnrZYyIJMxq9aoH",
+          "width": 3024
+        }
+      ],
+      "place_id": "ChIJXSuluzgX6zkRKQoYdhGEtyA",
+      "rating": 3.7,
+      "reference": "ChIJXSuluzgX6zkRKQoYdhGEtyA",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 7
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Patandhoka Road, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6835662,
+          "lng": 85.3185299
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.68492412989272,
+            "lng": 85.31998037989273
+          },
+          "southwest": {
+            "lat": 27.68222447010728,
+            "lng": 85.31728072010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Public Lalitpur Dental Service Center",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4160,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107454888308750783399\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DMcW693akOT6nn1iPbzxjsptLYh9-OVdMeO0S7PNARy2MosvAbW1hbf6yMSlsItzTr43ErKtqJ0hPhi2QHzena6YlA0UfgXQyGzfSFMK9p1kiPew4SJHbm_XGL239D-EszfNUGvowL2pqlrsn8HPTor0ORR1zF545qzXt_Vs_aZOm5W",
+          "width": 3120
+        }
+      ],
+      "place_id": "ChIJScnq2bUZ6zkRJlcrowbTqvM",
+      "plus_code": {
+        "compound_code": "M8M9+CC Lalitpur",
+        "global_code": "7MV7M8M9+CC"
+      },
+      "rating": 4.7,
+      "reference": "ChIJScnq2bUZ6zkRJlcrowbTqvM",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 3
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M88C+RCW, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6671205,
+          "lng": 85.3210792
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66844417989272,
+            "lng": 85.32249662989273
+          },
+          "southwest": {
+            "lat": 27.66574452010728,
+            "lng": 85.31979697010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Time Medicare Clinic & Patholab",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 918,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117669245637426927267\">deepak sharma</a>"
+          ],
+          "photo_reference": "AdCG2DPoGKBGpvSbMzjcT0M8dlo8RDaSUrpCx3VUxY3U1y77QnNefNIozXK_aQyszmdYzdUhJqoL4tQfKKZ8WbFIE0MxahFBS5cqddbOS3wbz3V-zKXJfck3MDuibM-qUknaH9kzpx73zOYPEM4ga3MII4PoGrhCq2wPUVgKF-XbBnBW75k1",
+          "width": 3201
+        }
+      ],
+      "place_id": "ChIJ97PXR_oZ6zkR7jYOg2M98w4",
+      "rating": 3,
+      "reference": "ChIJ97PXR_oZ6zkR7jYOg2M98w4",
+      "types": ["hospital", "point_of_interest", "health", "establishment"],
+      "user_ratings_total": 2
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Karyabinayak, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6619293,
+          "lng": 85.302661
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66321572989272,
+            "lng": 85.30409717989271
+          },
+          "southwest": {
+            "lat": 27.66051607010728,
+            "lng": 85.30139752010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Nepal Mediciti",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2250,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107386264694387257000\">kamal paudel</a>"
+          ],
+          "photo_reference": "AdCG2DNy-KAkxBL6HAUPYeCA0iuuqMTQSPFmcWGkHTSEOs_clJt-RxBS_BsYMRkZwOW90vf-GYn9ihFPQWgrRhU03l0Q8Wjs1Y9iWJc6BLgE11FfIoX9WCPdkJztrNzZX1E26_cekX8wW-LPA504A-cMogcmrKhTuBzT_nPgSkIehWHdJONv",
+          "width": 4000
+        }
+      ],
+      "place_id": "ChIJIwNJICYY6zkR86b1T6OO-sU",
+      "plus_code": {
+        "compound_code": "M863+Q3 Lalitpur",
+        "global_code": "7MV7M863+Q3"
+      },
+      "rating": 3.7,
+      "reference": "ChIJIwNJICYY6zkR86b1T6OO-sU",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 880
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Zoo Rd, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6734427,
+          "lng": 85.3116438
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67468637989272,
+            "lng": 85.31336372989273
+          },
+          "southwest": {
+            "lat": 27.67198672010728,
+            "lng": 85.31066407010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "अारोग्य स्वास्थ्‍य सदन नेपाल बाथरोग उपचार केन्द्र्‍ प्र्‍ाा.लि.",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3096,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108599877809442150134\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DPT7A7I3llKsUX8EVEeNdrZ_TWyYA_yRT6FEfN8QOiisWYZlGNlw0goWas_UrzLVzPf5iAS_KUMIqGT0tes8zsjehVFq6oX3gcwSJMJqOe-hfYGR4NFZdG0yxEJ1Yed4zRsh6lwB5RR2b4FleaGCvYoB9yAfXmFape9-n72YHYz0Itl",
+          "width": 4128
+        }
+      ],
+      "place_id": "ChIJ8eWmGjMY6zkRUue5ufTJRbE",
+      "plus_code": {
+        "compound_code": "M8F6+9M Lalitpur",
+        "global_code": "7MV7M8F6+9M"
+      },
+      "rating": 4.2,
+      "reference": "ChIJ8eWmGjMY6zkRUue5ufTJRbE",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 36
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M86M+WPG, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6623196,
+          "lng": 85.33432189999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66380357989272,
+            "lng": 85.33569777989271
+          },
+          "southwest": {
+            "lat": 27.66110392010728,
+            "lng": 85.33299812010726
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "KIST Teaching Hospital Ward Building",
+      "opening_hours": {},
+      "photos": [
+        {
+          "height": 4096,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115392988532883969985\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DPnTdAaXxhPjL27RRo7BcZv6j2PS7Pte-8_ggp9yruFngRIS7UQEjJuHkqErfmP3g6ytMihwU7XHVhDgfFxlXTJkPsk1FyxZ0QDLLXtxNf-eilefgCj64iX9vUJgVoAMbMZOeBxSXCIlFel6xdauY_UCECizrkAIykayTungK71iz68",
+          "width": 3072
+        }
+      ],
+      "place_id": "ChIJRXn5YgAZ6zkRDaOAZB_XUsM",
+      "rating": 1,
+      "reference": "ChIJRXn5YgAZ6zkRDaOAZB_XUsM",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 1
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M8C3+R82, Ring Rd, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6720139,
+          "lng": 85.30325209999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67330047989272,
+            "lng": 85.30464542989272
+          },
+          "southwest": {
+            "lat": 27.67060082010728,
+            "lng": 85.30194577010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Skevin Nature Care Hospital, Bagdol Pattipa Height",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4128,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103263579106594919544\">VIJAYA MALLA</a>"
+          ],
+          "photo_reference": "AdCG2DOvPOa149oglOxDTQczzPes5ybiqh6yMXV0tl3dGoHDIgblCgIcn7qAhgcIVS-tfIqjmt024ugbWEBYI0iErLbDwH6InJ-9Zl80i2t5E9_3jryxbTLYKjAv-2y1YCpRWKyJ1m0HcOB_RvO24lL2kFCGyPNEC_O0udktKpifq_l99ph0",
+          "width": 3096
+        }
+      ],
+      "place_id": "ChIJPSj1QXoZ6zkRonov5wmg3b0",
+      "rating": 4,
+      "reference": "ChIJPSj1QXoZ6zkRonov5wmg3b0",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 8
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M84G+VGX, Satdobato-Godavari Road, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6572262,
+          "lng": 85.3263674
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.65852457989272,
+            "lng": 85.32763942989271
+          },
+          "southwest": {
+            "lat": 27.65582492010728,
+            "lng": 85.32493977010726
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Gosaikunda Health Care Center",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105258897239904489931\">Raju Shrestha</a>"
+          ],
+          "photo_reference": "AdCG2DPBO2oczLFL9R79ipv2klilegFbHSsD6mQpol3HFlP-KLTFfbqKa8H0XJduuIyoezfT7iGwiXQ1zHWV2IAZ_b5R-L1AcJHSGfD8Q08DsBzasf8XC4EIz8PUqgoGy9xqcvBHg1gNW8IBL9KckgIJSp0_aJJZEzp2TM0TQI7A6S5FEUU1",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJZZsIFR8X6zkR655C9s0NzFA",
+      "rating": 5,
+      "reference": "ChIJZZsIFR8X6zkR655C9s0NzFA",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 3
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "19, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6707802,
+          "lng": 85.32118249999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67212882989272,
+            "lng": 85.32249747989272
+          },
+          "southwest": {
+            "lat": 27.66942917010728,
+            "lng": 85.31979782010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "DIYAS HOSPITAL PVT.LTD",
+      "opening_hours": {
+        "open_now": true
+      },
+      "place_id": "ChIJr0_rPNAZ6zkRKDltysTIrOo",
+      "plus_code": {
+        "compound_code": "M8CC+8F Lalitpur",
+        "global_code": "7MV7M8CC+8F"
+      },
+      "rating": 0,
+      "reference": "ChIJr0_rPNAZ6zkRKDltysTIrOo",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 0
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "J8V8+HX6, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6439084,
+          "lng": 85.31737769999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.64522897989272,
+            "lng": 85.31871327989272
+          },
+          "southwest": {
+            "lat": 27.64252932010728,
+            "lng": 85.31601362010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Anteem Bikalpa अन्तिम विकल्प",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114252405273406983543\">santosh bhusal</a>"
+          ],
+          "photo_reference": "AdCG2DNUNjjgiD0zmvo3SyT_B9o8oYB1Qy2E2t17-bOBHHZmWwp0jbV_3r7PcvrtfywSX5DtzQKrOsysW1R3hN03jn9-bMiM_G6AnZPHc-o21bkTkqfOOjrrHtdmzQ55rjGntZzwRJfP33lzx9PJKt_YV5Z94plv7GJ7GJqHK2I5kLo-kyXC",
+          "width": 1920
+        }
+      ],
+      "place_id": "ChIJg083SJcX6zkRb4tkLMbnW4I",
+      "rating": 3.3,
+      "reference": "ChIJg083SJcX6zkRb4tkLMbnW4I",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 16
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Lagankhel Satdobato Rd 12, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6679059,
+          "lng": 85.3219326
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66922427989272,
+            "lng": 85.32323077989273
+          },
+          "southwest": {
+            "lat": 27.66652462010728,
+            "lng": 85.32053112010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Lagankhel Tangal-12",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2592,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113704832755224461408\">pramendra shakya</a>"
+          ],
+          "photo_reference": "AdCG2DMKqxZVsEyO0Ssm49y89VdtXNK891S27BbTJ_WB9LYRo6KJvtDWb44yF1I8Dj0KofMivPyOZVhRnlBcr9WmwC7fUQfbiZlIpq0wrM7MNtim_NnC-8W0etvFLF2BdCv_TTWcc2FyWjEEo2i5f0ivzr2ejqI9CYNmw1r4gvWGejYfqhms",
+          "width": 1944
+        }
+      ],
+      "place_id": "ChIJm5gmUdAZ6zkRMyWJxnDiMJU",
+      "plus_code": {
+        "compound_code": "M89C+5Q Lalitpur",
+        "global_code": "7MV7M89C+5Q"
+      },
+      "rating": 5,
+      "reference": "ChIJm5gmUdAZ6zkRMyWJxnDiMJU",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 2
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M8CC+FPW, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.671228,
+          "lng": 85.321821
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67258082989272,
+            "lng": 85.32314562989272
+          },
+          "southwest": {
+            "lat": 27.66988117010728,
+            "lng": 85.32044597010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "DR. RAM CHHAYA MAN AMATYA",
+      "opening_hours": {
+        "open_now": true
+      },
+      "place_id": "ChIJjQhQzs8Z6zkR_LPESDTF5uk",
+      "rating": 5,
+      "reference": "ChIJjQhQzs8Z6zkR_LPESDTF5uk",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 2
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Banglamukhi road, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6743426,
+          "lng": 85.3243859
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67570572989272,
+            "lng": 85.32570682989272
+          },
+          "southwest": {
+            "lat": 27.67300607010728,
+            "lng": 85.32300717010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "patan heart clinic patko",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2184,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107590779608064236118\">ferus habitus</a>"
+          ],
+          "photo_reference": "AdCG2DN-s4XqCXSw46z2LLcXqkDnP47Zr6X-ykXFbInuqzIyVlGhi_njldoVyn9WDbvu51AwMJYFnPvnLlFGI_Nr2DQQYdU1sdmE14kvmNsNmG1IujHKcBBm2l49dhr38GYHTQvnMczRFqqQ1WFi8ZRWFVh7nb_U31CyQICXfeuvAXQUX-sW",
+          "width": 4608
+        }
+      ],
+      "place_id": "ChIJp31iqdoZ6zkRn53iVOcrBf8",
+      "plus_code": {
+        "compound_code": "M8FF+PQ Lalitpur",
+        "global_code": "7MV7M8FF+PQ"
+      },
+      "rating": 5,
+      "reference": "ChIJp31iqdoZ6zkRn53iVOcrBf8",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 1
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Thasikhel, Lalitpur, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6635106,
+          "lng": 85.31481769999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66487052989272,
+            "lng": 85.31619987989272
+          },
+          "southwest": {
+            "lat": 27.66217087010727,
+            "lng": 85.31350022010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Himalaya Health Home",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 809,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109876860639846591559\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DPIKV_X6CRq5GvU8sd4JVN8-VRav4kbxIG9DwLWXMkMt-EJBGjNtZz1SI36gt_WCAn-3KUO7_h_P7NJTdyTrv_FJvtvlWRGX86PPwB6eM1K7trrTUkLRd-nCKoVYuACpj7pxU5RNokCGn_U2bquqlIJmgLhFX5ahDtWTSkiKXh8bpVj",
+          "width": 1440
+        }
+      ],
+      "place_id": "ChIJcTCmIOEZ6zkR-4I0RFe1vZg",
+      "plus_code": {
+        "compound_code": "M877+CW Lalitpur",
+        "global_code": "7MV7M877+CW"
+      },
+      "rating": 4,
+      "reference": "ChIJcTCmIOEZ6zkR-4I0RFe1vZg",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 2
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Kanthi lokpath, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6555607,
+          "lng": 85.3219984
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.65694777989272,
+            "lng": 85.32336107989273
+          },
+          "southwest": {
+            "lat": 27.65424812010728,
+            "lng": 85.32066142010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "G & k Health Centre",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 960,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114330186627808961701\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DOS4nP28dBFkI8cNm-jbzcG9NMfw5cUSRbwwj7xn34x_2uMZMuRXqAThD-lh1344kz6WzkC-NJJz6vc8sL4nGGampC0n77x8FbtLRtqOvVHNb-Xzd7O5uA7hDDfKlsai5Q7-Qc8sWxSoOtStB1pa1Jkxb7O_LUgzianO-v8TNDVSXMJ",
+          "width": 948
+        }
+      ],
+      "place_id": "ChIJ47rZoRMX6zkRXGamCrSgCWc",
+      "plus_code": {
+        "compound_code": "M84C+6Q Lalitpur",
+        "global_code": "7MV7M84C+6Q"
+      },
+      "rating": 5,
+      "reference": "ChIJ47rZoRMX6zkRXGamCrSgCWc",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 1
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M89P+MRQ, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6692093,
+          "lng": 85.33711479999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67064647989272,
+            "lng": 85.33839932989272
+          },
+          "southwest": {
+            "lat": 27.66794682010727,
+            "lng": 85.33569967010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Balkumari Medical Center",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2048,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/118443049142785482949\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DMx2sCY4vyM50oBovDpK0r65VbGxtfl3OOAGHPn9t0npez2-a-bJ4ytByMh_294M1PjhrNNvQGTf9kDCmdXfIS9z9cl44VXuuvPur4oxqe8uL4iN9HXIXck3etQwGZuesviHpY6c5yt0n3hdQIBGN1uxNqnOwr8J1BGlk9HYzqVHOtB",
+          "width": 1536
+        }
+      ],
+      "place_id": "ChIJEypmtK4Z6zkRte4RJdFEUq0",
+      "rating": 0,
+      "reference": "ChIJEypmtK4Z6zkRte4RJdFEUq0",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 0
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M8F7+2F3, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6725006,
+          "lng": 85.31368209999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67383837989272,
+            "lng": 85.31499467989272
+          },
+          "southwest": {
+            "lat": 27.67113872010728,
+            "lng": 85.31229502010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "राष्ट्रिय वाथरोग केन्द्र",
+      "place_id": "ChIJ4yOzHp0Z6zkRznOkGK25CWk",
+      "rating": 0,
+      "reference": "ChIJ4yOzHp0Z6zkRznOkGK25CWk",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 0
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Ring Rd chowk, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6674823,
+          "lng": 85.3325533
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66881312989273,
+            "lng": 85.33392817989272
+          },
+          "southwest": {
+            "lat": 27.66611347010728,
+            "lng": 85.33122852010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Aadhya Neuro and Multispeciality Center",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1439,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100328031540382720493\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DO9Tq6kkR7l68ckDf0uKokkYiSxJKajFoSS0ORqFOZTuIqR_5iOSSnlqZUUSrCxqO4hjaf85yBxBcK8Fm_tCsajeZiYwbfKINOLn0bxHn0ykJ-xhOUzpQFca_PaB2Fk9J7BHjG969liYsXINQSO8LmbR_BIFseJUVDREAuiRqxrhvEf",
+          "width": 1079
+        }
+      ],
+      "place_id": "ChIJdZbeGV8Z6zkRkdXosagKk6g",
+      "plus_code": {
+        "compound_code": "M88M+X2 Lalitpur",
+        "global_code": "7MV7M88M+X2"
+      },
+      "rating": 4.3,
+      "reference": "ChIJdZbeGV8Z6zkRkdXosagKk6g",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 8
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Talchhikhel, Lalitpur, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6602864,
+          "lng": 85.32005699999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66162152989272,
+            "lng": 85.32139157989272
+          },
+          "southwest": {
+            "lat": 27.65892187010727,
+            "lng": 85.31869192010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "NEPAL CANCER CARE FOUNDATION",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107960079709649983420\">Umesh Ghimire</a>"
+          ],
+          "photo_reference": "AdCG2DNi_kxg08YA4Ga3eqVDWLlwE1SCqiGTulZjb2BbYXtWULDULN8vb9LnpY1uWtcr3q7fb_gWjK4i0hg2AgyB31F2WEZBsU75zuzdkg4xepoW5T28IpIzWnCoYkQflA_AOeFRoDeAEvKT5nhLj-yVAhdE-t5rkm1saJ5T_qFm_i9baxCq",
+          "width": 3085
+        }
+      ],
+      "place_id": "ChIJBTprxrwZ6zkR3YcNtZ0Z1To",
+      "plus_code": {
+        "compound_code": "M86C+42 Lalitpur",
+        "global_code": "7MV7M86C+42"
+      },
+      "rating": 5,
+      "reference": "ChIJBTprxrwZ6zkR3YcNtZ0Z1To",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 4
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M84C+FC8, Satdobato Road, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.656327,
+          "lng": 85.32117799999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.65768777989272,
+            "lng": 85.32253397989271
+          },
+          "southwest": {
+            "lat": 27.65498812010728,
+            "lng": 85.31983432010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Satdobato",
+      "place_id": "ChIJeT9WNAAX6zkR8dIarvZR7Qk",
+      "rating": 0,
+      "reference": "ChIJeT9WNAAX6zkR8dIarvZR7Qk",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 0
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "J8MR+X44, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6348964,
+          "lng": 85.34032169999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.63621392989272,
+            "lng": 85.34165782989271
+          },
+          "southwest": {
+            "lat": 27.63351427010727,
+            "lng": 85.33895817010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Harisiddhi Health Post",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100040612525391261634\">Bidur Maharjan</a>"
+          ],
+          "photo_reference": "AdCG2DOjbAlUU7Kqf2iFHsjfnHwX7VixeNRaNd2fv57MBpZlBGmIy2knVJcy_nb50ire9OP1jBMLYYOo1zocWyfn-T6TTz0mt-Peje_Hrd8ZbAq3e4tp6g7UG06huJ8Xtd2QrL-7Ul5HUo1s9Dt-01k0NyjjB9kC55Z4GtYb_s7K_ZdoBd2w",
+          "width": 3024
+        }
+      ],
+      "place_id": "ChIJXSuluzgX6zkRKQoYdhGEtyA",
+      "rating": 3.7,
+      "reference": "ChIJXSuluzgX6zkRKQoYdhGEtyA",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 7
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Patandhoka Road, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6835662,
+          "lng": 85.3185299
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.68492412989272,
+            "lng": 85.31998037989273
+          },
+          "southwest": {
+            "lat": 27.68222447010728,
+            "lng": 85.31728072010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Public Lalitpur Dental Service Center",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4160,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107454888308750783399\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DOcPUfgQpg9imQzY8_GOKAbRAm56C5dYjX-5vi1SDD4-5TpUNi0GmxdopGrMdFOAQpriG80vso37h3OyA0i6KLRe4yBpRE5xKnn8LBMNI_YYrmYbpgz6aoIqwFJVq-V5Z2kOufqWchdh_Qx8ufMkwHw7Whaa6PpIsODiE5uY0ELMuaI",
+          "width": 3120
+        }
+      ],
+      "place_id": "ChIJScnq2bUZ6zkRJlcrowbTqvM",
+      "plus_code": {
+        "compound_code": "M8M9+CC Lalitpur",
+        "global_code": "7MV7M8M9+CC"
+      },
+      "rating": 4.7,
+      "reference": "ChIJScnq2bUZ6zkRJlcrowbTqvM",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 3
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M88C+RCW, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6671205,
+          "lng": 85.3210792
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66844417989272,
+            "lng": 85.32249662989273
+          },
+          "southwest": {
+            "lat": 27.66574452010728,
+            "lng": 85.31979697010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Time Medicare Clinic & Patholab",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 918,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117669245637426927267\">deepak sharma</a>"
+          ],
+          "photo_reference": "AdCG2DPaiphOKiC_nTUgKC25uF_rTIRWVZHa19IVmnCOp-YULJFjlSrOnF823AEJcStTTByZxPN6G-eAkAK5VBVaRnAsQwJxqqTNJ1kwi71zCcjU_uL_-_WQ61t7DyPasONH8PLrNPiAkWsGI8VnITdBl1E1iXPXjQutjPaX3fljEdRqpRnH",
+          "width": 3201
+        }
+      ],
+      "place_id": "ChIJ97PXR_oZ6zkR7jYOg2M98w4",
+      "rating": 3,
+      "reference": "ChIJ97PXR_oZ6zkR7jYOg2M98w4",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 2
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Karyabinayak, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6619293,
+          "lng": 85.302661
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66321572989272,
+            "lng": 85.30409717989271
+          },
+          "southwest": {
+            "lat": 27.66051607010728,
+            "lng": 85.30139752010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Nepal Mediciti",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2250,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107386264694387257000\">kamal paudel</a>"
+          ],
+          "photo_reference": "AdCG2DOfGPL8tuUDbgF-yu09i4wfqNV5sY_5VnfKq0YxkPn9LRFkwrP47WEQjtaPjTU2Orx6st641bRXOiamfDhhFC2JbWARg3tDlI9_-Yu5i83Nd-1OnQ1xQeuAGnDg34sh7AGXAao5zWpVzkXDU4hfo9rWX0SjOdEhmnyZ1TrWlOeN6KUk",
+          "width": 4000
+        }
+      ],
+      "place_id": "ChIJIwNJICYY6zkR86b1T6OO-sU",
+      "plus_code": {
+        "compound_code": "M863+Q3 Lalitpur",
+        "global_code": "7MV7M863+Q3"
+      },
+      "rating": 3.7,
+      "reference": "ChIJIwNJICYY6zkR86b1T6OO-sU",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 880
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Zoo Rd, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6734427,
+          "lng": 85.3116438
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67468637989272,
+            "lng": 85.31336372989273
+          },
+          "southwest": {
+            "lat": 27.67198672010728,
+            "lng": 85.31066407010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "अारोग्य स्वास्थ्‍य सदन नेपाल बाथरोग उपचार केन्द्र्‍ प्र्‍ाा.लि.",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3096,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108599877809442150134\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DMlPuLWjON4YWd1onUO-8gkQE3Ra-_J7O7SokHDhQ3s1m7RbbRSNw_UEKiAQOSEkaTBM-uA61nqcoctnLVL0ZBGSkWCzAdyqRqJMORmgbA2lwOylrE10pEHPs9LFWTWyVQmsbH9FxOQLadFLt-CSlJpRGKxkSH4S2-MH3U-pE2OkOuM",
+          "width": 4128
+        }
+      ],
+      "place_id": "ChIJ8eWmGjMY6zkRUue5ufTJRbE",
+      "plus_code": {
+        "compound_code": "M8F6+9M Lalitpur",
+        "global_code": "7MV7M8F6+9M"
+      },
+      "rating": 4.2,
+      "reference": "ChIJ8eWmGjMY6zkRUue5ufTJRbE",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 36
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M86M+WPG, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6623196,
+          "lng": 85.33432189999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66380357989272,
+            "lng": 85.33569777989271
+          },
+          "southwest": {
+            "lat": 27.66110392010728,
+            "lng": 85.33299812010726
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "KIST Teaching Hospital Ward Building",
+      "opening_hours": {},
+      "photos": [
+        {
+          "height": 4096,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115392988532883969985\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DNdkdRBzw2-vJFGhRuHE1NAvL7VAmO3oU6b9aNn_0Va3aIa8QzpHZFX2vxGEaxyHdNeuNwLaYUWlSK_-wAW4IUI2xHHmhx0ekxldNrWL_m5joOz3tNXdoEm7sIxbLdtGyR_MAuIeEcYjeKnlPRL3w7SlQD73ygNGQotBZf0TW2AWNoC",
+          "width": 3072
+        }
+      ],
+      "place_id": "ChIJRXn5YgAZ6zkRDaOAZB_XUsM",
+      "rating": 1,
+      "reference": "ChIJRXn5YgAZ6zkRDaOAZB_XUsM",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 1
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M8C3+R82, Ring Rd, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6720139,
+          "lng": 85.30325209999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67330047989272,
+            "lng": 85.30464542989272
+          },
+          "southwest": {
+            "lat": 27.67060082010728,
+            "lng": 85.30194577010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Skevin Nature Care Hospital, Bagdol Pattipa Height",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4128,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103263579106594919544\">VIJAYA MALLA</a>"
+          ],
+          "photo_reference": "AdCG2DPI9jsOtnBfkoZs2_fiZOjh1oQshh4FqTRJG3eFh2E1N7G6dcajM3GOCBBFDl_1qDHrXme54QlM9l3EEjK8W2FdXRDY8m579S6Ys2AoI9nQEq_l9A4ga35IsG-1NoNljWQnrpA-Gl_rceNw52hN_E6CUOk2MMVxYo_SSdjnYmiBENpN",
+          "width": 3096
+        }
+      ],
+      "place_id": "ChIJPSj1QXoZ6zkRonov5wmg3b0",
+      "rating": 4,
+      "reference": "ChIJPSj1QXoZ6zkRonov5wmg3b0",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 8
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M84G+VGX, Satdobato-Godavari Road, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6572262,
+          "lng": 85.3263674
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.65852457989272,
+            "lng": 85.32763942989271
+          },
+          "southwest": {
+            "lat": 27.65582492010728,
+            "lng": 85.32493977010726
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Gosaikunda Health Care Center",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105258897239904489931\">Raju Shrestha</a>"
+          ],
+          "photo_reference": "AdCG2DNhEOFU9o9X-sZKv1jETpHFZL6K9oByYuWCQxs6pqSmujN1CN7KuoK_77bWU3CPmNCSSkpBLvcrHR27Hr3Moq2Ww9wT5jV6PoTpWhPxHDMBWOBSKSGgUqzZ_Ym23SmIvovwRUB4owiykFrdjjIEYnNBLDyAmxJ87KAYpv618lxVnfSI",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJZZsIFR8X6zkR655C9s0NzFA",
+      "rating": 5,
+      "reference": "ChIJZZsIFR8X6zkR655C9s0NzFA",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 3
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "19, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6707802,
+          "lng": 85.32118249999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67212882989272,
+            "lng": 85.32249747989272
+          },
+          "southwest": {
+            "lat": 27.66942917010728,
+            "lng": 85.31979782010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "DIYAS HOSPITAL PVT.LTD",
+      "opening_hours": {
+        "open_now": true
+      },
+      "place_id": "ChIJr0_rPNAZ6zkRKDltysTIrOo",
+      "plus_code": {
+        "compound_code": "M8CC+8F Lalitpur",
+        "global_code": "7MV7M8CC+8F"
+      },
+      "rating": 0,
+      "reference": "ChIJr0_rPNAZ6zkRKDltysTIrOo",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 0
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "J8V8+HX6, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6439084,
+          "lng": 85.31737769999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.64522897989272,
+            "lng": 85.31871327989272
+          },
+          "southwest": {
+            "lat": 27.64252932010728,
+            "lng": 85.31601362010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Anteem Bikalpa अन्तिम विकल्प",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114252405273406983543\">santosh bhusal</a>"
+          ],
+          "photo_reference": "AdCG2DM6R4Ple-0G66DHv9qKCQQW5VkA2VBKjLxSIRWUy_etHcJhztkZkIktBYYUZUESQWW4I4AbHM2T3No51e5aUISfpGn51DbnznwfBGbf4EPy0u8YJQkHuMpHONawbcD7IvLVrUilXwSvQdFhaQbtTLay7CYM-cMVMLd87zzeBrh7FpNu",
+          "width": 1920
+        }
+      ],
+      "place_id": "ChIJg083SJcX6zkRb4tkLMbnW4I",
+      "rating": 3.3,
+      "reference": "ChIJg083SJcX6zkRb4tkLMbnW4I",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 16
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Lagankhel Satdobato Rd 12, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6679059,
+          "lng": 85.3219326
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66922427989272,
+            "lng": 85.32323077989273
+          },
+          "southwest": {
+            "lat": 27.66652462010728,
+            "lng": 85.32053112010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Lagankhel Tangal-12",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2592,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113704832755224461408\">pramendra shakya</a>"
+          ],
+          "photo_reference": "AdCG2DM8PGMEXajrYm_gPQYruNStFwi-6oEYSdwnezyxD5fvFQabGOlGWPN9KgHIkebcH5zLmd4D_J-IkhsPdz3iCLOSfJ0rq4rpmdP1DRkRRVHMfSHJaXUzP55oCvgYITNClkB34ABoTOqS-Q-vMh9M6WHJo7fsenDIIFNbAi10jMHH4YuH",
+          "width": 1944
+        }
+      ],
+      "place_id": "ChIJm5gmUdAZ6zkRMyWJxnDiMJU",
+      "plus_code": {
+        "compound_code": "M89C+5Q Lalitpur",
+        "global_code": "7MV7M89C+5Q"
+      },
+      "rating": 5,
+      "reference": "ChIJm5gmUdAZ6zkRMyWJxnDiMJU",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 2
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M8CC+FPW, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.671228,
+          "lng": 85.321821
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67258082989272,
+            "lng": 85.32314562989272
+          },
+          "southwest": {
+            "lat": 27.66988117010728,
+            "lng": 85.32044597010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "DR. RAM CHHAYA MAN AMATYA",
+      "opening_hours": {
+        "open_now": true
+      },
+      "place_id": "ChIJjQhQzs8Z6zkR_LPESDTF5uk",
+      "rating": 5,
+      "reference": "ChIJjQhQzs8Z6zkR_LPESDTF5uk",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 2
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Banglamukhi road, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6743426,
+          "lng": 85.3243859
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67570572989272,
+            "lng": 85.32570682989272
+          },
+          "southwest": {
+            "lat": 27.67300607010728,
+            "lng": 85.32300717010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "patan heart clinic patko",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2184,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107590779608064236118\">ferus habitus</a>"
+          ],
+          "photo_reference": "AdCG2DNNCRnVlyL2FqQOzXNtn6bvrKCF6uYtHSJ-wCI8PAOnUz6IWld0odnbBqmXF1emJ8HqHXndhLXKvRuxxY1wlEXort4tg7zJnsQ5xqkBpO_DXDSbHWKhfAcACJejz6Y6Elj47FnUjKwdNGkl7qOyhO3Sr03DDlQstCrSyF4ZUjELmqLm",
+          "width": 4608
+        }
+      ],
+      "place_id": "ChIJp31iqdoZ6zkRn53iVOcrBf8",
+      "plus_code": {
+        "compound_code": "M8FF+PQ Lalitpur",
+        "global_code": "7MV7M8FF+PQ"
+      },
+      "rating": 5,
+      "reference": "ChIJp31iqdoZ6zkRn53iVOcrBf8",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 1
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Thasikhel, Lalitpur, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6635106,
+          "lng": 85.31481769999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66487052989272,
+            "lng": 85.31619987989272
+          },
+          "southwest": {
+            "lat": 27.66217087010727,
+            "lng": 85.31350022010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Himalaya Health Home",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 809,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109876860639846591559\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DMZk8mYbOcW331fHu2Xscyx3fgyyGYdNyRq1vDmZL0Eh2w6E9PEuN0VYoYavQjpdu3qW9OM2UYPdMCTVM8wSaUDvyZ47koPotgElfqiofNIqqWnEXRjE2qhjH5J0oIuivc4qCZlx-TWvQUaCyQZm4VSt0pTUz6aJP8Ug2skFzKs7kXO",
+          "width": 1440
+        }
+      ],
+      "place_id": "ChIJcTCmIOEZ6zkR-4I0RFe1vZg",
+      "plus_code": {
+        "compound_code": "M877+CW Lalitpur",
+        "global_code": "7MV7M877+CW"
+      },
+      "rating": 4,
+      "reference": "ChIJcTCmIOEZ6zkR-4I0RFe1vZg",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 2
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Kanthi lokpath, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6555607,
+          "lng": 85.3219984
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.65694777989272,
+            "lng": 85.32336107989273
+          },
+          "southwest": {
+            "lat": 27.65424812010728,
+            "lng": 85.32066142010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "G & k Health Centre",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 960,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114330186627808961701\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DPaaC0OHktfZRNsUTp9YSYkyMKMeIM-EWpM0hGEbYZ8zS_FJpXrbiBOXLwtD4ydcoRKu4YgLF32D4pMqBUQqkQrg6AnfP50LL0plEDs2k8v9eZjrUj5XS_GUVYv0Kj3aX05fzihT9d-jefjPLSBVROHKTAZaEwErcUrQF6bIN4nt6Ky",
+          "width": 948
+        }
+      ],
+      "place_id": "ChIJ47rZoRMX6zkRXGamCrSgCWc",
+      "plus_code": {
+        "compound_code": "M84C+6Q Lalitpur",
+        "global_code": "7MV7M84C+6Q"
+      },
+      "rating": 5,
+      "reference": "ChIJ47rZoRMX6zkRXGamCrSgCWc",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 1
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M89P+MRQ, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6692093,
+          "lng": 85.33711479999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67064647989272,
+            "lng": 85.33839932989272
+          },
+          "southwest": {
+            "lat": 27.66794682010727,
+            "lng": 85.33569967010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Balkumari Medical Center",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2048,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/118443049142785482949\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DNACudAF6EkLC-BuhgLeJ9Rmiat6xaN_b5LPyL8b3BTxOp_WboSgc2SsRI-lGWXN1R1EqWPUKvjNj3tj89i2xQ5pyWbO72MC6_OzFS-P5Et2PG5fziwci-6osN5D8cS_3bvqegCHqET3s3O9s_rNAbFKJ3PqRbF0x9jjVcxjD1IBqbU",
+          "width": 1536
+        }
+      ],
+      "place_id": "ChIJEypmtK4Z6zkRte4RJdFEUq0",
+      "rating": 0,
+      "reference": "ChIJEypmtK4Z6zkRte4RJdFEUq0",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 0
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M8F7+2F3, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6725006,
+          "lng": 85.31368209999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67383837989272,
+            "lng": 85.31499467989272
+          },
+          "southwest": {
+            "lat": 27.67113872010728,
+            "lng": 85.31229502010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "राष्ट्रिय वाथरोग केन्द्र",
+      "place_id": "ChIJ4yOzHp0Z6zkRznOkGK25CWk",
+      "rating": 0,
+      "reference": "ChIJ4yOzHp0Z6zkRznOkGK25CWk",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 0
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Ring Rd chowk, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6674823,
+          "lng": 85.3325533
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66881312989273,
+            "lng": 85.33392817989272
+          },
+          "southwest": {
+            "lat": 27.66611347010728,
+            "lng": 85.33122852010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Aadhya Neuro and Multispeciality Center",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1439,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100328031540382720493\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DOkHpnkoJVPbgXAn0VEJh9Ql9q4tsCIrlV2u7Tb7heqIy3n8r4w4rP3-FQLQPvVN0GpTcdyk471Aak9NsNjoqSxiw_Jj5EmsXLQtbfcSzRLxnx7fnT7FZe6HXv4HwIqj0D8FVAiATTfCjx43DNACOfn5GCVCpfwxmHaZ_MIc-Pe8QXp",
+          "width": 1079
+        }
+      ],
+      "place_id": "ChIJdZbeGV8Z6zkRkdXosagKk6g",
+      "plus_code": {
+        "compound_code": "M88M+X2 Lalitpur",
+        "global_code": "7MV7M88M+X2"
+      },
+      "rating": 4.3,
+      "reference": "ChIJdZbeGV8Z6zkRkdXosagKk6g",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 8
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Talchhikhel, Lalitpur, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6602864,
+          "lng": 85.32005699999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66162152989272,
+            "lng": 85.32139157989272
+          },
+          "southwest": {
+            "lat": 27.65892187010727,
+            "lng": 85.31869192010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "NEPAL CANCER CARE FOUNDATION",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107960079709649983420\">Umesh Ghimire</a>"
+          ],
+          "photo_reference": "AdCG2DNFx7ue6TjUGTO7REOZdv8tiq8ZA5lAKMKT8E9Ov-Cda0qpm-6x2F7knAHJC7qWe6wPJYn1ParB8ywnE1IEgU7CdL-ALcLtQ1NwsaqfXG8sND2o8NGvybO-38NM43JiJedx551LdNE0_GCH_e75JMi_IGnFToJTpgKvp8sMOl54JU7c",
+          "width": 3085
+        }
+      ],
+      "place_id": "ChIJBTprxrwZ6zkR3YcNtZ0Z1To",
+      "plus_code": {
+        "compound_code": "M86C+42 Lalitpur",
+        "global_code": "7MV7M86C+42"
+      },
+      "rating": 5,
+      "reference": "ChIJBTprxrwZ6zkR3YcNtZ0Z1To",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 4
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M84C+FC8, Satdobato Road, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.656327,
+          "lng": 85.32117799999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.65768777989272,
+            "lng": 85.32253397989271
+          },
+          "southwest": {
+            "lat": 27.65498812010728,
+            "lng": 85.31983432010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Satdobato",
+      "place_id": "ChIJeT9WNAAX6zkR8dIarvZR7Qk",
+      "rating": 0,
+      "reference": "ChIJeT9WNAAX6zkR8dIarvZR7Qk",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 0
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "J8MR+X44, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6348964,
+          "lng": 85.34032169999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.63621392989272,
+            "lng": 85.34165782989271
+          },
+          "southwest": {
+            "lat": 27.63351427010727,
+            "lng": 85.33895817010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Harisiddhi Health Post",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100040612525391261634\">Bidur Maharjan</a>"
+          ],
+          "photo_reference": "AdCG2DO-ZWCQT9qwjPU0A1wEIQr5I3XKB9VUKHoe963fgVEYrOLeP4CEXHs4-yE74ORbKplCKLkpP6KaRtYbmEBAL9LiniQsRgj3FCFbXTPn-dSf26SyYinDQq9c-e9Y0MHrAb3jc8nDXvmddzowJJOr6LqJBJ9V7QxqbCRRv-3Ee5qdZYm8",
+          "width": 3024
+        }
+      ],
+      "place_id": "ChIJXSuluzgX6zkRKQoYdhGEtyA",
+      "rating": 3.7,
+      "reference": "ChIJXSuluzgX6zkRKQoYdhGEtyA",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 7
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Patandhoka Road, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6835662,
+          "lng": 85.3185299
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.68492412989272,
+            "lng": 85.31998037989273
+          },
+          "southwest": {
+            "lat": 27.68222447010728,
+            "lng": 85.31728072010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Public Lalitpur Dental Service Center",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4160,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107454888308750783399\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DMx7gXHONes4ZeAAG-dpGde3QLwnZnk5vtK-HotzR5An8w0Vg50X4j9VWyaO2Z-q0KXaMXnl5yt0xY_Zh9HWyLHyR63kPfe2y41ddHWbaazqMxi4rrJ0_6Io1mwHAe5QoqPT8i4X6Zoy872ZYl2VKRqRDX1ibkfIMk5QhV3a_hHAYQ5",
+          "width": 3120
+        }
+      ],
+      "place_id": "ChIJScnq2bUZ6zkRJlcrowbTqvM",
+      "plus_code": {
+        "compound_code": "M8M9+CC Lalitpur",
+        "global_code": "7MV7M8M9+CC"
+      },
+      "rating": 4.7,
+      "reference": "ChIJScnq2bUZ6zkRJlcrowbTqvM",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 3
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M88C+RCW, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6671205,
+          "lng": 85.3210792
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66844417989272,
+            "lng": 85.32249662989273
+          },
+          "southwest": {
+            "lat": 27.66574452010728,
+            "lng": 85.31979697010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Time Medicare Clinic & Patholab",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 918,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117669245637426927267\">deepak sharma</a>"
+          ],
+          "photo_reference": "AdCG2DOAsyl3IJOyd3o_K--PecgG7mQg9_x_RZ3RBiCMgvfKTbFIgNBF5ukaIKHjkZFU4ILqHzCNUk53KOde5zBmXP3BUBntHWbjmJeTvhanoMkBJ5DkE0xrN8AXoYVcGHuAf28eihk_U17HsjEU6T0CDWPQHWwDKqEqhHKPqIel0WOcJaAe",
+          "width": 3201
+        }
+      ],
+      "place_id": "ChIJ97PXR_oZ6zkR7jYOg2M98w4",
+      "rating": 3,
+      "reference": "ChIJ97PXR_oZ6zkR7jYOg2M98w4",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 2
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M84G+VGX, Satdobato-Godavari Road, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6572262,
+          "lng": 85.3263674
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.65852457989272,
+            "lng": 85.32763942989271
+          },
+          "southwest": {
+            "lat": 27.65582492010728,
+            "lng": 85.32493977010726
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Gosaikunda Health Care Center",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105258897239904489931\">Raju Shrestha</a>"
+          ],
+          "photo_reference": "AdCG2DMYozb0lqWSOuZWjIFjQALUlz4gEId49yDm99q_0EI2BCnh0yzHgYPhjmn07bhRGopa4A_49ZP_XDyoXZ718URMkXdhCl6UkuQ5ObC4V4_00FZi2Q_F0Q6iNhkWWweo5UpBJ-ULLFg5tfbrJCDLnJ1DCTlt-xBpdQDEe1IePal1y7Fs",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJZZsIFR8X6zkR655C9s0NzFA",
+      "rating": 5,
+      "reference": "ChIJZZsIFR8X6zkR655C9s0NzFA",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 3
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M8C3+R82, Ring Rd, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6720139,
+          "lng": 85.30325209999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67330047989272,
+            "lng": 85.30464542989272
+          },
+          "southwest": {
+            "lat": 27.67060082010728,
+            "lng": 85.30194577010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Skevin Nature Care Hospital, Bagdol Pattipa Height",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4128,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103263579106594919544\">VIJAYA MALLA</a>"
+          ],
+          "photo_reference": "AdCG2DNJIvkXbT79iDrgkfHpRxpetp2ZIfyW2vW132JXp_0WtQYkaUMWsLulgHwbaa-PhONOaa9Qr3W74eq1PxV2Vai7nYZnkaXHs9rC2a5uJTVIX29kBFnBNW164IW4Hzpn-aHiaL39cYV966qbV2lrNyE3Ycxpb5ccKhV2hznWAF8MFqeY",
+          "width": 3096
+        }
+      ],
+      "place_id": "ChIJPSj1QXoZ6zkRonov5wmg3b0",
+      "rating": 4,
+      "reference": "ChIJPSj1QXoZ6zkRonov5wmg3b0",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 8
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Ring Rd chowk, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6674823,
+          "lng": 85.3325533
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66881312989273,
+            "lng": 85.33392817989272
+          },
+          "southwest": {
+            "lat": 27.66611347010728,
+            "lng": 85.33122852010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Aadhya Neuro and Multispeciality Center",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1439,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100328031540382720493\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DPq0Y84O9qXDOxEHpYTqDZiXyCLHdG8LtaSWlTmQ9Q6WFB-fRL-EcM6T-uPE-m5lNYyOekKjhnhmmNkwwGKU1C2h4JEXZWJtd02n0788NWKIoWbR7bFToWz8qVEZ8o_MHLpCB4FG4nEDrXDK4xlVV_u0htzySlaO92B_yN8-cgxNln9",
+          "width": 1079
+        }
+      ],
+      "place_id": "ChIJdZbeGV8Z6zkRkdXosagKk6g",
+      "plus_code": {
+        "compound_code": "M88M+X2 Lalitpur",
+        "global_code": "7MV7M88M+X2"
+      },
+      "rating": 4.3,
+      "reference": "ChIJdZbeGV8Z6zkRkdXosagKk6g",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 8
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Banglamukhi road, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6743426,
+          "lng": 85.3243859
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67570572989272,
+            "lng": 85.32570682989272
+          },
+          "southwest": {
+            "lat": 27.67300607010728,
+            "lng": 85.32300717010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "patan heart clinic patko",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2184,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107590779608064236118\">ferus habitus</a>"
+          ],
+          "photo_reference": "AdCG2DPanXAQ2c6ka4VXWhcmA8wm9yRDkz_CDh3MT0IxobfHb9-vpfxCeG-WSizRd0GIN58YVniMfR7RZtAXj_mxXxQ8ldC_J4sP2NgNb8BUMrqQkulo2Uz1VHlQH61pOBtGVnGuAr-5oyKe43nAM_zRs-8JHvi58aHCa8LVyhuZAIB6wiAv",
+          "width": 4608
+        }
+      ],
+      "place_id": "ChIJp31iqdoZ6zkRn53iVOcrBf8",
+      "plus_code": {
+        "compound_code": "M8FF+PQ Lalitpur",
+        "global_code": "7MV7M8FF+PQ"
+      },
+      "rating": 5,
+      "reference": "ChIJp31iqdoZ6zkRn53iVOcrBf8",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 1
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Lagankhel Satdobato Rd 12, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6679059,
+          "lng": 85.3219326
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66922427989272,
+            "lng": 85.32323077989273
+          },
+          "southwest": {
+            "lat": 27.66652462010728,
+            "lng": 85.32053112010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Lagankhel Tangal-12",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2592,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113704832755224461408\">pramendra shakya</a>"
+          ],
+          "photo_reference": "AdCG2DPs3XuZSgFnmnRQs2RagVhlO1xoiK-idoY-_JPzIF1hyvbFdCOtWbRS8FNtWiGlFjabjLn9l2YibpFsfjQ4110huce52egqRrXggWHN28RERXCh01Uh4TrzdJX2vL4A0j0pHQmzFHRvpIZct3DQDkkSBnqNDqbgEofrUTa7KxSy8rAY",
+          "width": 1944
+        }
+      ],
+      "place_id": "ChIJm5gmUdAZ6zkRMyWJxnDiMJU",
+      "plus_code": {
+        "compound_code": "M89C+5Q Lalitpur",
+        "global_code": "7MV7M89C+5Q"
+      },
+      "rating": 5,
+      "reference": "ChIJm5gmUdAZ6zkRMyWJxnDiMJU",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 2
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Thasikhel, Lalitpur, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6635106,
+          "lng": 85.31481769999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66487052989272,
+            "lng": 85.31619987989272
+          },
+          "southwest": {
+            "lat": 27.66217087010727,
+            "lng": 85.31350022010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Himalaya Health Home",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 809,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109876860639846591559\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DMwHAYxVhe8t9y2xb25Nif7Z04KloUXIZIIKEV3peBK_f1m6cYGtfxmBy3nFbmKiwZ0XcUvxfFZTphXXPxVGkR5rpd9eWpVZMqSld1zLb0pbNR1uWDopt3c8vV1E8exQT39H-DEGczeK4WKqB0Ez9j6rILL5F7MVFRwRhCkmo4D9Wdg",
+          "width": 1440
+        }
+      ],
+      "place_id": "ChIJcTCmIOEZ6zkR-4I0RFe1vZg",
+      "plus_code": {
+        "compound_code": "M877+CW Lalitpur",
+        "global_code": "7MV7M877+CW"
+      },
+      "rating": 4,
+      "reference": "ChIJcTCmIOEZ6zkR-4I0RFe1vZg",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 2
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Kanthi lokpath, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6555607,
+          "lng": 85.3219984
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.65694777989272,
+            "lng": 85.32336107989273
+          },
+          "southwest": {
+            "lat": 27.65424812010728,
+            "lng": 85.32066142010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "G & k Health Centre",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 960,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114330186627808961701\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DOLw2Jbmv_dVDSvzs45-_GmfDFTt-jLi-sCvF9oQIllqkCmPBAvqxPu1KteJ6Lyj3oYYbD4zG-Ba4YZPaoJWb-3Tn_YGRaZggXc-tGq6UuUT2kYvXnu0KhFXJj0agCCh_pSBueQRmCRPJfk3Yl-c_Sn3Kob3fD9sOowD_fJVtBY_4ij",
+          "width": 948
+        }
+      ],
+      "place_id": "ChIJ47rZoRMX6zkRXGamCrSgCWc",
+      "plus_code": {
+        "compound_code": "M84C+6Q Lalitpur",
+        "global_code": "7MV7M84C+6Q"
+      },
+      "rating": 5,
+      "reference": "ChIJ47rZoRMX6zkRXGamCrSgCWc",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 1
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "J8V8+HX6, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6439084,
+          "lng": 85.31737769999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.64522897989272,
+            "lng": 85.31871327989272
+          },
+          "southwest": {
+            "lat": 27.64252932010728,
+            "lng": 85.31601362010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Anteem Bikalpa अन्तिम विकल्प",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114252405273406983543\">santosh bhusal</a>"
+          ],
+          "photo_reference": "AdCG2DOc5I7mujVJrV0f0FaNo4rr4nVSsZQDcApEiU6my9RglTZ-jNe6ThEkrDXvgYNDB7Mqtk3-j0fSd5XgEvLqwldvw-SfV4-v6W0obXgVkx1135AzA3b3QDRUIxuars38xqpLE7x-GOAiTXCn4vzo6MAOamhbvHC4LFbtOr27WNhydufV",
+          "width": 1920
+        }
+      ],
+      "place_id": "ChIJg083SJcX6zkRb4tkLMbnW4I",
+      "rating": 3.3,
+      "reference": "ChIJg083SJcX6zkRb4tkLMbnW4I",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 16
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Pulchowk Rd, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6742923,
+          "lng": 85.31456340000001
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67565687989272,
+            "lng": 85.31586162989272
+          },
+          "southwest": {
+            "lat": 27.67295722010728,
+            "lng": 85.31316197010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Hamro Dental Clinic",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4624,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113878229816769314660\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DN5zVO9Bv-Jhvf_8Pij6P-uotVmjeC8_mX6568Pr2bBjuXMOvWb-0qWas5qnZTOAt7VwEABp4YlWFVo5ZzUZlVn1iWBSAvlpppIMO9TH5UWdCMZrKVxbY7_Txj5Cx367eptRkxvHz0SSLx7xh0_p_I6XS_KCIGD0NHfVPCyUmKRA6Hg",
+          "width": 2080
+        }
+      ],
+      "place_id": "ChIJQ6X92swZ6zkR-TfxjfdurbI",
+      "plus_code": {
+        "compound_code": "M8F7+PR Lalitpur",
+        "global_code": "7MV7M8F7+PR"
+      },
+      "rating": 4.8,
+      "reference": "ChIJQ6X92swZ6zkR-TfxjfdurbI",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 91
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M88C+RCW, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6671205,
+          "lng": 85.3210792
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66844417989272,
+            "lng": 85.32249662989273
+          },
+          "southwest": {
+            "lat": 27.66574452010728,
+            "lng": 85.31979697010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Time Medicare Clinic & Patholab",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 918,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117669245637426927267\">deepak sharma</a>"
+          ],
+          "photo_reference": "AdCG2DOY8ADZZa4pus9PWswynJX-SvQOUZI-iKxwQchsL16Nd_RtRLyPMWuk4zj4TWCcdNdi1tOUZbKytLcmX-40XCdGH3yLK4HSCl-7TOym4ReVQbhvMyqzZzRi5HQFiSrYQ1I9bRNYHitF6ZOH0kLbDvhsjBuTiGAqQuZXeJ2amXqFitGY",
+          "width": 3201
+        }
+      ],
+      "place_id": "ChIJ97PXR_oZ6zkR7jYOg2M98w4",
+      "rating": 3,
+      "reference": "ChIJ97PXR_oZ6zkR7jYOg2M98w4",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 2
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6623373,
+          "lng": 85.3191621
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66371312989272,
+            "lng": 85.32047132989273
+          },
+          "southwest": {
+            "lat": 27.66101347010728,
+            "lng": 85.31777167010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "Dr Vikash Paudel Clinic",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 335,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112099874447737028210\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DPiGuOb4DbukvsKfSkRoKsdO2EYFh_59M98YXjX1Ydc6JMoEkMtZGXWHaZKVAmSKU29yLUndbXpypX34ZPTq1wjtMUTZbxVFwr6v4121NOdDrVLKpJ6GxU5XQIMCfe_DNpzLWRcTZfIBXDaatFQN8iqNvKsrANACO3ag4cwoVuQYbUZ",
+          "width": 493
+        }
+      ],
+      "place_id": "ChIJVb_gUCxVkzkRQw4ckd5vDME",
+      "plus_code": {
+        "compound_code": "M869+WM Lalitpur",
+        "global_code": "7MV7M869+WM"
+      },
+      "rating": 5,
+      "reference": "ChIJVb_gUCxVkzkRQw4ckd5vDME",
+      "types": ["hair_care", "hospital", "doctor", "health", "beauty_salon", "point_of_interest", "establishment"],
+      "user_ratings_total": 95
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M8CC+FPW, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.671228,
+          "lng": 85.321821
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67258082989272,
+            "lng": 85.32314562989272
+          },
+          "southwest": {
+            "lat": 27.66988117010728,
+            "lng": 85.32044597010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "DR. RAM CHHAYA MAN AMATYA",
+      "opening_hours": {
+        "open_now": true
+      },
+      "place_id": "ChIJjQhQzs8Z6zkR_LPESDTF5uk",
+      "rating": 5,
+      "reference": "ChIJjQhQzs8Z6zkR_LPESDTF5uk",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 2
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M89F+M9H, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6691785,
+          "lng": 85.3234693
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67052372989272,
+            "lng": 85.32481652989271
+          },
+          "southwest": {
+            "lat": 27.66782407010728,
+            "lng": 85.32211687010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Banglamukhi Medical Center",
+      "opening_hours": {
+        "open_now": true
+      },
+      "place_id": "ChIJSVpaD9AZ6zkRxTYYPH5npPA",
+      "rating": 3.5,
+      "reference": "ChIJSVpaD9AZ6zkRxTYYPH5npPA",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 2
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M89P+MRQ, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6692093,
+          "lng": 85.33711479999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67064647989272,
+            "lng": 85.33839932989272
+          },
+          "southwest": {
+            "lat": 27.66794682010727,
+            "lng": 85.33569967010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Balkumari Medical Center",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2048,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/118443049142785482949\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DN23wOUKhwRY57XTezk7qn8lBWndJr1vWPnmE4Nf4K7ekkwhsK9HV9HfhE94c3rbeC8KcjSiHsd3EYEdNabMPdbXYJRm5QmFztSW9q_zV6-MoCFOQSmtRIvaYaB59WoE6QRczpiZPTXkHpSifGKqH7EKd_ECML1_aKmAYuKIoxlkAeM",
+          "width": 1536
+        }
+      ],
+      "place_id": "ChIJEypmtK4Z6zkRte4RJdFEUq0",
+      "rating": 0,
+      "reference": "ChIJEypmtK4Z6zkRte4RJdFEUq0",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 0
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M89C+97J, Patan Hospital Bus Stop, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6684661,
+          "lng": 85.32063149999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.66992127989272,
+            "lng": 85.32203702989271
+          },
+          "southwest": {
+            "lat": 27.66722162010727,
+            "lng": 85.31933737010726
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "Patan Private Clinic",
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101969924981829693675\">sunil thapa</a>"
+          ],
+          "photo_reference": "AdCG2DMbM3mhW1sZX_AKPB7ZABgouvR3n2waCtNkmPbcJ-lzOlXvmhmSz6Na21fAjzu3_ycZwnB40KLFbPLfd4-ywIvlgUwPlIpCh5fiGZnQfhOyRrBpqA2-vNYYjB9Z61JwMO7zl5dLC8qVkvMCDIaOK9yRAGlEJ7peRVQ0h6WCpDhT3rVk",
+          "width": 2268
+        }
+      ],
+      "place_id": "ChIJM4tIwIcZ6zkRzvXFYs2aeD8",
+      "rating": 2.8,
+      "reference": "ChIJM4tIwIcZ6zkRzvXFYs2aeD8",
+      "types": ["health", "point_of_interest", "establishment"],
+      "user_ratings_total": 6
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "44600,, Lalitpur, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6754466,
+          "lng": 85.31298319999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.67681787989272,
+            "lng": 85.31427992989272
+          },
+          "southwest": {
+            "lat": 27.67411822010727,
+            "lng": 85.31158027010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Lalitpur Heart Clinic",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 2448,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107045377471240683992\">SamBeg StHa1</a>"
+          ],
+          "photo_reference": "AdCG2DNijZrfoGFNuXZOBW8tuJoba_amBIDZi19I5-XF6aYkXuQhnPk6qsoxQUFnA0HrKMjqcOgg1g4ByMqIpM9YOuXfH7hJGsehIiNXoX01XM0OgmtXUKT-WlTJZf_69t6gnc2SmP0MhX55zQ4YDmk-j16ZXslKfAPct5buigZry3oe8Gku",
+          "width": 3264
+        }
+      ],
+      "place_id": "ChIJsVjrUDMY6zkRZxylxHpaR1U",
+      "plus_code": {
+        "compound_code": "M8G7+55 Lalitpur",
+        "global_code": "7MV7M8G7+55"
+      },
+      "rating": 3.6,
+      "reference": "ChIJsVjrUDMY6zkRZxylxHpaR1U",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 7
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Hema Textile, Satdobato-Godavari Road, Godawari 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.628907,
+          "lng": 85.34572279999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.63023757989272,
+            "lng": 85.34701992989272
+          },
+          "southwest": {
+            "lat": 27.62753792010728,
+            "lng": 85.34432027010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Godawari Midcity Hospital Pvt. Ltd.",
+      "opening_hours": {},
+      "photos": [
+        {
+          "height": 1080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117490814047667920300\">Naresh Mahat</a>"
+          ],
+          "photo_reference": "AdCG2DMLJS7-3mn7ke5EdVdjQcP20MnM2LG17q1jV--RQS7I-7zIVw4Ei3a7UTxtcVfF4y3khbi6JQ2WtHR0yYJgbM7UO-EGdSBL_aLJTGP4pfAXAxZunaW1laiQ_3b-cb1_K6gDq-qaTX6nk3UXTD8tMd7ncALpMpSBcM471qx0hwwFNM1l",
+          "width": 1920
+        }
+      ],
+      "place_id": "ChIJAZwcvMsX6zkRqXY4OGR0cWQ",
+      "plus_code": {
+        "compound_code": "J8HW+H7 Godawari",
+        "global_code": "7MV7J8HW+H7"
+      },
+      "rating": 2.6,
+      "reference": "ChIJAZwcvMsX6zkRqXY4OGR0cWQ",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 9
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Patandhoka Road, Lalitpur 44700, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6835662,
+          "lng": 85.3185299
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.68492412989272,
+            "lng": 85.31998037989273
+          },
+          "southwest": {
+            "lat": 27.68222447010728,
+            "lng": 85.31728072010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Public Lalitpur Dental Service Center",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 4160,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107454888308750783399\">A Google User</a>"
+          ],
+          "photo_reference": "AdCG2DPueVVILuSCJ3NHYLK9wQkXTkmZ02ZoaccPe-21iVdq7Jt-hG01vGtnvZ2GiZd3iLx6GJikO3azAV7esHnpbVWIi_-uZqCaSFgeMN2i6_vBkxuJAuUwLBWW5hLS9bXebNmfTigHPCSgf5XjBn78Wfw4O8jm_89VttEdGZvJOkRZlm9_",
+          "width": 3120
+        }
+      ],
+      "place_id": "ChIJScnq2bUZ6zkRJlcrowbTqvM",
+      "plus_code": {
+        "compound_code": "M8M9+CC Lalitpur",
+        "global_code": "7MV7M8M9+CC"
+      },
+      "rating": 4.7,
+      "reference": "ChIJScnq2bUZ6zkRJlcrowbTqvM",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 3
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Chakupat Rd 11, Lalitpur 44600, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.6800363,
+          "lng": 85.32642539999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.68134162989272,
+            "lng": 85.32789607989272
+          },
+          "southwest": {
+            "lat": 27.67864197010728,
+            "lng": 85.32519642010728
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Lalitpur Physiotherapy Clinic",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 2136,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102742782248279650990\">Aliza Tandukar</a>"
+          ],
+          "photo_reference": "AdCG2DOmOHy4umg_LGFjwfwDYzSvU2G65xa5ladv_r0xc2J1Q_bxGm-bMkuJSsNtKgUQANOnO179V9wu-Ts8jPJ_FM_MGuTq3itJ6V2GNhX3tTZH2EIpj5j65kTYFjsTvIliGHV33rivHUL1tSODDK48OnydjMkjltfrUYoH9v9HHmRnjYvr",
+          "width": 4624
+        }
+      ],
+      "place_id": "ChIJLat5F7gZ6zkRBnYhUGIkXpA",
+      "plus_code": {
+        "compound_code": "M8JG+2H Lalitpur",
+        "global_code": "7MV7M8JG+2H"
+      },
+      "rating": 5,
+      "reference": "ChIJLat5F7gZ6zkRBnYhUGIkXpA",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 19
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "M8V6+M6X, Tripura Marg, Tripureswor 44601, Nepal",
+      "geometry": {
+        "location": {
+          "lat": 27.694234,
+          "lng": 85.310597
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 27.69583642989272,
+            "lng": 85.31213637989271
+          },
+          "southwest": {
+            "lat": 27.69313677010728,
+            "lng": 85.30943672010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/hospital-71.png",
+      "icon_background_color": "#F88181",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hospital-H_pinlet",
+      "name": "Blue Lotus Hospital",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 600,
+          "html_attributions": ["<a href=\"https://maps.google.com/maps/contrib/106426233951202915545\">Chan Bc</a>"],
+          "photo_reference": "AdCG2DNRXUENfdUsw1UnUirNW5QfqE737oK38HPstGPui6HCY-z_IDWz4AKzrL8pXz93BChNYJm5Iqf7mqHTpK6w74qZX8X_AlRPpEGdxmZSnNLb2joQ4athUuVJnhILJILXlQ8vS0spN4Yf2BaPq6wqbRCfYi1sGDJLFg8xXH_W3UVG_5kW",
+          "width": 800
+        }
+      ],
+      "place_id": "ChIJ5UrvZFIY6zkRMOaoRDksD74",
+      "rating": 3.9,
+      "reference": "ChIJ5UrvZFIY6zkRMOaoRDksD74",
+      "types": ["hospital", "health", "point_of_interest", "establishment"],
+      "user_ratings_total": 22
+    }
+  ]
+}

@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'accounts',
     'blogs',
     'diseases',
+    'hospitals',
 ]
 
 MIDDLEWARE = [
