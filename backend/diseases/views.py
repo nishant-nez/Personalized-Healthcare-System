@@ -282,8 +282,22 @@ class DiseaseList(generics.ListAPIView):
 
     def get_queryset(self):
         if self.request.user.is_staff:
-            return DiseaseHistory.objects.all()
-        return DiseaseHistory.objects.filter(user=self.request.user)
+            obj = DiseaseHistory.objects.all()
+        obj = DiseaseHistory.objects.filter(user=self.request.user)
+        # Adding symptoms severity to each symptom
+        for disease in obj:
+            symptoms = disease.symptoms.strip("[]").replace("'", "").split(", ")
+            symptom_severity = {}
+            for symp in symptoms:
+                symp = symp.lower().replace(' ', '_')
+                symptom_weight = symptom_sev[symptom_sev['Symptom'] == symp]['weight'].values
+                if symptom_weight.size > 0:
+                    weight = symptom_weight[0]
+                    # Replace invalid float values in symptom severity with 0 or None
+                    symptom_severity[symp.replace('_', ' ').capitalize()] = clean_float_value(weight)
+            disease.symptoms = symptom_severity
+
+        return (obj)
 
 
 class DiseaseHistoryDetail(generics.RetrieveUpdateDestroyAPIView):

@@ -6,7 +6,7 @@ const AuthImage = () => {
             <img
                 src={authBackground}
                 alt="Background Image"
-                className="lg:max-h-[600px] xl:max-h-[800px] w-full object-cover dark:brightness-[0.2] rounded-md"
+                className="h-[90vh] lg:h-[91.2vh] w-full object-cover dark:brightness-[0.2] rounded-md"
             />
         </div>
     );

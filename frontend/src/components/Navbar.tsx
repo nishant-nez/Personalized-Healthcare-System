@@ -1,10 +1,17 @@
 import { useAuth } from "@/contexts/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
-import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { NavigationMenu, NavigationMenuList, NavigationMenuLink } from "@/components/ui/navigation-menu";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { SVGProps } from "react";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTrigger,
+} from "@/components/ui/sheet"
+import VerticalNav from "./VerticalNav";
+
 
 
 const Navbar = () => {
@@ -18,7 +25,6 @@ const Navbar = () => {
 
   return (
     <>
-
       <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6">
         <Sheet>
           <SheetTrigger asChild>
@@ -36,6 +42,16 @@ const Navbar = () => {
               <Link to={'/'} className="flex w-full items-center py-2 text-lg font-semibold" >
                 Home
               </Link>
+              <Link to={'/hospitals'} className="flex w-full items-center py-2 text-lg font-semibold" >
+                Hospitals
+              </Link>
+              {isLoggedIn &&
+                <>
+                  <Link to={'/history'} className="flex w-full items-center py-2 text-lg font-semibold" >
+                    History
+                  </Link>
+                </>
+              }
             </div>
           </SheetContent>
         </Sheet>
@@ -70,10 +86,10 @@ const Navbar = () => {
                   <>
                     <NavigationMenuLink asChild>
                       <Link
-                        to={'/'}
+                        to={'/history'}
                         className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50"
                       >
-                        History
+                        My History
                       </Link>
                     </NavigationMenuLink>
 
@@ -87,11 +103,23 @@ const Navbar = () => {
           {isLoggedIn
             ?
             <div className="flex gap-3 cursor-pointer">
-              <Button onClick={logout_user}>Logout</Button>
-              <Avatar>
-                <AvatarImage src={user?.image} />
-                <AvatarFallback>CN</AvatarFallback>
-              </Avatar>
+              <Sheet>
+                <SheetTrigger>
+                  <div className="flex gap-3 justify-center items-center">
+                    <p className="font-semibold">{user?.first_name}</p>
+                    <Avatar>
+                      <AvatarImage src={user?.image} />
+                      <AvatarFallback>CN</AvatarFallback>
+                    </Avatar>
+                  </div>
+                </SheetTrigger>
+                <SheetContent>
+                  <SheetHeader>
+                    {/* <SheetTitle>Hello, {user?.first_name}</SheetTitle> */}
+                  </SheetHeader>
+                  <VerticalNav logout={logout_user} />
+                </SheetContent>
+              </Sheet>
             </div>
             :
             <div className="flex gap-4">
@@ -106,14 +134,6 @@ const Navbar = () => {
 
         </div>
       </header>
-
-      {/* <div>Navbar - {user && (user.first_name + ' ' + user.email)}</div>
-      <div>
-        <Link to={'/'}>Home</Link>
-
-        {isLoggedIn ? authLinks() : guestLinks()}
-
-      </div> */}
     </>
   )
 };

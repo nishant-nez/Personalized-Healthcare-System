@@ -3,15 +3,8 @@ import axios from '@/api/axios';
 import { isAxiosError } from 'axios';
 import { useCookies } from 'react-cookie';
 import { useToast } from "@/components/ui/use-toast";
+import { IUser } from '@/interfaces/IUser';
 
-interface IUser {
-    id: number;
-    first_name: string;
-    last_name: string;
-    email: string;
-    is_superuser: boolean;
-    image: string;
-};
 
 interface AuthContextProps {
     isLoggedIn: boolean;
@@ -59,7 +52,8 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
             };
             try {
                 const response = await axios.get('/api/auth/users/me/', config);
-
+                setAccess(cookies.access);
+                setRefresh(cookies.refresh);
                 setUser(response.data);
             } catch (error: unknown) {
                 setValues(false, '', '');

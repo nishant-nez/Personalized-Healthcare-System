@@ -69,7 +69,7 @@ const DiseasePredictionModal = ({ modalOpen, setModalOpen, data }: { modalOpen: 
     };
 
     useEffect(() => {
-        fetchNearestHospital();
+        if (location) fetchNearestHospital();
     }, []);
 
     if (data !== null) return (
