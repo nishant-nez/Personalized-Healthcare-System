@@ -48,6 +48,12 @@ class BlogSerializer(serializers.Serializer):
         instance.content = validated_data.get('content', instance.content)
         instance.save()
         return instance
+    
+    def get_image_url(self, obj):
+        request = self.context.get('request')
+        if obj.image_url and request:
+            return request.build_absolute_uri(obj.image_url.url)
+        return None
 
     def to_representation(self, instance):
         """

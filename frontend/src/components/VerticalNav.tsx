@@ -5,13 +5,18 @@ const VerticalNav = ({ logout }: { logout: () => void }) => {
         <div className="my-8">
             <div className="">
                 <Link to={'/profile'}>
-                    <div onClick={logout} className="w-full mb-4 rounded-lg text-center font-semibold cursor-pointer py-3 hover:bg-[#0f172a] hover:text-white ">
+                    <div className="w-full mb-4 rounded-lg text-center font-semibold cursor-pointer py-3 hover:bg-[#0f172a] hover:text-white ">
                         Profile
                     </div>
                 </Link>
                 <Link to={'/history'}>
-                    <div onClick={logout} className="w-full mb-4 rounded-lg text-center font-semibold cursor-pointer py-3 hover:bg-[#0f172a] hover:text-white ">
+                    <div className="w-full mb-4 rounded-lg text-center font-semibold cursor-pointer py-3 hover:bg-[#0f172a] hover:text-white ">
                         History
+                    </div>
+                </Link>
+                <Link to={'/profile/blogs'}>
+                    <div className="w-full mb-4 rounded-lg text-center font-semibold cursor-pointer py-3 hover:bg-[#0f172a] hover:text-white ">
+                        My Blogs
                     </div>
                 </Link>
                 <div onClick={logout} className="w-full mb-4 rounded-lg text-center font-semibold cursor-pointer py-3 hover:bg-[#0f172a] hover:text-white ">Logout</div>

@@ -1,3 +1,14 @@
+import {
+    AlertDialog,
+    AlertDialogAction,
+    AlertDialogCancel,
+    AlertDialogContent,
+    AlertDialogDescription,
+    AlertDialogFooter,
+    AlertDialogHeader,
+    AlertDialogTitle,
+    AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
 import { IDiagnosisHistory } from "@/interfaces/IDiagnosisHistory";
 
 const COLUMNS = [
@@ -8,7 +19,7 @@ const COLUMNS = [
     "Actions",
 ];
 
-const DiagnosisHistoryTable = ({ diagnosis, setSelectedID }: { diagnosis: IDiagnosisHistory[], setSelectedID: (id: number) => void }) => {
+const DiagnosisHistoryTable = ({ diagnosis, setSelectedID, deleteHistory }: { diagnosis: IDiagnosisHistory[], setSelectedID: (id: number) => void, deleteHistory: () => void }) => {
     return (
         <section className="min-h-screen container mx-auto p-6">
             <h2 className="text-2xl font-bold text-center mt-4 mb-8">My Diagnosis History</h2>
@@ -47,11 +58,27 @@ const DiagnosisHistoryTable = ({ diagnosis, setSelectedID }: { diagnosis: IDiagn
                                         </td>
                                         <td className="px-4 py-3 border">
                                             <div className="h-full flex justify-center gap-2">
-                                                <button type="button" className="py-2 px-3 text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300"
-                                                    onClick={() => setSelectedID(data.id)}
-                                                >
-                                                    Delete
-                                                </button>
+                                                <AlertDialog>
+                                                    <AlertDialogTrigger>
+                                                        <div className="py-2 px-3 text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300"
+                                                            onClick={() => setSelectedID(data.id)}
+                                                        >
+                                                            Delete
+                                                        </div>
+                                                    </AlertDialogTrigger>
+                                                    <AlertDialogContent>
+                                                        <AlertDialogHeader>
+                                                            <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
+                                                            <AlertDialogDescription>
+                                                                This action cannot be undone. This will delete the selected diagnosis.
+                                                            </AlertDialogDescription>
+                                                        </AlertDialogHeader>
+                                                        <AlertDialogFooter>
+                                                            <AlertDialogCancel>Cancel</AlertDialogCancel>
+                                                            <AlertDialogAction onClick={deleteHistory}>Continue</AlertDialogAction>
+                                                        </AlertDialogFooter>
+                                                    </AlertDialogContent>
+                                                </AlertDialog>
                                             </div>
                                         </td>
                                     </tr>

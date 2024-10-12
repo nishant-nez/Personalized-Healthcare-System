@@ -83,3 +83,29 @@ class BlogDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = BlogSerializer
     permission_classes = [IsOwnerOrReadOnly]
     parser_classes = (MultiPartParser, FormParser)
+
+
+class BlogsOfUser(APIView):
+    """
+    List all blogs of a user
+    """
+
+    permission_classes = []
+
+    def get(self, request, pk, format=None):
+        blogs = Blog.objects.filter(author_id=pk)
+        serializer = BlogSerializer(blogs, many=True, context={'request': request})
+        return Response(serializer.data)
+
+
+class BlogsExceptUser(APIView):
+    """
+    List all blogs except of a user
+    """
+
+    permission_classes = []
+
+    def get(self, request, pk, format=None):
+        blogs = Blog.objects.exclude(author_id=pk)
+        serializer = BlogSerializer(blogs, many=True, context={'request': request})
+        return Response(serializer.data)

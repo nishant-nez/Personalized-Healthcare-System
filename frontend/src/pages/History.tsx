@@ -53,6 +53,7 @@ const History = () => {
     };
 
     const deleteHistory = async () => {
+        console.log('inside')
         setIsLoading(true);
         const config = {
             headers: {
@@ -61,13 +62,17 @@ const History = () => {
         };
 
         try {
-            const response = await axios.get(
-                '/api/diseases/history/all/',
+            const response = await axios.delete(
+                `/api/diseases/history/${selectedID}/`,
                 config,
             );
             console.log(response.data)
-            setHistory(response.data);
+            toast({
+                variant: "success",
+                title: 'Diagnosis History Deleted Successfully',
+            });
             setIsLoading(false);
+            fetchHistory();
         } catch (err: unknown) {
             setIsLoading(false);
             console.log('Error', err);
@@ -99,7 +104,7 @@ const History = () => {
     return (
         <>
             <div className="container mx-auto rounded-2xl">
-                <DiagnosisHistoryTable diagnosis={history} setSelectedID={setSelectedID} />
+                <DiagnosisHistoryTable diagnosis={history} setSelectedID={setSelectedID} deleteHistory={deleteHistory} />
 
                 {isLoading && <Loader2 className="mx-auto h-14 w-14 animate-spin" />}
             </div>

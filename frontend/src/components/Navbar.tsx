@@ -1,7 +1,7 @@
 import { useAuth } from "@/contexts/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { NavigationMenu, NavigationMenuList, NavigationMenuLink } from "@/components/ui/navigation-menu";
+import { NavigationMenu, NavigationMenuList } from "@/components/ui/navigation-menu";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { SVGProps } from "react";
 import {
@@ -12,7 +12,15 @@ import {
 } from "@/components/ui/sheet"
 import VerticalNav from "./VerticalNav";
 
+const LINKS = [
+  { label: "Home", to: "/" },
+  { label: "Hospitals", to: "/hospital" },
+  { label: "Blogs", to: "/blogs" },
+];
 
+const AUTH_LINKS = [
+  { label: "My History", to: "/history" },
+];
 
 const Navbar = () => {
   const { logout, isLoggedIn, user } = useAuth();
@@ -39,17 +47,18 @@ const Navbar = () => {
               <span className="sr-only">Company Logo</span>
             </Link>
             <div className="grid gap-2 py-6">
-              <Link to={'/'} className="flex w-full items-center py-2 text-lg font-semibold" >
-                Home
-              </Link>
-              <Link to={'/hospitals'} className="flex w-full items-center py-2 text-lg font-semibold" >
-                Hospitals
-              </Link>
+              {LINKS.map((link) =>
+                <Link to={link.to} key={link.to} className="flex w-full items-center py-2 text-lg font-semibold" >
+                  {link.label}
+                </Link>
+              )}
               {isLoggedIn &&
                 <>
-                  <Link to={'/history'} className="flex w-full items-center py-2 text-lg font-semibold" >
-                    History
-                  </Link>
+                  {AUTH_LINKS.map((link) =>
+                    <Link to={link.to} key={link.to} className="flex w-full items-center py-2 text-lg font-semibold" >
+                      {link.label}
+                    </Link>
+                  )}
                 </>
               }
             </div>
@@ -65,34 +74,26 @@ const Navbar = () => {
               <NavigationMenuList>
 
                 {/* map */}
-                <NavigationMenuLink asChild>
+                {LINKS.map((link) =>
                   <Link
-                    to={'/'}
+                    to={link.to}
+                    key={link.to}
                     className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50"
                   >
-                    Home
+                    {link.label}
                   </Link>
-                </NavigationMenuLink>
-                {/* map */}
-                <NavigationMenuLink asChild>
-                  <Link
-                    to={'/hospitals'}
-                    className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50"
-                  >
-                    Hospitals
-                  </Link>
-                </NavigationMenuLink>
+                )}
                 {isLoggedIn &&
                   <>
-                    <NavigationMenuLink asChild>
+                    {AUTH_LINKS.map((link) =>
                       <Link
-                        to={'/history'}
+                        to={link.to}
+                        key={link.to}
                         className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50"
                       >
-                        My History
+                        {link.label}
                       </Link>
-                    </NavigationMenuLink>
-
+                    )}
                   </>
                 }
               </NavigationMenuList>
