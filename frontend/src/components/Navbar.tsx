@@ -14,7 +14,7 @@ import VerticalNav from "./VerticalNav";
 
 const LINKS = [
   { label: "Home", to: "/" },
-  { label: "Hospitals", to: "/hospital" },
+  { label: "Hospitals", to: "/hospitals" },
   { label: "Blogs", to: "/blogs" },
 ];
 

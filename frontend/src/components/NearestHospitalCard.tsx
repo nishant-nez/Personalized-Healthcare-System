@@ -39,7 +39,7 @@ const NearestHospitalCard = ({ hospital }: { hospital: INearestHospital }) => {
                         </div>
                     </div>
                 </div>
-                <div className="rounded-xl shadow-lg mb-3 border border-white bg-white p-6 flex flex-col items-center justify-center">
+                {/* <div className="rounded-xl shadow-lg mb-3 border border-white bg-white p-6 flex flex-col items-center justify-center">
                     <div className="flex justify-between mx-4 w-full">
                         <div>Distance: </div>
                         <div className="font-bold pl-4">{hospital.distance.text}</div>
@@ -48,6 +48,12 @@ const NearestHospitalCard = ({ hospital }: { hospital: INearestHospital }) => {
                         <span>Duration (vehicle): </span>
                         <span className="font-bold pl-4">{hospital.duration.text}</span>
                     </div>
+                </div> */}
+                <div className="rounded-xl shadow-lg mb-3 border border-white bg-white p-6 flex flex-col items-center justify-center">
+                    <div className="font-bold text-3xl mb-1">{hospital.distance.text}</div>
+                    <div className="font-light mb-4">Distance</div>
+                    <div className="font-bold text-3xl mb-1">{hospital.duration.text}</div>
+                    <div className="font-light">Duration (vehicle)</div>
                 </div>
             </div>
         </>
