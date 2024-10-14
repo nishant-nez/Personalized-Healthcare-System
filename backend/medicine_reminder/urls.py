@@ -3,7 +3,8 @@ from rest_framework.urlpatterns import format_suffix_patterns
 from medicine_reminder import views
 
 urlpatterns = [
-    path('test/', views.Test.as_view()),
+    path('', views.MedicineReminder.as_view()),
+    path('<int:id>/', views.ReminderDetail.as_view()),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)

@@ -93,4 +93,6 @@ guide.txt
 
 personalized_healthcare_system/media/blogs/*
 personalized_healthcare_system/media/profile/*
+personalized_healthcare_system/media/medicine_reminders/*
 !personalized_healthcare_system/media/profile/default.jpg
+!personalized_healthcare_system/media/medicine_reminders/default.png

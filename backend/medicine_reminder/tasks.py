@@ -3,23 +3,19 @@ from django.core.mail import send_mail
 from django.utils import timezone
 from datetime import timedelta
 from personalized_healthcare_system.settings import base 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
 
 @shared_task(bind=True)
-def sendmail(self, *args, **kwargs):
-    # operations
-    for i in range(10):
-        print(i)
-    print(args)
-    print(kwargs)
-    # timezone.localtime(users.date_time) + timedelta(days=2)
-    mail_subject = "Celery Testing"
-    message = "testing email contents for celery"
-    to = ""
+def send_medicine_reminder(self, to, subject, message):
     send_mail(
-        subject=mail_subject, 
+        subject=subject, 
         message=message, 
         from_email=base.EMAIL_HOST_USER,
-        recipient_list=[to],
+        recipient_list=[to, os.environ.get('ADMIN_EMAIL')],
         fail_silently=False,
     )
-    return "Sent"
+    return "Medicine reminder sent to " + to
