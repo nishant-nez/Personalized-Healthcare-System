@@ -36,10 +36,10 @@ class MedicineReminder(APIView):
         reminder_type = data.get('reminder_type')
         reminder_time = data.get('reminder_time')
         start_date = data.get('start_date')
-        end_date = data.get('end_date', None)  # Can be null
+        end_date = data.get('end_date', None)
         interval_value = data.get('interval_value', None)
         interval_type = data.get('interval_type', None)
-        day_of_week = data.get('day_of_week', None)  # Can be null
+        day_of_week = data.get('day_of_week', None)
 
         # Format reminder message for the email
         subject = f"Medicine Reminder for {medicine_name}"
@@ -95,6 +95,7 @@ class MedicineReminder(APIView):
             is_active=True,
             task=task,
         )
+        reminder.save()
 
         return Response({"message": "Reminder and cronjob created successfully."})
 

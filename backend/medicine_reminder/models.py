@@ -18,7 +18,6 @@ class Reminder(models.Model):
     start_date = models.DateField()
     end_date = models.DateField(null=True, blank=True)
 
-    # Reminder type to distinguish custom daily, interval, or weekly reminders
     reminder_type_choices = [
         ('interval', 'Interval-based'),
         ('daily', 'Daily'),
@@ -39,14 +38,12 @@ class Reminder(models.Model):
     reminder_time = models.TimeField()  # Time to send the reminder (for daily, weekly, or interval-based)
     day_of_week = models.CharField(max_length=20, null=True, blank=True)  # Comma-separated list of days (e.g., '1,5' for Monday and Friday)
 
-    # Status and scheduling
     is_active = models.BooleanField(default=True)
     next_reminder = models.DateTimeField(null=True, blank=True)
 
-    # Optional image field
     image = models.ImageField(upload_to=upload_to, default='medicine_reminders/default.jpg')  # Optional medicine image
 
-    task = models.OneToOneField(PeriodicTask, on_delete=models.CASCADE, null=True, blank=True)  # New field
+    task = models.OneToOneField(PeriodicTask, on_delete=models.CASCADE, null=True, blank=True)
 
 
     def __str__(self):
@@ -66,4 +63,4 @@ class ReminderHistory(models.Model):
     reminder = models.ForeignKey(Reminder, on_delete=models.CASCADE)
     timestamp = models.DateTimeField(auto_now_add=True)
     is_taken = models.BooleanField(default=False)
-    notes = models.TextField(null=True, blank=True)  # Optional notes, e.g., side effects or delays
+    notes = models.TextField(null=True, blank=True)
