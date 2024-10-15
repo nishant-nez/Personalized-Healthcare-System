@@ -30,7 +30,6 @@ const History = () => {
                 '/api/diseases/history/all/',
                 config,
             );
-            console.log(response.data)
             setHistory(response.data);
             setIsLoading(false);
         } catch (err: unknown) {
@@ -39,13 +38,13 @@ const History = () => {
             if (err instanceof AxiosError) {
                 toast({
                     variant: "destructive",
-                    title: `Error fetching hospitals`,
+                    title: `Error fetching diagnosis history`,
                     description: err.message,
                 });
             } else {
                 toast({
                     variant: "destructive",
-                    title: "Error fetching hospitals",
+                    title: "Error fetching diagnosis history",
                 });
             }
         }
@@ -53,7 +52,6 @@ const History = () => {
     };
 
     const deleteHistory = async () => {
-        console.log('inside')
         setIsLoading(true);
         const config = {
             headers: {
@@ -62,11 +60,10 @@ const History = () => {
         };
 
         try {
-            const response = await axios.delete(
+            await axios.delete(
                 `/api/diseases/history/${selectedID}/`,
                 config,
             );
-            console.log(response.data)
             toast({
                 variant: "success",
                 title: 'Diagnosis History Deleted Successfully',
@@ -79,13 +76,13 @@ const History = () => {
             if (err instanceof AxiosError) {
                 toast({
                     variant: "destructive",
-                    title: `Error fetching hospitals`,
+                    title: `Error deleting history`,
                     description: err.message,
                 });
             } else {
                 toast({
                     variant: "destructive",
-                    title: "Error fetching hospitals",
+                    title: "Error deleting history",
                 });
             }
         }
@@ -95,11 +92,6 @@ const History = () => {
     useEffect(() => {
         if (access) fetchHistory();
     }, [access]);
-
-    useEffect(() => {
-        console.log('in use effect')
-        if (selectedID) console.log(selectedID);
-    }, [selectedID]);
 
     return (
         <>

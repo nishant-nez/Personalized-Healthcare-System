@@ -51,6 +51,11 @@ class MedicineReminder(APIView):
         except ValueError:
             return Response({"error": "Invalid reminder_time format. It should be HH:MM."}, status=status.HTTP_400_BAD_REQUEST)
 
+        if not reminder_type:
+            return Response({"error": "Reminder type is required."}, status=status.HTTP_400_BAD_REQUEST)
+        
+        schedule = None
+
         if reminder_type == 'daily':
             # Daily reminder
             schedule, created = CrontabSchedule.objects.get_or_create(minute=minute, hour=hour)
@@ -61,7 +66,10 @@ class MedicineReminder(APIView):
 
         elif reminder_type == 'interval':
             # Interval reminder (e.g., every X hours or days)
-            if interval_type == 'hours':
+            if interval_type == 'minutes':
+                # Every X minutes
+                schedule, created = CrontabSchedule.objects.get_or_create(minute=f'*/{interval_value}')
+            elif interval_type == 'hours':
                 # Create periodic tasks for intervals (e.g., every 8 hours)
                 schedule, created = CrontabSchedule.objects.get_or_create(minute=minute, hour=f'*/{interval_value}')
             elif interval_type == 'days':

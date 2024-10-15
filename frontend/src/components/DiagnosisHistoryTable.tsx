@@ -8,7 +8,7 @@ import {
     AlertDialogHeader,
     AlertDialogTitle,
     AlertDialogTrigger,
-} from "@/components/ui/alert-dialog"
+} from "@/components/ui/alert-dialog";
 import { IDiagnosisHistory } from "@/interfaces/IDiagnosisHistory";
 
 const COLUMNS = [
@@ -60,7 +60,7 @@ const DiagnosisHistoryTable = ({ diagnosis, setSelectedID, deleteHistory }: { di
                                             <div className="h-full flex justify-center gap-2">
                                                 <AlertDialog>
                                                     <AlertDialogTrigger>
-                                                        <div className="py-2 px-3 text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300"
+                                                        <div className="py-2 px-3 text-sm font-medium text-center text-white bg-[#d9534f] rounded-lg hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-red-300"
                                                             onClick={() => setSelectedID(data.id)}
                                                         >
                                                             Delete

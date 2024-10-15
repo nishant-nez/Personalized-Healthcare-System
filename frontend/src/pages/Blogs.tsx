@@ -138,7 +138,7 @@ const Blogs = () => {
 
     return (
         <>
-            <div className="h-[35vh] flex flex-col content-center items-center justify-center">
+            <div className="flex flex-col content-center items-center justify-center">
                 <div className="p-4 w-[45%]">
                     <h1 className="text-4xl font-bold text-center">Blogs</h1>
                     <p className="text-lg font-light pt-3 pb-4 text-center">
@@ -187,7 +187,7 @@ const Blogs = () => {
                 </div>
             </div>
 
-            <div className="container mx-auto mb-10">
+            <div className="container mx-auto pb-10">
 
                 {/* Cards */}
                 <div className="flex flex-wrap justify-center gap-8">

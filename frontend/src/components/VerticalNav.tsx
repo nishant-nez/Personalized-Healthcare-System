@@ -11,7 +11,7 @@ const VerticalNav = ({ logout }: { logout: () => void }) => {
                 </Link>
                 <Link to={'/history'}>
                     <div className="w-full mb-4 rounded-lg text-center font-semibold cursor-pointer py-3 hover:bg-[#0f172a] hover:text-white ">
-                        History
+                        Diagnosis History
                     </div>
                 </Link>
                 <Link to={'/profile/blogs'}>

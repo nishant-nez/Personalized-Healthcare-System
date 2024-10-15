@@ -140,7 +140,7 @@ const DiseasePredictionModal = ({ modalOpen, setModalOpen, data }: { modalOpen: 
                         </div>
                         <div className="grid grid-cols-4 items-center gap-4">
                             <Label htmlFor="workouts" className="text-right">
-                                Workouts
+                                Recommendations
                             </Label>
                             <Textarea
                                 id="workouts"

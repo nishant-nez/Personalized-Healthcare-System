@@ -41,7 +41,7 @@ class Reminder(models.Model):
     is_active = models.BooleanField(default=True)
     next_reminder = models.DateTimeField(null=True, blank=True)
 
-    image = models.ImageField(upload_to=upload_to, default='medicine_reminders/default.jpg')  # Optional medicine image
+    image = models.ImageField(upload_to=upload_to, default='medicine_reminders/default.png')  # Optional medicine image
 
     task = models.OneToOneField(PeriodicTask, on_delete=models.CASCADE, null=True, blank=True)
 

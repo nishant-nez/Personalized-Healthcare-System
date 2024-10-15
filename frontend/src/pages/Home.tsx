@@ -106,8 +106,8 @@ const Home = () => {
 
 
     return (
-        <>
-            <div className="h-[60vh] flex flex-col content-center items-center justify-center">
+        <div className="h-[90vh] flex justify-center">
+            <div className="h-[70%] flex flex-col content-center items-center justify-center">
                 <div className="p-4 w-[45%]">
                     <h1 className="text-4xl font-bold text-center">Personalized Healthcare System</h1>
                     <p className="text-lg font-light pt-3 pb-4">
@@ -145,7 +145,7 @@ const Home = () => {
                 </div>
             </div>
             <DiseasePredictionModal modalOpen={modalOpen} setModalOpen={setModalOpen} data={prediction} />
-        </>
+        </div>
     );
 }
 
