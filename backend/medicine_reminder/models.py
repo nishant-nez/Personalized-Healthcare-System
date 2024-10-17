@@ -62,5 +62,5 @@ class Reminder(models.Model):
 class ReminderHistory(models.Model):
     reminder = models.ForeignKey(Reminder, on_delete=models.CASCADE)
     timestamp = models.DateTimeField(auto_now_add=True)
-    is_taken = models.BooleanField(default=False)
+    is_taken = models.BooleanField(default=True)
     notes = models.TextField(null=True, blank=True)

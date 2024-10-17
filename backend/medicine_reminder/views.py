@@ -4,9 +4,9 @@ from rest_framework import mixins, generics, permissions
 from rest_framework import status
 from rest_framework.views import APIView
 from django_celery_beat.models import PeriodicTask, CrontabSchedule
-from .models import Reminder
+from .models import Reminder, ReminderHistory
 from datetime import datetime, timedelta
-from .serializers import ReminderSerializer
+from .serializers import ReminderSerializer, ReminderHistorySerializer
 import json
 
 
@@ -84,10 +84,9 @@ class MedicineReminder(APIView):
             crontab=schedule,
             name=f'Reminder for {medicine_name} - {datetime.now()}',  # Unique name for the task
             task='medicine_reminder.tasks.send_medicine_reminder',
-            args=json.dumps([user_email, subject, message]),  # Send email reminder
+            args=json.dumps([user_email, subject, message, request.user.id, medicine_name, reminder_type, interval_type, interval_value]),  # Send email reminder
         )
 
-        # Save the reminder details to the database (if needed)
         reminder = Reminder.objects.create(
             user=request.user,
             medicine_name=medicine_name,
@@ -174,3 +173,37 @@ class ReminderDetail(APIView):
 
         except Reminder.DoesNotExist:
             return Response({"detail": "Reminder not found."}, status=status.HTTP_404_NOT_FOUND)
+
+
+class ReminderHistoryView(APIView):
+    """
+    API endpoint to retrieve the history of reminders sent
+    """
+
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get(self, request):
+        if request.user.is_staff:
+            reminders_history = ReminderHistory.objects.all()
+        else:
+            reminders_history = ReminderHistory.objects.filter(reminder__user=request.user)
+        serializer = ReminderHistorySerializer(reminders_history, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
+
+class ReminderHistoryDetail(APIView):
+    """
+    API endpoint to retrieve a specific reminder history entry
+    """
+
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get(self, request, id):
+        try:
+            reminder_history = ReminderHistory.objects.get(id=id)
+            serializer = ReminderHistorySerializer(reminder_history)
+            if request.user.is_staff or request.user.id == reminder_history.reminder.user.id:
+                return Response(serializer.data, status=status.HTTP_200_OK)
+            return Response({"detail": "You do not have permission to access this reminder history."}, status=status.HTTP_403_FORBIDDEN)
+        except ReminderHistory.DoesNotExist:
+            return Response({"detail": "Reminder history not found."}, status=status.HTTP_404_NOT_FOUND)

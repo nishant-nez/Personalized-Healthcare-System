@@ -68,4 +68,4 @@ class ReminderHistorySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ReminderHistory
-        fields = ['id', 'reminder', 'status', 'date_sent', 'message']
+        fields = ['id', 'reminder', 'is_taken', 'timestamp', 'notes']
