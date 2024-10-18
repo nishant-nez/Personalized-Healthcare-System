@@ -191,6 +191,40 @@ class ReminderHistoryView(APIView):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
 
+class ReminderHistoryOneDay(APIView):
+    """
+    API endpoint to retrieve the history of reminders sent for the last 24 hours
+    """
+
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get(self, request):
+        if request.user.is_staff:
+            reminders_history = ReminderHistory.objects.filter(timestamp__gte=datetime.now() - timedelta(days=1))
+        else:
+            reminders_history = ReminderHistory.objects.filter(reminder__user=request.user, timestamp__gte=datetime.now() - timedelta(days=1))
+        serializer = ReminderHistorySerializer(reminders_history, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
+
+class ReminderHistoryUpdateStatus(APIView):
+    """
+    API endpoint to update the status of a reminder history entry
+    """
+
+    permission_classes = [permissions.IsAuthenticated]
+
+    def put(self, request, id):
+        try:
+            reminder_history = ReminderHistory.objects.get(id=id)
+            new_status = request.data.get('status')
+            reminder_history.is_taken = new_status
+            reminder_history.save()
+            return Response({"message": "Reminder history status updated successfully."}, status=status.HTTP_200_OK)
+        except ReminderHistory.DoesNotExist:
+            return Response({"detail": "Reminder history not found."}, status=status.HTTP_404_NOT_FOUND)
+
+
 class ReminderHistoryDetail(APIView):
     """
     API endpoint to retrieve a specific reminder history entry

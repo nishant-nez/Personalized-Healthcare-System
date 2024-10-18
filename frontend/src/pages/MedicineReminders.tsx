@@ -13,12 +13,15 @@ import {
     DialogTitle,
 } from "@/components/ui/dialog";
 import ReminderAddForm from "@/components/ReminderAddForm";
+import { Button } from "@/components/ui/button";
+import HistoryDrawer from "./HistoryDrawer";
 
 
 const MedicineReminders = () => {
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [modifyLoading, setModifyLoading] = useState<boolean>(false);
     const [modalOpen, setModalOpen] = useState<boolean>(false);
+    const [drawerOpen, setDrawerOpen] = useState<boolean>(false);
     const [reminders, setReminders] = useState<IReminder[]>([]);
     const [selectedID, setSelectedID] = useState<number | null>(null);
     const { access } = useAuth();
@@ -115,9 +118,14 @@ const MedicineReminders = () => {
     return (
         <div className="container mx-auto rounded-2xl min-h-[89vh]">
             <h2 className="text-2xl font-bold text-center mt-4 mb-8">My Medicine Reminders</h2>
+            <Button onClick={() => setDrawerOpen(true)} type="button">Open</Button>
             <div className="w-full mb-8 overflow-hidden rounded-lg">
                 < RemindersTable reminders={reminders} setSelectedID={setSelectedID} modifyReminder={modifyReminder} isLoading={modifyLoading} selectedID={selectedID} />
             </div>
+
+            {/* history slider */}
+            <HistoryDrawer setDrawerOpen={setDrawerOpen} drawerOpen={drawerOpen} />
+
 
             {/* add form */}
             <div className="fixed bottom-10 right-10" onClick={() => setModalOpen(true)}>
