@@ -13,6 +13,7 @@ import Blogs from './pages/Blogs'
 import BlogDetail from './pages/BlogDetail'
 import MyBlogs from './pages/MyBlogs'
 import MedicineReminders from './pages/MedicineReminders'
+import Profile from './pages/Profile'
 
 import Layout from './hocs/Layout'
 
@@ -22,6 +23,7 @@ const App = () => (
     <Layout>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/profile' element={<Profile />} />
         <Route path='/hospitals' element={<Hospitals />} />
         <Route path='/history' element={<History />} />
         <Route path='/reminders' element={<MedicineReminders />} />

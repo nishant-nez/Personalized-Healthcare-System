@@ -116,7 +116,7 @@ const MedicineReminders = () => {
     }, []);
 
     return (
-        <div className="container mx-auto rounded-2xl min-h-[89vh]">
+        <div className="container mx-auto rounded-2xl min-h-[86vh]">
             <div className="flex items-center justify-center gap-4 mt-12 mb-8">
                 <h2 className="text-2xl font-bold text-center">My Medicine Reminders</h2>
                 <Button onClick={() => setDrawerOpen(true)} type="button" variant="outline">

@@ -27,3 +27,14 @@ class UpdateProfileImageView(APIView):
             return Response({"message": "Profile image updated successfully"}, status=status.HTTP_200_OK)
         
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class UpdateName(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        user = request.user
+        user.first_name = request.data.get('first_name', user.first_name)
+        user.last_name = request.data.get('last_name', user.last_name)
+        user.save()
+        return Response({"message": "Profile updated successfully"}, status=status.HTTP_200_OK)
