@@ -8,6 +8,8 @@ from .models import Reminder, ReminderHistory
 from datetime import datetime, timedelta
 from .serializers import ReminderSerializer, ReminderHistorySerializer
 import json
+from django.utils import timezone
+import pytz
 
 
 class MedicineReminder(APIView):
@@ -189,6 +191,68 @@ class ReminderHistoryView(APIView):
             reminders_history = ReminderHistory.objects.filter(reminder__user=request.user)
         serializer = ReminderHistorySerializer(reminders_history, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
+
+
+class ReminderHistoryStats(APIView):
+    """
+    API endpoint to retrieve the statistics of reminders sent
+    """
+
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get(self, request):
+        if request.user.is_staff:
+            reminders_history = ReminderHistory.objects.all()
+        else:
+            reminders_history = ReminderHistory.objects.filter(reminder__user=request.user)
+
+        total_reminders = reminders_history.count()
+        oldest_history_date = reminders_history.order_by("-timestamp").first().timestamp.strftime("%b %Y")
+        newest_history_date = reminders_history.order_by("timestamp").first().timestamp.strftime("%b %Y")
+        reminders_taken = reminders_history.filter(is_taken=True).count()
+        reminders_missed = reminders_history.filter(is_taken=False).count()
+        # Define the timezone
+        kathmandu_tz = pytz.timezone('Asia/Kathmandu')
+
+        # Calculate reminders in the last day using the specified timezone
+        reminders_last_day = reminders_history.filter(timestamp__gte=datetime.now(tz=kathmandu_tz) - timedelta(days=1)).count()
+
+        # Reminder success, missed and total counts for each month
+        reminder_stats = []
+        stats_dict = {}
+        for reminder in reminders_history:
+            month_year = reminder.timestamp.strftime("%b %Y")
+            if month_year not in stats_dict:
+                stats_dict[month_year] = {
+                    "total": 0,
+                    "taken": 0,
+                    "missed": 0,
+                }
+            stats_dict[month_year]["total"] += 1
+            if reminder.is_taken:
+                stats_dict[month_year]["taken"] += 1
+            else:
+                stats_dict[month_year]["missed"] += 1
+
+        for month_year, stats in stats_dict.items():
+            reminder_stats.append({
+            "month_year": month_year,
+            "total": stats["total"],
+            "taken": stats["taken"],
+            "missed": stats["missed"]
+            })
+
+        stats = {
+            "total_reminders": total_reminders,
+            "reminders_taken": reminders_taken,
+            "reminders_missed": reminders_missed,
+            "reminders_last_day": reminders_last_day,
+            "oldest": oldest_history_date,
+            "newest": newest_history_date,
+            "by_month": reminder_stats,
+        }
+
+        return Response(stats, status=status.HTTP_200_OK)
 
 
 class ReminderHistoryOneDay(APIView):

@@ -1,7 +1,7 @@
 import { useToast } from "@/components/ui/use-toast";
 import { useAuth } from "@/contexts/AuthContext";
 import { IReminder } from "@/interfaces/IReminder";
-import { Loader2 } from "lucide-react";
+import { Loader2, History } from "lucide-react";
 import { useEffect, useState } from "react";
 import axios from "@/api/axios";
 import { AxiosError } from "axios";
@@ -117,8 +117,12 @@ const MedicineReminders = () => {
 
     return (
         <div className="container mx-auto rounded-2xl min-h-[89vh]">
-            <h2 className="text-2xl font-bold text-center mt-4 mb-8">My Medicine Reminders</h2>
-            <Button onClick={() => setDrawerOpen(true)} type="button">Open</Button>
+            <div className="flex items-center justify-center gap-4 mt-12 mb-8">
+                <h2 className="text-2xl font-bold text-center">My Medicine Reminders</h2>
+                <Button onClick={() => setDrawerOpen(true)} type="button" variant="outline">
+                    <History />
+                </Button>
+            </div>
             <div className="w-full mb-8 overflow-hidden rounded-lg">
                 < RemindersTable reminders={reminders} setSelectedID={setSelectedID} modifyReminder={modifyReminder} isLoading={modifyLoading} selectedID={selectedID} />
             </div>

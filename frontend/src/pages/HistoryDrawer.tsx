@@ -1,16 +1,11 @@
-import { Minus, Plus, Check, X, Loader2 } from "lucide-react";
-// import { Bar, BarChart, ResponsiveContainer } from "recharts"
-
+import { Check, X, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
     Drawer,
-    DrawerClose,
     DrawerContent,
     DrawerDescription,
-    DrawerFooter,
     DrawerHeader,
     DrawerTitle,
-    DrawerTrigger,
 } from "@/components/ui/drawer";
 import { useEffect, useState } from "react";
 import { useAuth } from "@/contexts/AuthContext";
@@ -18,17 +13,23 @@ import axios from "@/api/axios";
 import { IReminderHistory } from "@/interfaces/IReminderHistory";
 import { AxiosError } from "axios";
 import { useToast } from "@/components/ui/use-toast";
-
+import HistoryPieChart from "@/components/HistoryPieChart";
+import { IHistoryStats } from "@/interfaces/IHistoryStats";
+import HistoryBarChart from "@/components/HistoryBarChart";
+import { Card, CardTitle } from "@/components/ui/card";
 
 
 const HistoryDrawer = ({ setDrawerOpen, drawerOpen }: { setDrawerOpen: (open: boolean) => void; drawerOpen: boolean }) => {
     const { access } = useAuth();
     const [isLoading, setIsLoading] = useState(false);
+    const [updateLoading, setUpdateLoading] = useState(false);
     const [recentHistory, setRecentHistory] = useState<IReminderHistory[]>([]);
+    const [stats, setStats] = useState<IHistoryStats | null>(null);
     const { toast } = useToast();
 
 
     const fetchRecentReminders = async () => {
+        if (!access) return;
         setIsLoading(true);
         const config = {
             headers: {
@@ -62,7 +63,43 @@ const HistoryDrawer = ({ setDrawerOpen, drawerOpen }: { setDrawerOpen: (open: bo
         setIsLoading(false);
     };
 
+    const fetchStats = async () => {
+        if (!access) return;
+        setIsLoading(true);
+        const config = {
+            headers: {
+                'Authorization': 'JWT ' + access,
+            },
+        };
+
+        try {
+            const response = await axios.get(
+                '/api/medicine-reminder/history/stats/',
+                config,
+            );
+            setStats(response.data);
+            setIsLoading(false);
+        } catch (err: unknown) {
+            setIsLoading(false);
+            console.log('Error', err);
+            if (err instanceof AxiosError) {
+                toast({
+                    variant: "destructive",
+                    title: `Error fetching reminder stats`,
+                    description: err.message,
+                });
+            } else {
+                toast({
+                    variant: "destructive",
+                    title: "Error fetching reminder stats",
+                });
+            }
+        }
+        setIsLoading(false);
+    };
+
     const handleSubmit = async (status: boolean, id: number) => {
+        setUpdateLoading(true);
         const config = {
             headers: {
                 'Authorization': 'JWT ' + access,
@@ -75,11 +112,14 @@ const HistoryDrawer = ({ setDrawerOpen, drawerOpen }: { setDrawerOpen: (open: bo
                 { 'status': status },
                 config,
             );
+            setUpdateLoading(false);
             toast({
                 variant: "success",
                 title: "Reminder Status Updated",
             });
+            fetchStats();
         } catch (err: unknown) {
+            setUpdateLoading(false);
             console.log('Error', err);
             if (err instanceof AxiosError) {
                 toast({
@@ -94,36 +134,40 @@ const HistoryDrawer = ({ setDrawerOpen, drawerOpen }: { setDrawerOpen: (open: bo
                 });
             }
         }
+        setUpdateLoading(false);
     };
 
     useEffect(() => {
         fetchRecentReminders();
+        fetchStats();
     }, [access]);
 
     return (
         <div className="">
             <Drawer onOpenChange={setDrawerOpen} open={drawerOpen}>
-                <DrawerTrigger asChild>
+                {/* <DrawerTrigger asChild>
                     <Button variant="outline">Open Drawer</Button>
-                </DrawerTrigger>
-                <DrawerContent>
-                    <div className="mx-auto w-full h-[60vh]">
+                </DrawerTrigger> */}
+                <DrawerContent className="overflow-y-scroll scrollbar-hidden">
+                    <div className="mx-auto w-full max-h-[60vh]">
                         <DrawerHeader >
                             <DrawerTitle className="text-center">Reminders Overview</DrawerTitle>
-                            <DrawerDescription className="text-center">className="text-center"Check your recent reminders sent to you.</DrawerDescription>
+                            <DrawerDescription className="text-center">Check your recent reminders sent to you.</DrawerDescription>
                         </DrawerHeader>
 
-                        <div className="grid grid-cols-3 gap-4 border h-full m-4">
-                            <div>chart1</div>
-                            <div>chart2</div>
-                            <div >
-                                <h5 className="mb-2 text-xl mt-4 font-bold tracking-tight text-gray-900">Recent Reminders</h5>
+                        <div className="grid grid- grid-cols-1 md:grid-cols-3 gap-4 h-full m-4">
+                            {stats && <HistoryPieChart stats={stats} />}
+
+                            {stats && <HistoryBarChart stats={stats} />}
+
+                            <Card className="p-4 mb-4">
+                                <CardTitle className="text-center">Recent Reminders</CardTitle>
                                 <div className="flex flex-col gap-4 my-4">
 
-                                    {isLoading && <Loader2 className="mx-auto h-14 w-14 animate-spin" />}
+                                    {updateLoading && <Loader2 className="mx-auto h-14 w-14 animate-spin" />}
 
                                     {
-                                        recentHistory && !isLoading &&
+                                        recentHistory && !isLoading && !updateLoading &&
                                         recentHistory.map((item) => (
                                             <div className="w-full cursor-pointer">
                                                 <div className="flex p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100">
@@ -154,7 +198,7 @@ const HistoryDrawer = ({ setDrawerOpen, drawerOpen }: { setDrawerOpen: (open: bo
                                     }
 
                                 </div>
-                            </div>
+                            </Card>
                         </div>
                         {/* <DrawerFooter>
                             <Button>Submit</Button>
