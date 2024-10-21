@@ -26,6 +26,7 @@ import axios from "@/api/axios";
 import { AxiosError } from "axios";
 import { useToast } from "./ui/use-toast";
 import { Loader2 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 
 
@@ -34,6 +35,17 @@ const DiseasePredictionModal = ({ modalOpen, setModalOpen, data }: { modalOpen: 
     const [nearestHospital, setNearestHospital] = useState<INearestHospital | null>(null);
     const { location } = useContext(LocationContext);
     const { toast } = useToast();
+
+    const getSeverityColor = (severity: number) => {
+        const colors = [
+            "bg-green-200 text-green-800",
+            "bg-lime-200 text-lime-800",
+            "bg-yellow-200 text-yellow-800",
+            "bg-orange-200 text-orange-800",
+            "bg-red-200 text-red-800",
+        ]
+        return colors[severity - 1] || colors[0]
+    }
 
     const fetchNearestHospital = async () => {
         setIsLoading(true);
@@ -157,15 +169,17 @@ const DiseasePredictionModal = ({ modalOpen, setModalOpen, data }: { modalOpen: 
                                 id="severity"
                                 className="col-span-3 flex gap-3 text-sm"
                             >
-                                {
-                                    Object.entries(data.Severity).map(([key, value]) => {
-                                        if (Number(value) === 1) return <div key={key} className="bg-green-500 text-white p-2 rounded-lg">{key} ({value})</div>
-                                        if (Number(value) === 2) return <div key={key} className="bg-blue-500 text-white p-2 rounded-lg">{key} ({value})</div>
-                                        if (Number(value) === 3) return <div key={key} className="bg-yellow-500 text-white p-2 rounded-lg">{key} ({value})</div>
-                                        if (Number(value) === 4) return <div key={key} className="bg-orange-500 text-white p-2 rounded-lg">{key} ({value})</div>
-                                        if (Number(value) === 5) return <div key={key} className="bg-red-500 text-white p-2 rounded-lg">{key} ({value})</div>
-                                    })
-                                }
+                                {Object.entries(data.Severity).map(([symptom, severity]) => (
+                                    <div key={severity} className="mb-1">
+                                        <span
+                                            className={`inline-block px-2 py-1 rounded-full text-xs font-semibold ${getSeverityColor(
+                                                Number(severity)
+                                            )}`}
+                                        >
+                                            {symptom} (Severity: {severity})
+                                        </span>
+                                    </div>
+                                ))}
                             </div>
                         </div>
                     </div>
@@ -218,6 +232,9 @@ const DiseasePredictionModal = ({ modalOpen, setModalOpen, data }: { modalOpen: 
                                         </div>
                                     </>}
                                 </SheetHeader>
+                                <Button className="absolute right-4 bottom-4">
+                                    <Link to={'/hospitals'}>Get More</Link>
+                                </Button>
                             </SheetContent>
                         </Sheet>
                     </DialogFooter>

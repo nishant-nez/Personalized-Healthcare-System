@@ -114,8 +114,8 @@ const Hospitals = () => {
     }, [nearMe]);
 
     return (
-        <>
-            <div className="h-[35vh] flex flex-col content-center items-center justify-center">
+        <div className="min-h-screen">
+            <div className="h-[45vh] flex flex-col content-center items-center justify-center pt-20">
                 <div className="p-4 w-[45%]">
                     <h1 className="text-4xl font-bold text-center">Search for Hospitals</h1>
                     <p className="text-lg font-light pt-3 pb-4 text-center">
@@ -126,6 +126,7 @@ const Hospitals = () => {
                     <Input
                         type="search"
                         value={search}
+                        placeholder="Search for hospitals"
                         onChange={(e) => setSearch(e.target.value)}
                     />
                     <Switch
@@ -166,7 +167,7 @@ const Hospitals = () => {
             {isLoading && <Loader2 className="mx-auto h-14 w-14 animate-spin" />}
             {hospitals.length === 0 && !nearMe && !isLoading && <EmptySearchResults />}
             {!nearestHospital && nearMe && !isLoading && <EmptySearchResults />}
-        </>
+        </div>
     );
 }
 

@@ -9,6 +9,7 @@ import { StylesConfig } from 'react-select';
 import { AxiosError } from "axios";
 import DiseasePredictionModal from "@/components/DiseasePredictionModal";
 import { IDiseasePrediction } from "@/interfaces/IDiseasePrediction";
+import HomeFeatures from "@/components/HomeFeatures";
 
 
 const selectStyles: StylesConfig<{ value: string; label: string }, true> = {
@@ -106,11 +107,11 @@ const Home = () => {
 
 
     return (
-        <div className="h-[90vh] flex justify-center">
-            <div className="h-[70%] flex flex-col content-center items-center justify-center">
+        <div className="min-h-screen flex justify-between items-center flex-col gap-16">
+            <div className="flex flex-col content-center items-center justify-center mt-44">
                 <div className="p-4 w-[45%]">
                     <h1 className="text-4xl font-bold text-center">Personalized Healthcare System</h1>
-                    <p className="text-lg font-light pt-3 pb-4">
+                    <p className="text-lg font-light pt-3 pb-4 hidden lg:block">
                         Get prediction for diseases along with description, precautions, preventive measures and possible medications.
                         {user && 'Your diagnostic history will automatically be saved to the database.'}
                     </p>
@@ -144,6 +145,9 @@ const Home = () => {
                     </Button>
                 </div>
             </div>
+
+            <HomeFeatures />
+
             <DiseasePredictionModal modalOpen={modalOpen} setModalOpen={setModalOpen} data={prediction} />
         </div>
     );

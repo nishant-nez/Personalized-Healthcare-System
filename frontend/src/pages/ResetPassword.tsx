@@ -81,7 +81,7 @@ const ResetPassword = () => {
 
     return (
         <>
-            <div className="w-full lg:grid lg:max-h-[600px] lg:grid-cols-2 xl:max-h-[800px]">
+            <div className="w-full lg:grid lg:grid-cols-2 pt-[80px]">
                 <AuthImage />
                 <div className="flex items-center justify-center py-12">
                     <div className="mx-auto grid w-[350px] gap-6">

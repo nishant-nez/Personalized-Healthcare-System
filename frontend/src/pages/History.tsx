@@ -95,7 +95,7 @@ const History = () => {
 
     return (
         <>
-            <div className="container mx-auto rounded-2xl">
+            <div className="container mx-auto rounded-2xl pt-24 min-h-screen">
                 <DiagnosisHistoryTable diagnosis={history} setSelectedID={setSelectedID} deleteHistory={deleteHistory} />
 
                 {isLoading && <Loader2 className="mx-auto h-14 w-14 animate-spin" />}

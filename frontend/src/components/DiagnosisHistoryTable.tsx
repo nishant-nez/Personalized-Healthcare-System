@@ -10,6 +10,9 @@ import {
     AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import { IDiagnosisHistory } from "@/interfaces/IDiagnosisHistory";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { Trash2 } from "lucide-react"
+import { Button } from "./ui/button";
 
 const COLUMNS = [
     "ID",
@@ -20,51 +23,70 @@ const COLUMNS = [
 ];
 
 const DiagnosisHistoryTable = ({ diagnosis, setSelectedID, deleteHistory }: { diagnosis: IDiagnosisHistory[], setSelectedID: (id: number) => void, deleteHistory: () => void }) => {
+    const getSeverityColor = (severity: number) => {
+        const colors = [
+            "bg-green-200 text-green-800",
+            "bg-lime-200 text-lime-800",
+            "bg-yellow-200 text-yellow-800",
+            "bg-orange-200 text-orange-800",
+            "bg-red-200 text-red-800",
+        ]
+        return colors[severity - 1] || colors[0]
+    }
+
     return (
         <section className="min-h-screen container mx-auto p-6">
-            <h2 className="text-2xl font-bold text-center mt-4 mb-8">My Diagnosis History</h2>
+            <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl md:text-3xl lg:text-4xl/none mt-4 mb-8">My Diagnosis History</h2>
             <div className="w-full mb-8 overflow-hidden rounded-lg">
                 <div className="w-full overflow-x-auto">
-                    <table className="sm:inline-table w-full flex flex-row justify-center overflow-hidden">
-                        <thead>
-                            <tr className={`bg-[#222E3A]/[6%] flex flex-col sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0`}>
-                                {COLUMNS.map((column) => <th key={column} className="py-3 px-5 text-left border border-b">{column}</th>)}
-                            </tr>
-                        </thead>
-                        <tbody className="bg-white">
+                    <Table>
+                        <TableHeader>
+                            <TableRow>
+                                {COLUMNS.map((column) => <TableHead key={column}>{column}</TableHead>)}
+                            </TableRow>
+                        </TableHeader>
+                        <TableBody>
 
                             {diagnosis.map((data) => {
                                 return (
-                                    <tr key={data.id} className="flex flex-col sm:table-row mb-2 sm:mb-0">
-                                        <td className="border hover:bg-[#222E3A]/[6%] hover:sm:bg-transparent py-3 px-5">
+                                    <TableRow key={data.id}>
+                                        <TableCell>
                                             {data.id}
-                                        </td>
-                                        <td className="border hover:bg-[#222E3A]/[6%]  hover:sm:bg-transparent py-3 px-5">
+                                        </TableCell>
+                                        <TableCell>
                                             {data.name}
-                                        </td>
-                                        <td className="border hover:bg-[#222E3A]/[6%]  hover:sm:bg-transparent py-3 px-5 flex gap-3 flex-wrap">
-                                            {
-                                                Object.entries(data.symptoms).map(([key, value]) => {
-                                                    if (Number(value) === 1) return <div key={key} className="bg-green-500 text-white p-2 rounded-lg">{key} ({value})</div>
-                                                    if (Number(value) === 2) return <div key={key} className="bg-blue-500 text-white p-2 rounded-lg">{key} ({value})</div>
-                                                    if (Number(value) === 3) return <div key={key} className="bg-yellow-500 text-white p-2 rounded-lg">{key} ({value})</div>
-                                                    if (Number(value) === 4) return <div key={key} className="bg-orange-500 text-white p-2 rounded-lg">{key} ({value})</div>
-                                                    if (Number(value) === 5) return <div key={key} className="bg-red-500 text-white p-2 rounded-lg">{key} ({value})</div>
-                                                })
-                                            }
-                                        </td>
-                                        <td className="border hover:bg-[#222E3A]/[6%]  hover:sm:bg-transparent py-3 px-5">
+                                        </TableCell>
+                                        <TableCell>
+                                            <ul>
+                                                {Object.entries(data.symptoms).map(([symptom, severity]) => (
+                                                    <li key={symptom} className="mb-1">
+                                                        <span
+                                                            className={`inline-block px-2 py-1 rounded-full text-xs font-semibold ${getSeverityColor(
+                                                                Number(severity)
+                                                            )}`}
+                                                        >
+                                                            {symptom} (Severity: {severity})
+                                                        </span>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </TableCell>
+                                        <TableCell>
                                             {new Date(data.created_at).toDateString()}
-                                        </td>
-                                        <td className="px-4 py-3 border">
+                                        </TableCell>
+                                        <TableCell >
                                             <div className="h-full flex justify-center gap-2">
                                                 <AlertDialog>
                                                     <AlertDialogTrigger>
-                                                        <div className="py-2 px-3 text-sm font-medium text-center text-white bg-[#d9534f] rounded-lg hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-red-300"
+                                                        {/* <div className="py-2 px-3 text-sm font-medium text-center text-white bg-[#d9534f] rounded-lg hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-red-300"
                                                             onClick={() => setSelectedID(data.id)}
                                                         >
                                                             Delete
-                                                        </div>
+                                                        </div> */}
+                                                        <Button variant="ghost" size="icon" onClick={() => setSelectedID(data.id)}>
+                                                            <Trash2 className="h-4 w-4" />
+                                                            <span className="sr-only">Delete</span>
+                                                        </Button>
                                                     </AlertDialogTrigger>
                                                     <AlertDialogContent>
                                                         <AlertDialogHeader>
@@ -80,15 +102,12 @@ const DiagnosisHistoryTable = ({ diagnosis, setSelectedID, deleteHistory }: { di
                                                     </AlertDialogContent>
                                                 </AlertDialog>
                                             </div>
-                                        </td>
-                                    </tr>
+                                        </TableCell>
+                                    </TableRow>
                                 )
                             })}
-
-
-
-                        </tbody>
-                    </table>
+                        </TableBody>
+                    </Table>
                 </div>
             </div>
         </section>

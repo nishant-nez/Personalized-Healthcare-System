@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { useState } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Loader2 } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 import axios from "@/api/axios";
@@ -62,7 +62,7 @@ const Activate = () => {
 
     return (
         <>
-            <div className="w-full lg:grid lg:max-h-[600px] lg:grid-cols-2 xl:max-h-[800px]">
+            <div className="w-full lg:grid lg:grid-cols-2 pt-[80px]">
                 <AuthImage />
                 <div className="flex items-center justify-center py-12">
                     <div className="mx-auto grid w-[350px] gap-6">

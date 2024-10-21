@@ -103,10 +103,6 @@ const MedicineReminders = () => {
         setModifyLoading(false);
     };
 
-    const handleAddReminder = () => {
-
-    };
-
     useEffect(() => {
         if (access) fetchReminders();
     }, [access]);
@@ -115,16 +111,19 @@ const MedicineReminders = () => {
         if (access) fetchReminders();
     }, []);
 
+
     return (
-        <div className="container mx-auto rounded-2xl min-h-[86vh]">
-            <div className="flex items-center justify-center gap-4 mt-12 mb-8">
-                <h2 className="text-2xl font-bold text-center">My Medicine Reminders</h2>
-                <Button onClick={() => setDrawerOpen(true)} type="button" variant="outline">
-                    <History />
+        <div className="container mx-auto rounded-2xl min-h-screen pt-16 min-h-screen">
+            <div className="flex justify-between items-center mb-10 mt-16">
+                <h1 className="text-3xl font-bold">My Medicine Reminders</h1>
+                <Button onClick={() => setDrawerOpen(true)}>
+                    <History className="w-4 h-4 mr-2" />
+                    View History
                 </Button>
             </div>
-            <div className="w-full mb-8 overflow-hidden rounded-lg">
-                < RemindersTable reminders={reminders} setSelectedID={setSelectedID} modifyReminder={modifyReminder} isLoading={modifyLoading} selectedID={selectedID} />
+
+            <div>
+                <RemindersTable reminders={reminders} setSelectedID={setSelectedID} modifyReminder={modifyReminder} isLoading={modifyLoading} selectedID={selectedID} />
             </div>
 
             {/* history slider */}
@@ -133,7 +132,7 @@ const MedicineReminders = () => {
 
             {/* add form */}
             <div className="fixed bottom-10 right-10" onClick={() => setModalOpen(true)}>
-                <button className="inline-flex items-center justify-center transition-colors duration-150 bg-[#0f172a] rounded-full focus:shadow-outline hover:bg-[#272e3f] p-6" onClick={handleAddReminder}>
+                <button className="inline-flex items-center justify-center transition-colors duration-150 bg-[#0f172a] rounded-full focus:shadow-outline hover:bg-[#272e3f] p-6">
                     <svg fill="#ffffff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 45.402 45.402">
                         <g>
                             <path d="M41.267,18.557H26.832V4.134C26.832,1.851,24.99,0,22.707,0c-2.283,0-4.124,1.851-4.124,4.135v14.432H4.141

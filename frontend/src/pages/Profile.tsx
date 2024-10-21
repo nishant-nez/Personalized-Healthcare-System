@@ -2,11 +2,13 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/contexts/AuthContext";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Loader2 } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 import axios from "@/api/axios";
 import { AxiosError, isAxiosError } from "axios";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const Profile = () => {
     const { user, access, load_user } = useAuth();
@@ -110,62 +112,106 @@ const Profile = () => {
         setIsLoading(false);
     };
 
+    useEffect(() => {
+        if (user) {
+            setFirstName(user.first_name);
+            setLastName(user.last_name);
+        }
+    }, [user]);
+
     return (
 
-        <div className="container mx-auto my-10 min-h-[86vh]">
+        <div className="container mx-auto mb-10 pt-32">
             {
                 user &&
-                <div className="px-4 space-y-6 md:px-6">
-                    <header className="space-y-1.5">
-                        <div className="flex items-center space-x-4">
-                            <img
-                                src={user.image}
-                                alt="User Image"
-                                width="96"
-                                height="96"
-                                className="border rounded-full"
-                                style={{ aspectRatio: "96/96", objectFit: "cover" }}
-                            />
-                            <div className="space-y-1.5">
-                                <h1 className="text-2xl font-bold">{user?.first_name} {user?.last_name}</h1>
-                                <p className="text-gray-500 dark:text-gray-400">
-                                    {user.is_superuser ? "Admin" : "User"}
-                                </p>
+                <div className="container mx-auto">
+                    <Card className="max-w-2xl mx-auto p-8">
+                        <CardHeader>
+                            <CardTitle className="text-2xl">User Profile</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <div className="space-y-6">
+                                <div className="flex items-center space-x-4">
+                                    <Avatar className="w-32 h-32">
+                                        <AvatarImage src={user.image} alt={`${user.first_name} ${user.last_name}`} />
+                                        <AvatarFallback>{user.first_name}{user.last_name}</AvatarFallback>
+                                    </Avatar>
+                                    <div>
+                                        <Label htmlFor="avatar" className="block text-sm font-medium text-gray-700">
+                                            Change Avatar
+                                        </Label>
+                                        <Input
+                                            id="avatar"
+                                            type="file"
+                                            accept="image/*"
+                                            onChange={updateImage}
+                                            className="mt-1"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="grid grid-cols-2 gap-4">
+                                    <div>
+                                        <Label htmlFor="firstName" className="block text-sm font-medium text-gray-700">
+                                            First Name
+                                        </Label>
+                                        <Input
+                                            type="text"
+                                            id="firstName"
+                                            name="firstName"
+                                            value={firstName}
+                                            onChange={(e) => setFirstName(e.target.value)}
+                                            className="mt-1"
+                                        />
+                                    </div>
+                                    <div>
+                                        <Label htmlFor="lastName" className="block text-sm font-medium text-gray-700">
+                                            Last Name
+                                        </Label>
+                                        <Input
+                                            type="text"
+                                            id="lastName"
+                                            name="lastName"
+                                            value={lastName}
+                                            onChange={(e) => setLastName(e.target.value)}
+                                            className="mt-1"
+                                        />
+                                    </div>
+                                </div>
+                                <div>
+                                    <Label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                                        Email
+                                    </Label>
+                                    <Input
+                                        type="email"
+                                        id="email"
+                                        value={user.email}
+                                        readOnly
+                                        className="mt-1 bg-gray-100"
+                                    />
+                                </div>
+                                <div>
+                                    <Label htmlFor="role" className="block text-sm font-medium text-gray-700">
+                                        Role
+                                    </Label>
+                                    <Input
+                                        type="text"
+                                        id="role"
+                                        value={user.is_superuser ? "Admin" : "User"}
+                                        readOnly
+                                        className="mt-1 bg-gray-100 capitalize"
+                                    />
+                                </div>
                             </div>
-                        </div>
-                    </header>
-                    <div className="w-[220px]">
-                        {/* <Button variant="outline" onClick={updateImage}> */}
-                        <Input type="file" onChange={updateImage} accept="image/*" />
-                        {/* </Button> */}
-                    </div>
-                    <div className="space-y-6">
-                        <div className="space-y-2">
-                            <h2 className="text-lg font-semibold">Personal Information</h2>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <Label htmlFor="firstname">First Name</Label>
-                                    <Input id="firstname" placeholder="Enter your first name" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
-                                </div>
-                                <div>
-                                    <Label htmlFor="lastname">Last Name</Label>
-                                    <Input id="lastname" placeholder="Enter your last name" value={lastName} onChange={(e) => setLastName(e.target.value)} />
-                                </div>
-                                <div>
-                                    <Label htmlFor="email">Email</Label>
-                                    <Input id="email" placeholder="Enter your email" type="email" readOnly value={user.email} />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="mt-8">
-                        {isLoading
-                            ? <Button type="submit" disabled>
-                                <Loader2 />
-                            </Button>
-                            : <Button type="submit" onClick={updateName}>Save</Button>
-                        }
-                    </div>
+                        </CardContent>
+                        <CardFooter>
+                            {isLoading
+                                ? <Button type="submit" disabled>
+                                    <Loader2 />
+                                </Button>
+                                : <Button type="submit" onClick={updateName}>Save Changes</Button>
+                            }
+                        </CardFooter>
+                    </Card>
                 </div>
             }
         </div >

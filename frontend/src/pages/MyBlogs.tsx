@@ -116,7 +116,7 @@ const MyBlogs = () => {
     }, [user]);
 
     return (
-        <>
+        <div className="min-h-screen pt-14">
             <div className="my-14 flex flex-col content-center items-center justify-center">
                 <div className="p-4 mt-14 w-[45%]">
                     <h1 className="text-4xl font-bold text-center">Blogs</h1>
@@ -180,7 +180,7 @@ const MyBlogs = () => {
                 {(isBlogLoading || isCategoryLoading) && <Loader2 className="mx-auto h-14 w-14 animate-spin" />}
                 {blogs.length === 0 && !isBlogLoading && !isCategoryLoading && <EmptySearchResults />}
             </div>
-        </>
+        </div>
     );
 }
 

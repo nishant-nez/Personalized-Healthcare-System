@@ -8,11 +8,19 @@ import {
     AlertDialogFooter,
     AlertDialogHeader,
     AlertDialogTitle,
-    AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
-import { Loader2 } from "lucide-react";
+import { Loader2, Trash2, Pause, Play } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
+import {
+    Table,
+    TableBody,
+    TableCell,
+    TableHead,
+    TableHeader,
+    TableRow,
+} from "@/components/ui/table";
+import { useState } from "react";
+import { Button } from "./ui/button";
 
 const COLUMNS = [
     "ID",
@@ -45,82 +53,113 @@ const RemindersTable = (
         }
 ) => {
 
+    const [alertOpen, setAlertOpen] = useState<boolean>(false);
+
     return (
         <div className="w-full overflow-x-auto">
-            <table className="sm:inline-table w-full flex flex-row justify-center overflow-hidden">
-                <thead>
-                    <tr className={`bg-[#222E3A]/[6%] flex flex-col sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0`}>
-                        {COLUMNS.map((column) => <th key={column} className="py-3 px-5 text-left border border-b">{column}</th>)}
-                    </tr>
-                </thead>
-                <tbody className="bg-white">
+            <Table>
+                <TableHeader>
+                    <TableRow>
+                        {COLUMNS.map((column) => <TableHead key={column}>{column}</TableHead>)}
+                    </TableRow>
+                </TableHeader>
+                <TableBody>
 
                     {reminders.map((data) => {
                         return (
-                            <tr key={data.id} className="flex flex-col sm:table-row mb-2 sm:mb-0">
-                                <td className="border hover:bg-[#222E3A]/[6%] hover:sm:bg-transparent py-3 px-5">
+                            <TableRow key={data.id}>
+                                <TableCell>
                                     {data.id}
-                                </td>
-                                <td className="border hover:bg-[#222E3A]/[6%] hover:sm:bg-transparent py-3 px-5">
+                                </TableCell>
+                                <TableCell>
                                     <Avatar>
                                         <AvatarImage src={data.image} />
                                         <AvatarFallback>MD</AvatarFallback>
                                     </Avatar>
-                                </td>
-                                <td className="border hover:bg-[#222E3A]/[6%]  hover:sm:bg-transparent py-3 px-5">
+                                </TableCell>
+                                <TableCell >
                                     {data.medicine_name}
-                                </td>
-                                <td className="border hover:bg-[#222E3A]/[6%]  hover:sm:bg-transparent py-3 px-5">
+                                </TableCell>
+                                <TableCell >
                                     {data.dosage}
-                                </td>
-                                <td className="border hover:bg-[#222E3A]/[6%]  hover:sm:bg-transparent py-3 px-5">
+                                </TableCell>
+                                <TableCell >
                                     {data.instructions}
-                                </td>
-                                <td className="border hover:bg-[#222E3A]/[6%]  hover:sm:bg-transparent py-3 px-5">
+                                </TableCell>
+                                <TableCell >
                                     {data.reminder_time}
-                                </td>
-                                <td className="border hover:bg-[#222E3A]/[6%]  hover:sm:bg-transparent py-3 px-5">
-                                    {data.reminder_type === 'weekly' && `Weekly (${data.day_of_week?.map((item) => item.weekday)})`}
+                                </TableCell>
+                                <TableCell >
+                                    {data.reminder_type === 'weekly' && Array.isArray(data.day_of_week) && `Weekly (${data.day_of_week.map((item: { weekday: string }) => item.weekday)})`}
                                     {data.reminder_type === 'daily' && `Daily`}
                                     {data.reminder_type === 'interval' && `Interval (Every ${data.interval_value} ${data.interval_type})`}
-                                </td>
-                                <td className="border hover:bg-[#222E3A]/[6%]  hover:sm:bg-transparent py-3 px-5">
+                                </TableCell>
+                                <TableCell >
                                     {new Date(data.start_date).toDateString()}
-                                </td>
-                                <td className="border hover:bg-[#222E3A]/[6%]  hover:sm:bg-transparent py-3 px-5">
+                                </TableCell>
+                                <TableCell >
                                     {data.end_date && new Date(data.end_date).toDateString()}
-                                </td>
-                                <td className="border hover:bg-[#222E3A]/[6%]  hover:sm:bg-transparent py-3 px-5">
-                                    {data.is_active ? <Badge variant="default" className="bg-green-600 hover:bg-green-500">Active</Badge> : <Badge variant="destructive">Inactive</Badge>}
-                                </td>
-                                <td className="px-4 py-3 border">
+                                </TableCell>
+                                <TableCell >
+                                    <span
+                                        className={`inline-block px-2 py-1 rounded-full text-xs font-semibold ${data.is_active
+                                            ? "bg-green-200 text-green-800"
+                                            : "bg-red-200 text-red-800"
+                                            }`}
+                                    >
+                                        {data.is_active ? 'active' : 'inactive'}
+                                    </span>
+                                </TableCell>
+
+                                <TableCell>
                                     <div className="h-full flex justify-center gap-2">
-                                        <div
-                                            className="py-2 px-3 text-sm font-medium text-center bg-white border-black border-[1px] rounded-lg cursor-pointer hover:bg-black hover:text-white focus:ring-4"
+                                        {/* pause / resume */}
+                                        <Button
+                                            variant="outline"
                                             onClick={() => {
-                                                setSelectedID(data.id);
-                                                if (data.is_active) modifyReminder('pause', data.id);
-                                                else modifyReminder('resume', data.id);
+                                                if (data.id !== undefined) {
+                                                    setSelectedID(data.id);
+                                                }
+                                                if (data.id !== undefined) {
+                                                    if (data.is_active) modifyReminder('pause', data.id);
+                                                    else modifyReminder('resume', data.id);
+                                                }
                                             }}
                                         >
                                             {
                                                 isLoading && selectedID === data.id && <Loader2 className="mx-auto h-4 w-4 animate-spin" />
                                             }
-                                            {!isLoading && (data.is_active ? 'Pause' : 'Resume')}
-                                        </div>
-                                        <AlertDialog>
-                                            <AlertDialogTrigger>
-                                                <div className="py-2 px-3 text-sm font-medium text-center text-white bg-[#d9534f] rounded-lg hover:bg-red-600 focus:ring-4"
-                                                    onClick={() => {
+                                            {!isLoading && (data.is_active
+                                                ?
+                                                <>
+                                                    <Pause className="w-4 h-4 mr-1" />
+                                                    Pause
+                                                </>
+                                                :
+                                                <>
+                                                    <Play className="w-4 h-4 mr-1" />
+                                                    Resume
+                                                </>
+                                            )}
+                                        </Button>
+                                        <AlertDialog open={alertOpen} onOpenChange={setAlertOpen}>
+                                            {/* <AlertDialogTrigger> */}
+                                            <Button
+                                                variant="destructive"
+                                                // size="sm"
+                                                onClick={() => {
+                                                    if (data.id !== undefined) {
                                                         setSelectedID(data.id);
-                                                    }}
-                                                >
-                                                    {
-                                                        isLoading && selectedID === data.id && <Loader2 className="mx-auto h-4 w-4 animate-spin" />
+                                                        setAlertOpen(true);
                                                     }
-                                                    {!isLoading && 'Delete'}
-                                                </div>
-                                            </AlertDialogTrigger>
+                                                }}
+                                            >
+                                                {
+                                                    isLoading && selectedID === data.id && <Loader2 className="mx-auto h-4 w-4 animate-spin" />
+                                                }
+                                                {!isLoading && <><Trash2 className="w-4 h-4 mr-1" /> Delete</>}
+                                            </Button>
+                                            {/* </AlertDialogTrigger> */}
                                             <AlertDialogContent>
                                                 <AlertDialogHeader>
                                                     <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
@@ -130,17 +169,17 @@ const RemindersTable = (
                                                 </AlertDialogHeader>
                                                 <AlertDialogFooter>
                                                     <AlertDialogCancel>Cancel</AlertDialogCancel>
-                                                    <AlertDialogAction onClick={() => { modifyReminder('delete', data.id) }}>Continue</AlertDialogAction>
+                                                    <AlertDialogAction onClick={() => { if (data.id !== undefined) modifyReminder('delete', data.id) }}>Continue</AlertDialogAction>
                                                 </AlertDialogFooter>
                                             </AlertDialogContent>
                                         </AlertDialog>
                                     </div>
-                                </td>
-                            </tr>
+                                </TableCell>
+                            </TableRow>
                         )
                     })}
-                </tbody>
-            </table>
+                </TableBody>
+            </Table>
         </div>
     );
 }

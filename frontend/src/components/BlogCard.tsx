@@ -17,7 +17,7 @@ const BlogCard = ({ blog, isOwner }: { blog: IBlog, isOwner: boolean }) => {
                 <Link to={`/blogs/${blog.id}`}>
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">{blog.title}</h5>
                 </Link>
-                <p className="mb-3 font-normal text-gray-700">{blog.content.slice(0, 50) + '...'}</p>
+                <p className="mb-3 font-normal text-muted-foreground">{blog.content.slice(0, 100) + '...'}</p>
                 <div className="mb-4 flex gap-2 cursor-pointer">
                     {blog.categories.map((item) =>
                         <Badge key={item.id} variant="outline">{item.name}</Badge>
