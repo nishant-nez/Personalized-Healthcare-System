@@ -205,6 +205,9 @@ class ReminderHistoryStats(APIView):
             reminders_history = ReminderHistory.objects.all()
         else:
             reminders_history = ReminderHistory.objects.filter(reminder__user=request.user)
+        
+        if not reminders_history:
+            return Response({}, status=status.HTTP_200_OK)
 
         total_reminders = reminders_history.count()
         oldest_history_date = reminders_history.order_by("-timestamp").first().timestamp.strftime("%b %Y")
