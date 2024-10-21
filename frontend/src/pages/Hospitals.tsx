@@ -114,7 +114,7 @@ const Hospitals = () => {
     }, [nearMe]);
 
     return (
-        <div className="min-h-screen">
+        <div className="min-h-screen bg-background">
             <div className="h-[45vh] flex flex-col content-center items-center justify-center pt-20">
                 <div className="p-4 w-[45%]">
                     <h1 className="text-4xl font-bold text-center">Search for Hospitals</h1>
@@ -139,7 +139,7 @@ const Hospitals = () => {
                     </div>
 
                     {isLoading
-                        ? <Button type="submit" className="py-4 px-8" onClick={handleSearch} disabled>
+                        ? <Button type="submit" className="py-4 px-8 dark" onClick={handleSearch} disabled>
                             <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                         </Button>
                         : <Button type="submit" className="py-4 px-6" onClick={handleSearch}>

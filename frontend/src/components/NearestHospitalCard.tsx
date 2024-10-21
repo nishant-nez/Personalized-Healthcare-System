@@ -6,7 +6,7 @@ const NearestHospitalCard = ({ hospital }: { hospital: INearestHospital }) => {
             <div className="flex justify-center gap-6">
                 <div className="flex flex-col justify-center mb-3">
                     <div
-                        className="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white w-full">
+                        className="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-border bg-card w-full">
                         {/* <div className="w-full md:w-1/3 bg-white grid place-items-center overflow-clip">
                     <img src={hospital.photo_url} alt={hospital.name} className="rounded-xl" />
                 </div> */}
@@ -14,7 +14,7 @@ const NearestHospitalCard = ({ hospital }: { hospital: INearestHospital }) => {
                             <img src={hospital.photo_url} alt={hospital.name} className="w-full h-full object-cover rounded-md" />
                         </div>
 
-                        <div className="w-full md:w-2/3 bg-white flex flex-col space-y-2 p-3 justify-between">
+                        <div className="w-full md:w-2/3 bg-card flex flex-col space-y-2 p-3 justify-between">
                             <div className="flex justify-between item-center top-0">
                                 <p className="text-gray-500 font-medium hidden md:block">
                                     {hospital.name.toLowerCase().includes('clinic') ? 'Clinic' : 'Hospital'}
@@ -32,10 +32,10 @@ const NearestHospitalCard = ({ hospital }: { hospital: INearestHospital }) => {
                                 </div>
                             </div>
                             <div>
-                                <h3 className="font-black text-gray-800 md:text-2xl text-lg">{hospital.name}</h3>
+                                <h3 className="font-black text-foreground md:text-2xl text-lg">{hospital.name}</h3>
                                 <p className="md:text-lg text-gray-500 text-base">{hospital.formatted_address}</p>
                             </div>
-                            <div className="font-light">Coords: {hospital.geometry.location.lat}, {hospital.geometry.location.lng}</div>
+                            <div className="font-light text-muted-foreground">Coords: {hospital.geometry.location.lat}, {hospital.geometry.location.lng}</div>
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ const NearestHospitalCard = ({ hospital }: { hospital: INearestHospital }) => {
                         <span className="font-bold pl-4">{hospital.duration.text}</span>
                     </div>
                 </div> */}
-                <div className="rounded-xl shadow-lg mb-3 border border-white bg-white p-6 flex flex-col items-center justify-center">
+                <div className="rounded-xl shadow-lg mb-3 border border-border bg-card p-6 flex flex-col items-center justify-center">
                     <div className="font-bold text-3xl mb-1">{hospital.distance.text}</div>
                     <div className="font-light mb-4">Distance</div>
                     <div className="font-bold text-3xl mb-1">{hospital.duration.text}</div>

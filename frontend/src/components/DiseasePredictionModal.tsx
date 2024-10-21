@@ -203,11 +203,11 @@ const DiseasePredictionModal = ({ modalOpen, setModalOpen, data }: { modalOpen: 
                                         <div className="flex justify-between mx-4">Duration (vehicle): <span className="font-bold">{nearestHospital.duration.text}</span></div>
                                         <div className="flex flex-col justify-center mb-3">
                                             <div
-                                                className="relative flex flex-col space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-white bg-white">
+                                                className="relative flex flex-col space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-border bg-background">
                                                 <div className="w-[510px] h-[290px] overflow-hidden">
                                                     <img src={nearestHospital.photo_url} alt={nearestHospital.name} className="w-full h-full object-cover rounded-md" />
                                                 </div>
-                                                <div className="w-full bg-white flex flex-col space-y-2 p-3 justify-between">
+                                                <div className="w-full bg-background flex flex-col space-y-2 p-3 justify-between">
                                                     <div className="flex justify-between item-center top-0">
                                                         <p className="text-gray-500 font-medium hidden md:block">Hospital</p>
                                                         <div className="flex items-center">
@@ -223,7 +223,7 @@ const DiseasePredictionModal = ({ modalOpen, setModalOpen, data }: { modalOpen: 
                                                         </div>
                                                     </div>
                                                     <div>
-                                                        <h3 className="font-black text-gray-800 md:text-2xl text-lg">{nearestHospital.name}</h3>
+                                                        <h3 className="font-black text-foreground md:text-2xl text-lg">{nearestHospital.name}</h3>
                                                         <p className="md:text-lg text-gray-500 text-base text-justify">{nearestHospital.formatted_address}</p>
                                                     </div>
                                                     <div className="font-light">Coords: {nearestHospital.geometry.location.lat}, {nearestHospital.geometry.location.lng}</div>

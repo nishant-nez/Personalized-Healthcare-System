@@ -172,10 +172,10 @@ const HistoryDrawer = ({ setDrawerOpen, drawerOpen }: { setDrawerOpen: (open: bo
                                             {
                                                 recentHistory && !isLoading && !updateLoading &&
                                                 recentHistory.map((item) => (
-                                                    <div className="w-full cursor-pointer" key={item.id}>
-                                                        <div className="flex p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100">
+                                                    <div className="w-full cursor-pointer border-border" key={item.id}>
+                                                        <Card className="flex p-6 bg-card border-border rounded-lg shadow hover:bg-gray-100 dark:hover:bg-gray-900">
                                                             <p className="font-normal text-gray-700 dark:text-gray-400">
-                                                                <span className="font-bold pr-2">
+                                                                <span className="font-bold pr-2 text-accent-foreground">
                                                                     {
                                                                         new Date(item.timestamp).toLocaleString('en-US', {
                                                                             day: 'numeric',
@@ -195,7 +195,7 @@ const HistoryDrawer = ({ setDrawerOpen, drawerOpen }: { setDrawerOpen: (open: bo
                                                             <Button variant="outline" size="icon" className="hover:bg-red-300 px-2" onClick={() => handleSubmit(false, item.id)}>
                                                                 <X className="h-4 w-4 hover:text-white" />
                                                             </Button>
-                                                        </div>
+                                                        </Card>
                                                     </div>
                                                 ))
                                             }

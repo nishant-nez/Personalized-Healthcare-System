@@ -81,7 +81,7 @@ const ResetPassword = () => {
 
     return (
         <>
-            <div className="w-full lg:grid lg:grid-cols-2 pt-[80px]">
+            <div className="w-full lg:grid lg:grid-cols-2 pt-[80px] bg-background">
                 <AuthImage />
                 <div className="flex items-center justify-center py-12">
                     <div className="mx-auto grid w-[350px] gap-6">
@@ -103,16 +103,16 @@ const ResetPassword = () => {
                                     required
                                 />
                             </div>
-                            {isLoading ?
-                                <Button disabled type="submit" className="w-full" onClick={onSubmit}>
-                                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                            {isLoading ? (
+                                <Button disabled type="submit" className="w-full dark:bg-gray-700 dark:text-gray-300" onClick={onSubmit}>
+                                    <Loader2 className="mr-2 h-4 w-4 animate-spin dark:text-gray-300" />
                                     Please Wait
                                 </Button>
-                                :
-                                <Button type="submit" className="w-full" onClick={onSubmit}>
+                            ) : (
+                                <Button type="submit" className="w-full dark:white dark:text-black" onClick={onSubmit}>
                                     Reset
                                 </Button>
-                            }
+                            )}
                         </div>
                         <div className="mt-4 text-center text-sm">
                             Don&apos;t have an account?{" "}

@@ -138,7 +138,7 @@ const Blogs = () => {
     }, [user]);
 
     return (
-        <div className="max-h-screen">
+        <div className="max-h-screen bg-background">
             <div className="flex flex-col content-center items-center justify-center pt-44">
                 <div className="p-4 w-[45%]">
                     <h1 className="text-4xl font-bold text-center">Blogs</h1>
@@ -183,7 +183,7 @@ const Blogs = () => {
                     })}
 
                     <div
-                        className="text-gray-500 hover:text-red-500 transition cursor-pointer"
+                        className="text-gray-500 hover:text-destructive transition cursor-pointer"
                         onClick={handleClear}
                     >
                         X

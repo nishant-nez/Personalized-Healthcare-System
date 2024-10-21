@@ -107,7 +107,7 @@ const Home = () => {
 
 
     return (
-        <div className="min-h-screen flex justify-between items-center flex-col gap-16">
+        <div className="min-h-screen flex justify-between items-center flex-col gap-16 bg-background">
             <div className="flex flex-col content-center items-center justify-center mt-44">
                 <div className="p-4 w-[45%]">
                     <h1 className="text-4xl font-bold text-center">Personalized Healthcare System</h1>

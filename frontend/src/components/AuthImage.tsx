@@ -2,7 +2,7 @@ import authBackground from "/auth-background.jpg";
 
 const AuthImage = () => {
     return (
-        <div className="hidden bg-muted lg:block">
+        <div className="hidden bg-background lg:block">
             <img
                 src={authBackground}
                 alt="Background Image"

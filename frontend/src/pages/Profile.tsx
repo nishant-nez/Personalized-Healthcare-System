@@ -137,7 +137,7 @@ const Profile = () => {
                                         <AvatarFallback>{user.first_name}{user.last_name}</AvatarFallback>
                                     </Avatar>
                                     <div>
-                                        <Label htmlFor="avatar" className="block text-sm font-medium text-gray-700">
+                                        <Label htmlFor="avatar" className="block text-sm font-medium text-accent-foreground">
                                             Change Avatar
                                         </Label>
                                         <Input
@@ -145,13 +145,13 @@ const Profile = () => {
                                             type="file"
                                             accept="image/*"
                                             onChange={updateImage}
-                                            className="mt-1"
+                                            className="mt-1 text-accent-foreground"
                                         />
                                     </div>
                                 </div>
                                 <div className="grid grid-cols-2 gap-4">
                                     <div>
-                                        <Label htmlFor="firstName" className="block text-sm font-medium text-gray-700">
+                                        <Label htmlFor="firstName" className="block text-sm font-medium text-accent-foreground">
                                             First Name
                                         </Label>
                                         <Input
@@ -164,7 +164,7 @@ const Profile = () => {
                                         />
                                     </div>
                                     <div>
-                                        <Label htmlFor="lastName" className="block text-sm font-medium text-gray-700">
+                                        <Label htmlFor="lastName" className="block text-sm font-medium text-accent-foreground">
                                             Last Name
                                         </Label>
                                         <Input
@@ -178,7 +178,7 @@ const Profile = () => {
                                     </div>
                                 </div>
                                 <div>
-                                    <Label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                                    <Label htmlFor="email" className="block text-sm font-medium text-accent-foreground">
                                         Email
                                     </Label>
                                     <Input
@@ -186,11 +186,11 @@ const Profile = () => {
                                         id="email"
                                         value={user.email}
                                         readOnly
-                                        className="mt-1 bg-gray-100"
+                                        className="mt-1"
                                     />
                                 </div>
                                 <div>
-                                    <Label htmlFor="role" className="block text-sm font-medium text-gray-700">
+                                    <Label htmlFor="role" className="block text-sm font-medium text-accent-foreground">
                                         Role
                                     </Label>
                                     <Input
@@ -198,7 +198,7 @@ const Profile = () => {
                                         id="role"
                                         value={user.is_superuser ? "Admin" : "User"}
                                         readOnly
-                                        className="mt-1 bg-gray-100 capitalize"
+                                        className="mt-1 capitalize"
                                     />
                                 </div>
                             </div>

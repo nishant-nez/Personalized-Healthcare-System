@@ -12,6 +12,9 @@ import {
 } from "@/components/ui/sheet"
 import VerticalNav from "./VerticalNav";
 import Logo from "@/assets/healthcare-logo.svg";
+import LogoDark from "@/assets/healthcare-logo-dark.svg";
+import { ModeToggle } from "./mode-toggle";
+import { useTheme } from "@/contexts/theme-provider";
 
 const LINKS = [
   { label: "Home", to: "/" },
@@ -33,32 +36,33 @@ const Navbar = () => {
     navigate('/');
   }
 
+  const theme = useTheme().theme;
+
   return (
     <>
-      <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6 bg-white fixed top-0 z-50">
+      <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6 bg-white dark:bg-gray-900 fixed top-0 z-50">
         <Sheet>
           <SheetTrigger asChild>
             <Button variant="outline" size="icon" className="lg:hidden">
-              <MenuIcon className="h-6 w-6" />
+              <MenuIcon className="h-6 w-6 text-black dark:text-white" />
               <span className="sr-only">Toggle navigation menu</span>
             </Button>
           </SheetTrigger>
-          <SheetContent side="left">
+          <SheetContent side="left" className="dark:bg-gray-800">
             <Link to={'/'} >
-              {/* <Logo className="h-6 w-6" /> */}
-              <img src={Logo} alt="Healthcare Logo" className="h-6 w-6" />
+              <img src={document.documentElement.classList.contains('dark') ? LogoDark : Logo} alt="Healthcare Logo" className="h-6 w-6" />
               <span className="sr-only">Healthcare</span>
             </Link>
             <div className="grid gap-2 py-6">
               {LINKS.map((link) =>
-                <Link to={link.to} key={link.to} className="flex w-full items-center py-2 text-lg font-semibold" >
+                <Link to={link.to} key={link.to} className="flex w-full items-center py-2 text-lg font-semibold text-black dark:text-white" >
                   {link.label}
                 </Link>
               )}
               {isLoggedIn &&
                 <>
                   {AUTH_LINKS.map((link) =>
-                    <Link to={link.to} key={link.to} className="flex w-full items-center py-2 text-lg font-semibold" >
+                    <Link to={link.to} key={link.to} className="flex w-full items-center py-2 text-lg font-semibold text-black dark:text-white" >
                       {link.label}
                     </Link>
                   )}
@@ -70,18 +74,16 @@ const Navbar = () => {
         <div className="w-full flex justify-between items-center">
           <div className="flex items-center">
             <Link to={'/'} className="mr-6 hidden lg:flex" >
-              <img src={Logo} alt="Healthcare Logo" className="h-6 w-6" />
+              <img src={theme === 'dark' ? LogoDark : Logo} alt="Healthcare Logo" className="h-6 w-6" />
               <span className="sr-only">Healthcare</span>
             </Link>
             <NavigationMenu className="hidden lg:flex">
               <NavigationMenuList>
-
-                {/* map */}
                 {LINKS.map((link) =>
                   <Link
                     to={link.to}
                     key={link.to}
-                    className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50"
+                    className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white dark:bg-gray-900 px-4 py-2 text-sm font-medium text-black dark:text-white transition-colors hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-900 dark:hover:text-gray-300 focus:bg-gray-100 dark:focus:bg-gray-700 focus:text-gray-900 dark:focus:text-gray-300 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 dark:data-[active]:bg-gray-700/50 data-[state=open]:bg-gray-100/50 dark:data-[state=open]:bg-gray-700/50"
                   >
                     {link.label}
                   </Link>
@@ -92,7 +94,7 @@ const Navbar = () => {
                       <Link
                         to={link.to}
                         key={link.to}
-                        className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:text-gray-900 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 data-[state=open]:bg-gray-100/50"
+                        className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-white dark:bg-gray-900 px-4 py-2 text-sm font-medium text-black dark:text-white transition-colors hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-900 dark:hover:text-gray-300 focus:bg-gray-100 dark:focus:bg-gray-700 focus:text-gray-900 dark:focus:text-gray-300 focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-gray-100/50 dark:data-[active]:bg-gray-700/50 data-[state=open]:bg-gray-100/50 dark:data-[state=open]:bg-gray-700/50"
                       >
                         {link.label}
                       </Link>
@@ -100,38 +102,38 @@ const Navbar = () => {
                   </>
                 }
               </NavigationMenuList>
-
             </NavigationMenu>
           </div>
 
           {isLoggedIn
             ?
-            <div className="flex gap-3 cursor-pointer">
+            <div className="flex gap-3 items-center cursor-pointer">
+              <ModeToggle />
               <Sheet>
                 <SheetTrigger>
                   <div className="flex gap-3 justify-center items-center">
-                    <p className="font-semibold">{user?.first_name}</p>
+                    <p className="font-semibold text-black dark:text-white">{user?.first_name}</p>
                     <Avatar>
                       <AvatarImage src={user?.image} />
                       <AvatarFallback>CN</AvatarFallback>
                     </Avatar>
                   </div>
                 </SheetTrigger>
-                <SheetContent>
+                <SheetContent className="dark:bg-gray-800">
                   <SheetHeader>
-                    {/* <SheetTitle>Hello, {user?.first_name}</SheetTitle> */}
                   </SheetHeader>
                   <VerticalNav logout={logout_user} />
                 </SheetContent>
               </Sheet>
             </div>
             :
-            <div className="flex gap-4">
+            <div className="flex items-center gap-4">
+              <ModeToggle />
               <Link to={'/login'}>
-                <Button variant="outline">Login</Button>
+                <Button variant="outline" className="text-black dark:text-black dark:bg-white">Login</Button>
               </Link>
               <Link to={'/signup'}>
-                <Button>Signup</Button>
+                <Button className="text-white dark:text-black dark:bg-white">Signup</Button>
               </Link>
             </div>
           }
@@ -143,8 +145,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
 
 function MenuIcon(props: SVGProps<SVGSVGElement>) {
   return (
@@ -159,6 +159,7 @@ function MenuIcon(props: SVGProps<SVGSVGElement>) {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
+      className="text-black dark:text-white"
     >
       <line x1="4" x2="20" y1="12" y2="12" />
       <line x1="4" x2="20" y1="6" y2="6" />

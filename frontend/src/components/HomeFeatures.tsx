@@ -1,6 +1,6 @@
 const HomeFeatures = () => {
     return (
-        <section className="w-full py-18 md:py-18 lg:py-24 bg-gray-100 bottom-0">
+        <section className="w-full py-18 md:py-18 lg:py-24 bg-gray-100 bottom-0 dark:bg-gray-900">
             <div className="container px-4 md:px-6">
                 <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                     <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">

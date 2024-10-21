@@ -48,7 +48,7 @@ const BlogDetail = () => {
 
     return (
         <>
-            <div className="container mx-auto px-40 pt-28 pb-10 min-h-screen">
+            <div className="container mx-auto px-40 pt-28 pb-10 min-h-screen bg-background">
                 {blog &&
                     <div>
                         <h1 className="text-3xl font-bold">{blog.title}</h1>
