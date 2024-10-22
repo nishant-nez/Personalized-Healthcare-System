@@ -115,14 +115,14 @@ const Hospitals = () => {
 
     return (
         <div className="min-h-screen bg-background">
-            <div className="h-[45vh] flex flex-col content-center items-center justify-center pt-20">
+            <div className="my-20 flex flex-col content-center items-center justify-center pt-20">
                 <div className="p-4 w-[45%]">
                     <h1 className="text-4xl font-bold text-center">Search for Hospitals</h1>
                     <p className="text-lg font-light pt-3 pb-4 text-center">
                         Search for hospitals and clinics within Kathmandu valley.
                     </p>
                 </div>
-                <div className="w-[40%] mx-auto flex gap-4 items-center content-center justify-center">
+                <div className="w-[40%] mx-auto flex flex-col md:flex-row gap-4 items-center content-center justify-center mb-4">
                     <Input
                         type="search"
                         value={search}
@@ -149,7 +149,7 @@ const Hospitals = () => {
                 </div>
                 {
                     nearestHospital && nearMe &&
-                    <div className="mt-6">
+                    <div className="mt-6 text-center mx-4">
                         Using Your Location:
                         <span className="font-bold">
                             &nbsp;{nearestHospital[0].origin_address}
@@ -161,8 +161,15 @@ const Hospitals = () => {
                 }
             </div>
 
-            {hospitals && !nearMe && hospitals.map((hospital) => <div key={hospital.place_id}><HospitalSearchCard hospital={hospital} /></div>)}
-            {nearestHospital && nearMe && nearestHospital.map((hospital) => <div key={hospital.place_id} className="w-full"><NearestHospitalCard hospital={hospital} /></div>)}
+            {hospitals && !nearMe && hospitals.map((hospital) =>
+                <div key={hospital.place_id} className="mt-4">
+                    <HospitalSearchCard hospital={hospital} />
+                </div>)}
+
+            {nearestHospital && nearMe && nearestHospital.map((hospital) =>
+                <div key={hospital.place_id} className="w-full">
+                    <NearestHospitalCard hospital={hospital} />
+                </div>)}
 
             {isLoading && <Loader2 className="mx-auto h-14 w-14 animate-spin" />}
             {hospitals.length === 0 && !nearMe && !isLoading && <EmptySearchResults />}

@@ -42,7 +42,7 @@ const HistoryPieChart = ({ stats }: { stats: IHistoryStats }) => {
     // }, [])
 
     return (
-        <Card className="flex flex-col max-h-[50vh] mb-4">
+        <Card className="flex flex-col md:max-h-[50vh] mb-4">
             <CardHeader className="items-center pb-0">
                 <CardTitle>Medicines Taken on Time vs Missed</CardTitle>
                 <CardDescription>{stats.oldest} - {stats.newest}</CardDescription>

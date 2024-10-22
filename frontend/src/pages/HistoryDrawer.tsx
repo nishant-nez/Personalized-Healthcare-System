@@ -17,6 +17,7 @@ import HistoryPieChart from "@/components/HistoryPieChart";
 import { IHistoryStats } from "@/interfaces/IHistoryStats";
 import HistoryBarChart from "@/components/HistoryBarChart";
 import { Card, CardTitle } from "@/components/ui/card";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 
 const HistoryDrawer = ({ setDrawerOpen, drawerOpen }: { setDrawerOpen: (open: boolean) => void; drawerOpen: boolean }) => {
@@ -145,76 +146,69 @@ const HistoryDrawer = ({ setDrawerOpen, drawerOpen }: { setDrawerOpen: (open: bo
     return (
         <div className="">
             <Drawer onOpenChange={setDrawerOpen} open={drawerOpen}>
-                {/* <DrawerTrigger asChild>
-                    <Button variant="outline">Open Drawer</Button>
-                </DrawerTrigger> */}
                 <DrawerContent className="scrollbar-hidden">
-                    <div className="mx-auto w-full max-h-[80vh]">
-                        <DrawerHeader >
-                            <DrawerTitle className="text-center">Reminders Overview</DrawerTitle>
-                            <DrawerDescription className="text-center">Check your recent reminders sent to you.</DrawerDescription>
-                        </DrawerHeader>
+                    <ScrollArea className="md:overflow-auto md:overflow-y-auto max-h-[80vh]">
+                        <div className="mx-auto w-full max-h-[80vh]">
+                            <DrawerHeader >
+                                <DrawerTitle className="text-center">Reminders Overview</DrawerTitle>
+                                <DrawerDescription className="text-center">Check your recent reminders sent to you.</DrawerDescription>
+                            </DrawerHeader>
 
-                        {
-                            history.length > 0
-                                ?
-                                <div className="grid grid- grid-cols-1 md:grid-cols-3 gap-4 h-full pb-2">
-                                    {stats && <HistoryPieChart stats={stats} />}
+                            {
+                                history.length > 0
+                                    ?
+                                    <div className="h-full pb-2">
+                                        <div className="grid grid- grid-cols-1 md:grid-cols-3 gap-4 md:overflow-hidden">
+                                            {stats && <HistoryPieChart stats={stats} />}
 
-                                    {stats && <HistoryBarChart stats={stats} />}
+                                            {stats && <HistoryBarChart stats={stats} />}
 
-                                    <Card className="p-4 mb-4 pb-6 max-h-[50vh]">
-                                        <CardTitle className="text-center">Recent Reminders</CardTitle>
-                                        <div className="flex flex-col gap-4 my-4 max-h-[43vh] overflow-y-scroll scrollbar-hidden">
+                                            <Card className="p-4 mb-4 pb-6 md:max-h-[50vh] scrollbar-hidden">
+                                                <CardTitle className="text-center">Recent Reminders</CardTitle>
+                                                <div className="flex flex-col gap-4 my-4 max-h-[43vh] overflow-auto scrollbar-hidden">
+                                                    {updateLoading && <Loader2 className="mx-auto h-14 w-14 animate-spin" />}
 
-                                            {updateLoading && <Loader2 className="mx-auto h-14 w-14 animate-spin" />}
-
-                                            {
-                                                recentHistory && !isLoading && !updateLoading &&
-                                                recentHistory.map((item) => (
-                                                    <div className="w-full cursor-pointer border-border" key={item.id}>
-                                                        <Card className="flex p-6 bg-card border-border rounded-lg shadow hover:bg-gray-100 dark:hover:bg-gray-900">
-                                                            <p className="font-normal text-gray-700 dark:text-gray-400">
-                                                                <span className="font-bold pr-2 text-accent-foreground">
-                                                                    {
-                                                                        new Date(item.timestamp).toLocaleString('en-US', {
-                                                                            day: 'numeric',
-                                                                            month: 'short',
-                                                                            year: 'numeric',
-                                                                            hour: 'numeric',
-                                                                            minute: 'numeric',
-                                                                            hour12: true,
-                                                                        })
-                                                                    }
-                                                                </span>
-                                                                Take {item.reminder.medicine_name} ({item.reminder.dosage}) with instructions: {item.reminder.instructions}.
-                                                            </p>
-                                                            <Button variant="outline" size="icon" className="hover:bg-green-300 mx-3 px-2" onClick={() => handleSubmit(true, item.id)}>
-                                                                <Check className="h-4 w-4 hover:text-white" />
-                                                            </Button>
-                                                            <Button variant="outline" size="icon" className="hover:bg-red-300 px-2" onClick={() => handleSubmit(false, item.id)}>
-                                                                <X className="h-4 w-4 hover:text-white" />
-                                                            </Button>
-                                                        </Card>
-                                                    </div>
-                                                ))
-                                            }
-
+                                                    {
+                                                        recentHistory && !isLoading && !updateLoading &&
+                                                        recentHistory.map((item) => (
+                                                            <div className="w-full cursor-pointer border-border" key={item.id}>
+                                                                <Card className="flex p-6 bg-card border-border rounded-lg shadow hover:bg-gray-100 dark:hover:bg-gray-900">
+                                                                    <p className="font-normal text-gray-700 dark:text-gray-400">
+                                                                        <span className="font-bold pr-2 text-accent-foreground">
+                                                                            {
+                                                                                new Date(item.timestamp).toLocaleString('en-US', {
+                                                                                    day: 'numeric',
+                                                                                    month: 'short',
+                                                                                    year: 'numeric',
+                                                                                    hour: 'numeric',
+                                                                                    minute: 'numeric',
+                                                                                    hour12: true,
+                                                                                })
+                                                                            }
+                                                                        </span>
+                                                                        Take {item.reminder.medicine_name} ({item.reminder.dosage}) with instructions: {item.reminder.instructions}.
+                                                                    </p>
+                                                                    <Button variant="outline" size="icon" className="hover:bg-green-300 mx-3 px-2" onClick={() => handleSubmit(true, item.id)}>
+                                                                        <Check className="h-4 w-4 hover:text-white" />
+                                                                    </Button>
+                                                                    <Button variant="outline" size="icon" className="hover:bg-red-300 px-2" onClick={() => handleSubmit(false, item.id)}>
+                                                                        <X className="h-4 w-4 hover:text-white" />
+                                                                    </Button>
+                                                                </Card>
+                                                            </div>
+                                                        ))
+                                                    }
+                                                </div>
+                                            </Card>
                                         </div>
-                                    </Card>
-                                </div>
-                                :
-                                <div className="flex flex-col items-center justify-center h-full">
-                                    No History
-                                </div>
-                        }
-                        {/* <DrawerFooter>
-                            <Button>Submit</Button>
-                            <DrawerClose asChild>
-                                <Button variant="outline">Cancel</Button>
-                            </DrawerClose>
-                        </DrawerFooter> */}
-                    </div>
+                                    </div>
+                                    :
+                                    <div className="flex flex-col items-center justify-center h-full">
+                                        No History
+                                    </div>
+                            }
+                        </div>
+                    </ScrollArea>
                 </DrawerContent>
             </Drawer>
         </div>

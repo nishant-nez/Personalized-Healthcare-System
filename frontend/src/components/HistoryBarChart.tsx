@@ -31,7 +31,7 @@ const HistoryBarChart = ({ stats }: { stats: IHistoryStats }) => {
     const chartData = stats.by_month
 
     return (
-        <Card className="flex flex-col max-h-[50vh] mb-4">
+        <Card className="flex flex-col md:max-h-[50vh] mb-4">
             <CardHeader className="items-center">
                 <CardTitle>Reminder Status by Month</CardTitle>
                 <CardDescription>

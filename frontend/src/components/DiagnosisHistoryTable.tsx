@@ -25,11 +25,11 @@ const COLUMNS = [
 const DiagnosisHistoryTable = ({ diagnosis, setSelectedID, deleteHistory }: { diagnosis: IDiagnosisHistory[], setSelectedID: (id: number) => void, deleteHistory: () => void }) => {
     const getSeverityColor = (severity: number) => {
         const colors = [
-            "bg-green-200 text-green-800",
-            "bg-lime-200 text-lime-800",
-            "bg-yellow-200 text-yellow-800",
-            "bg-orange-200 text-orange-800",
-            "bg-red-200 text-red-800",
+            "md:bg-green-200 text-green-800",
+            "md:bg-lime-200 text-lime-800",
+            "md:bg-yellow-200 text-yellow-800",
+            "md:bg-orange-200 text-orange-800",
+            "md:bg-red-200 text-red-800",
         ]
         return colors[severity - 1] || colors[0]
     }

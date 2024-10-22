@@ -10,7 +10,7 @@ const NearestHospitalCard = ({ hospital }: { hospital: INearestHospital }) => {
                         {/* <div className="w-full md:w-1/3 bg-white grid place-items-center overflow-clip">
                     <img src={hospital.photo_url} alt={hospital.name} className="rounded-xl" />
                 </div> */}
-                        <div className="w-[450px] h-[290px] overflow-hidden">
+                        <div className="md:w-[450px] md:h-[290px] overflow-hidden">
                             <img src={hospital.photo_url} alt={hospital.name} className="w-full h-full object-cover rounded-md" />
                         </div>
 

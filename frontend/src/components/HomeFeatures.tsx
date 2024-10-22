@@ -95,7 +95,7 @@ const HomeFeatures = () => {
                                 <path d="M8 8h4" />
                             </svg>
                         </div>
-                        <h3 className="text-xl font-bold">Hospital Recommendation</h3>
+                        <h3 className="text-xl font-bold text-center">Hospital Recommendation</h3>
                         <p className="text-sm text-gray-500 text-center">
                             Get location, distance and travel time for the Hospital nearest to your location.
                         </p>

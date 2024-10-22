@@ -5,7 +5,7 @@ const HospitalSearchCard = ({ hospital }: { hospital: IHospital }) => {
         <div className="flex flex-col justify-center mb-3">
             <div
                 className="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-lg p-3 max-w-xs md:max-w-3xl mx-auto border border-border bg-card">
-                <div className="w-[450px] h-[290px] overflow-hidden">
+                <div className="md:w-[450px] md:h-[290px] overflow-hidden">
                     <img src={hospital.photo_url} alt={hospital.name} className="w-full h-full object-cover rounded-md" />
                 </div>
 

@@ -10,30 +10,8 @@ import { AxiosError } from "axios";
 import DiseasePredictionModal from "@/components/DiseasePredictionModal";
 import { IDiseasePrediction } from "@/interfaces/IDiseasePrediction";
 import HomeFeatures from "@/components/HomeFeatures";
+import { useTheme } from "@/contexts/theme-provider";
 
-
-const selectStyles: StylesConfig<{ value: string; label: string }, true> = {
-    control: (base) => ({
-        ...base,
-        cursor: 'pointer',
-        width: '45vw',
-        fontSize: '16px',
-        // fontWeight: 'bold',
-        borderRadius: '8px',
-        padding: '6px 5px',
-        border: '1px solid #21274F !important',
-        boxShadow: 'none',
-        '&:focus': {
-            border: '0 !important',
-        },
-    }),
-    multiValue: (base) => ({
-        ...base,
-        // backgroundColor: '#111111',
-        cursor: 'pointer',
-        color: 'white',
-    }),
-};
 
 const Home = () => {
     const { user, access } = useAuth();
@@ -41,7 +19,33 @@ const Home = () => {
     const [symptoms, setSymptoms] = useState<{ value: string; label: string }[] | null>(null);
     const [modalOpen, setModalOpen] = useState<boolean>(false);
     const [prediction, setPrediction] = useState<IDiseasePrediction | null>(null);
+    const theme = useTheme().theme;
     const { toast } = useToast();
+
+
+    const selectStyles: StylesConfig<{ value: string; label: string }, true> = {
+        control: (base) => ({
+            ...base,
+            cursor: 'pointer',
+            width: '45vw',
+            fontSize: '16px',
+            // fontWeight: 'bold',
+            borderRadius: '8px',
+            padding: '6px 5px',
+            border: '1px solid #21274F !important',
+            boxShadow: 'none',
+            '&:focus': {
+                border: '0 !important',
+            },
+
+        }),
+        multiValue: (base) => ({
+            ...base,
+            backgroundColor: theme === 'light' ? 'gray' : 'white',
+            color: theme === 'light' ? 'white' : 'black',
+            cursor: 'pointer',
+        }),
+    };
 
     const config = {
         headers: {
@@ -118,24 +122,58 @@ const Home = () => {
                 </div>
                 <div className="w-[40%] mx-auto flex gap-4 items-center content-center justify-center">
                     <CreatableSelect
-                        // classNames={{
-                        //     control: () => 'border border-gray-300 rounded-lg cursor-pointer'
-                        // }}
-                        // theme={(theme) => ({
-                        //     ...theme,
-                        //     borderRadius: 0,
-                        //     colors: {
-                        //         ...theme.colors,
-                        //         primary25: 'neutral150',
-                        //         primary: 'black',
-                        //     },
-                        // })}
-                        styles={selectStyles}
+                        theme={(selectTheme) => ({
+                            ...selectTheme,
+                            colors: {
+                                ...selectTheme.colors,
+                                danger: 'red',
+                                dangerLight: 'red',
+                                primary: `${theme === 'light' ? 'white' : 'black'}`,
+                                primary25: `${theme === 'light' ? 'lightgray' : 'darkgray'}`,
+                                // primary50: `${theme === 'light' ? 'lightgray' : 'darkgray'}`,
+                                // primary75: `${theme === 'light' ? 'lightgray' : 'darkgray'}`,
+                                neutral: `${theme === 'light' ? 'white' : 'black'}`,
+                                neutral0: `${theme === 'light' ? 'white' : 'black'}`,
+                                neutral5: `${theme === 'light' ? 'white' : 'black'}`,
+                                neutral10: `${theme === 'light' ? 'white' : 'black'}`,
+                                neutral15: `${theme === 'light' ? 'white' : 'black'}`,
+                                neutral20: `${theme === 'light' ? 'white' : 'black'}`,
+                                neutral30: `${theme === 'light' ? 'white' : 'black'}`,
+                                neutral40: `${theme === 'light' ? 'white' : 'black'}`,
+                                neutral50: `${theme === 'light' ? 'white' : 'black'}`,
+                                neutral60: `${theme === 'light' ? 'white' : 'black'}`,
+                                neutral70: `${theme === 'light' ? 'white' : 'black'}`,
+                                neutral80: `${theme === 'light' ? 'white' : 'black'}`,
+                                neutral90: `${theme === 'light' ? 'white' : 'black'}`,
+                            },
+                        })}
+                        styles={{
+                            ...selectStyles,
+                            input: (base) => ({
+                                ...base,
+                                color: 'white',
+                                // backgroundColor: 'white',
+                                colorScheme: 'light',
+                            }),
+                            dropdownIndicator: (base) => ({
+                                ...base,
+                                color: 'gray',
+                                '&:hover': {
+                                    color: 'darkgray',
+                                },
+                            }),
+                            clearIndicator: (base) => ({
+                                ...base,
+                                color: 'gray',
+                                '&:hover': {
+                                    color: 'darkred',
+                                },
+                            }),
+                        }}
                         defaultValue={selectedOption}
                         onChange={(newValue) => setSelectedOption(newValue as { value: string; label: string }[])}
                         options={symptoms || []}
                         placeholder={'Enter your symptoms'}
-                        // unstyled
                         isMulti
                         isSearchable
                         isClearable
