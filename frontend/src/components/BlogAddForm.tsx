@@ -109,7 +109,7 @@ const BlogAddForm = ({ categories, setModalOpen, fetchBlogs, }: { categories: IC
                             <FormItem>
                                 <FormLabel>Content</FormLabel>
                                 <FormControl>
-                                    <Textarea placeholder="Blog Content" {...field} />
+                                    <Textarea placeholder="Blog Content" {...field} rows={12} />
                                 </FormControl>
                                 <FormDescription></FormDescription>
                                 <FormMessage />
@@ -176,8 +176,8 @@ const BlogAddForm = ({ categories, setModalOpen, fetchBlogs, }: { categories: IC
                     />
                     <div className="flex justify-center items-center">
                         {isLoading
-                            ? <Button type="submit" disabled>Submit</Button>
-                            : <Button type="submit">Submit</Button>
+                            ? <Button type="submit" disabled className="py-4 px-6">Submit</Button>
+                            : <Button type="submit" className="py-4 px-6">Submit</Button>
                         }
                     </div>
                 </form>

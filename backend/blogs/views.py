@@ -5,8 +5,8 @@ from rest_framework import mixins, generics, permissions
 from rest_framework.parsers import MultiPartParser, FormParser
 from django.http import Http404
 from django.views.decorators.csrf import csrf_exempt
-from .models import Category, Blog
-from .serializers import CategorySerializer, BlogSerializer
+from .models import Category, Blog, Like
+from .serializers import CategorySerializer, BlogSerializer, LikeSerializer
 from .permissions import IsOwnerOrReadOnly, IsAdminOrReadOnly
 
 # class CategoryList(APIView):
@@ -109,3 +109,55 @@ class BlogsExceptUser(APIView):
         blogs = Blog.objects.exclude(author_id=pk)
         serializer = BlogSerializer(blogs, many=True, context={'request': request})
         return Response(serializer.data)
+
+
+class BlogLikeList(APIView):
+    """
+    List all likes of all blog
+    """
+
+    permission_classes = []
+
+    def get(self, request, format=None):
+        likes = Like.objects.all()
+        serializer = LikeSerializer(likes, many=True)
+        return Response(serializer.data)
+
+
+class BlogLike(APIView):
+    """
+    Like a blog and get likes of given blog
+    """
+
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+
+    def post(self, request, blog_id, format=None):
+        blog = Blog.objects.get(pk=blog_id)
+        try:
+            blog = Blog.objects.get(pk=blog_id)
+        except Blog.DoesNotExist:
+            return Response({"error": "Blog not found"}, status=status.HTTP_404_NOT_FOUND)
+
+        try:
+            liked = Like.objects.get(user=request.user, blog=blog)
+            liked.delete()
+            return Response({'message': 'Unliked'}, status=status.HTTP_200_OK)
+        except Like.DoesNotExist:
+            like = Like.objects.create(user=request.user, blog=blog)
+            like.save()
+            return Response({'message': 'Liked'}, status=status.HTTP_201_CREATED)
+    
+    def get(self, request, blog_id, format=None):
+        try:
+            blog = Blog.objects.get(pk=blog_id)
+        except Blog.DoesNotExist:
+            return Response({"error": "Blog not found"}, status=status.HTTP_404_NOT_FOUND)
+        
+        likes = Like.objects.filter(blog=blog)
+        like_count = likes.count()
+        if request.user.is_authenticated:
+            self_liked = likes.filter(user=request.user).exists()
+        else:
+            self_liked = False
+
+        return Response({'likes': like_count, 'self_liked': self_liked})

@@ -62,8 +62,13 @@ class BlogSerializer(serializers.Serializer):
         representation = super().to_representation(instance)
 
         # Convert author and categories to full details for GET requests
-        representation['author'] = UserAccountSerializer(instance.author).data
-        representation['categories'] = CategorySerializer(instance.categories.all(), many=True).data
+        author_representation = UserAccountSerializer(instance.author, context=self.context).data
+        if 'image_url' in author_representation and author_representation['image_url']:
+            request = self.context.get('request')
+            author_representation['image_url'] = request.build_absolute_uri(author_representation['image_url'])
+        
+        representation['author'] = author_representation
+        representation['categories'] = CategorySerializer(instance.categories.all(), many=True, context=self.context).data
 
         return representation
 
@@ -78,6 +83,7 @@ class CommentSerializer(serializers.ModelSerializer):
 
 class LikeSerializer(serializers.ModelSerializer):
     user = UserAccountSerializer()
+    blog = BlogSerializer()
     
     class Meta:
         model = Like

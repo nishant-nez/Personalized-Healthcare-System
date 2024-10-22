@@ -147,7 +147,7 @@ const MedicineReminders = () => {
             <Dialog open={modalOpen} onOpenChange={setModalOpen} >
                 <DialogContent className="sm:max-w-[1000px] overflow-y-scroll scrollbar-hidden max-h-[90vh]">
                     <DialogHeader className="text-center sm:text-center">
-                        <DialogTitle className="font-bold text-3xl">Add a new reminder</DialogTitle>
+                        <DialogTitle className="font-bold text-3xl">Create New Reminder</DialogTitle>
                     </DialogHeader>
                     {/* form */}
                     <ReminderAddForm fetchReminders={fetchReminders} setModalOpen={setModalOpen} />

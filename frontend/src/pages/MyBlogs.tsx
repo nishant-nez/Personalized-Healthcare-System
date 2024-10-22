@@ -169,7 +169,7 @@ const MyBlogs = () => {
                 <Dialog open={modalOpen} onOpenChange={setModalOpen} >
                     <DialogContent className="sm:max-w-[1000px]">
                         <DialogHeader className="text-center sm:text-center">
-                            <DialogTitle className="font-bold text-3xl">Add a new blog</DialogTitle>
+                            <DialogTitle className="font-bold text-3xl">Create New Blog Post</DialogTitle>
                         </DialogHeader>
                         {/* form */}
                         <BlogAddForm categories={categories} setModalOpen={setModalOpen} fetchBlogs={fetchBlogs} />
