@@ -14,6 +14,7 @@ import BlogDetail from './pages/BlogDetail'
 import MyBlogs from './pages/MyBlogs'
 import MedicineReminders from './pages/MedicineReminders'
 import Profile from './pages/Profile'
+import RequireAuth from './components/RequireAuth'
 
 import Layout from './hocs/Layout'
 
@@ -23,13 +24,17 @@ const App = () => (
     <Layout>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/profile' element={<Profile />} />
         <Route path='/hospitals' element={<Hospitals />} />
-        <Route path='/history' element={<History />} />
-        <Route path='/reminders' element={<MedicineReminders />} />
         <Route path='/blogs' element={<Blogs />} />
         <Route path='/blogs/:id' element={<BlogDetail />} />
-        <Route path='/profile/blogs' element={<MyBlogs />} />
+
+        <Route element={<RequireAuth />}>
+          <Route path='/profile' element={<Profile />} />
+          <Route path='/history' element={<History />} />
+          <Route path='/reminders' element={<MedicineReminders />} />
+          <Route path='/profile/blogs' element={<MyBlogs />} />
+        </Route>
+
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<Signup />} />
         <Route path='/reset-password' element={<ResetPassword />} />
