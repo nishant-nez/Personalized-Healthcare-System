@@ -11,6 +11,7 @@ import { Switch } from "@/components/ui/switch";
 import { Loader2 } from "lucide-react";
 import EmptySearchResults from "@/components/EmptySearchResults";
 import { LocationContext } from "@/contexts/LocationContext";
+import GoogleMapsBox from "@/components/GoogleMapsBox";
 
 
 const Hospitals = () => {
@@ -115,7 +116,7 @@ const Hospitals = () => {
 
     return (
         <div className="min-h-screen bg-background">
-            <div className="my-20 flex flex-col content-center items-center justify-center pt-20">
+            <div className="mt-20 mb-9 flex flex-col content-center items-center justify-center pt-20">
                 <div className="p-4 w-[45%]">
                     <h1 className="text-4xl font-bold text-center">Search for Hospitals</h1>
                     <p className="text-lg font-light pt-3 pb-4 text-center">
@@ -161,15 +162,20 @@ const Hospitals = () => {
                 }
             </div>
 
+            {!nearMe && <GoogleMapsBox markers={hospitals} />}
+            {nearMe && <GoogleMapsBox markers={nearestHospital ? nearestHospital : []} />}
+
             {hospitals && !nearMe && hospitals.map((hospital) =>
                 <div key={hospital.place_id} className="mt-4">
                     <HospitalSearchCard hospital={hospital} />
-                </div>)}
+                </div>)
+            }
 
             {nearestHospital && nearMe && nearestHospital.map((hospital) =>
                 <div key={hospital.place_id} className="w-full">
                     <NearestHospitalCard hospital={hospital} />
-                </div>)}
+                </div>)
+            }
 
             {isLoading && <Loader2 className="mx-auto h-14 w-14 animate-spin" />}
             {hospitals.length === 0 && !nearMe && !isLoading && <EmptySearchResults />}

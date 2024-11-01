@@ -82,7 +82,7 @@ const DiseasePredictionModal = ({ modalOpen, setModalOpen, data }: { modalOpen: 
 
     useEffect(() => {
         if (location) fetchNearestHospital();
-    }, []);
+    }, [location]);
 
     if (data !== null) return (
         <>
@@ -197,7 +197,7 @@ const DiseasePredictionModal = ({ modalOpen, setModalOpen, data }: { modalOpen: 
                                     </SheetDescription>
                                     {isLoading && <Loader2 className="mx-auto h-14 w-14 animate-spin" />}
                                     {nearestHospital && <>
-                                        <div className="flex justify-between mx-4">From: <span className="font-bold">{nearestHospital.origin_address}</span></div>
+                                        <div className="flex justify-between mx-4">From: <span className="font-bold pl-2">{nearestHospital.origin_address}</span></div>
                                         <div className="flex justify-between mx-4">To: <span className="font-bold">{nearestHospital.name}</span></div>
                                         <div className="flex justify-between mx-4">Distance: <span className="font-bold">{nearestHospital.distance.text}</span></div>
                                         <div className="flex justify-between mx-4">Duration (vehicle): <span className="font-bold">{nearestHospital.duration.text}</span></div>

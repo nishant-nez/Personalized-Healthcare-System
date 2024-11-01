@@ -130,8 +130,8 @@ const Home = () => {
                                 dangerLight: 'red',
                                 primary: `${theme === 'light' ? 'white' : 'black'}`,
                                 primary25: `${theme === 'light' ? 'lightgray' : 'darkgray'}`,
-                                // primary50: `${theme === 'light' ? 'lightgray' : 'darkgray'}`,
-                                // primary75: `${theme === 'light' ? 'lightgray' : 'darkgray'}`,
+                                primary50: `${theme === 'light' ? 'lightgray' : 'darkgray'}`,
+                                primary75: `${theme === 'light' ? 'lightgray' : 'darkgray'}`,
                                 neutral: `${theme === 'light' ? 'white' : 'black'}`,
                                 neutral0: `${theme === 'light' ? 'white' : 'black'}`,
                                 neutral5: `${theme === 'light' ? 'white' : 'black'}`,
@@ -151,9 +151,9 @@ const Home = () => {
                             ...selectStyles,
                             input: (base) => ({
                                 ...base,
-                                color: 'white',
-                                // backgroundColor: 'white',
-                                colorScheme: 'light',
+                                color: `${theme === 'light' ? 'black' : 'white'}`,
+                                // backgroundColor: 'dark',
+                                // colorScheme: 'dark',
                             }),
                             dropdownIndicator: (base) => ({
                                 ...base,
