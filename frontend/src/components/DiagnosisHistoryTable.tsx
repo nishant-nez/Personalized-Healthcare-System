@@ -15,7 +15,6 @@ import { Trash2 } from "lucide-react"
 import { Button } from "./ui/button";
 
 const COLUMNS = [
-    "ID",
     "Disease",
     "Symptoms",
     "Diagnosis Date",
@@ -50,9 +49,6 @@ const DiagnosisHistoryTable = ({ diagnosis, setSelectedID, deleteHistory }: { di
                             {diagnosis.map((data) => {
                                 return (
                                     <TableRow key={data.id}>
-                                        <TableCell>
-                                            {data.id}
-                                        </TableCell>
                                         <TableCell>
                                             {data.name}
                                         </TableCell>

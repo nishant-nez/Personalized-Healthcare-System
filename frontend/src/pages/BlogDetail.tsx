@@ -73,8 +73,11 @@ const BlogDetail = () => {
         setIsLoading(true);
         const config = {
             headers: {
-                'Authorization': 'JWT ' + access,
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'Authorization': `JWT ${access}`,
             },
+            withCredentials: true,
         };
 
         if (blog) {
