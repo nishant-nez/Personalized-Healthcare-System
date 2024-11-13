@@ -8,6 +8,7 @@ from django.views.decorators.csrf import csrf_exempt
 from .models import Category, Blog, Like
 from .serializers import CategorySerializer, BlogSerializer, LikeSerializer
 from .permissions import IsOwnerOrReadOnly, IsAdminOrReadOnly
+from rest_framework_simplejwt.authentication import JWTAuthentication
 
 # class CategoryList(APIView):
 class CategoryList(generics.ListCreateAPIView):
@@ -129,7 +130,8 @@ class BlogLike(APIView):
     Like a blog and get likes of given blog
     """
 
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+    permission_classes = []
+    authentication_classes = [JWTAuthentication]
 
     def post(self, request, blog_id, format=None):
         blog = Blog.objects.get(pk=blog_id)

@@ -62,18 +62,8 @@ const ReminderAddForm = ({ fetchReminders, setModalOpen }: { fetchReminders: () 
     });
 
     async function onSubmit(values: z.infer<typeof formSchema>) {
-        // console.log('selected tab: ', selectedTab)
-        // console.log("Submitted values:", values);
-        // console.log("Form Errors:", form.formState.errors); // Check errors after submission
-
         const formatted_start_date = new Date(values.start_date).toISOString().split('T')[0]
-        // console.log('formatted start_date: ', formatted_start_date.toISOString().split('T')[0])
         const formatted_end_date = new Date(values.end_date).toISOString().split('T')[0]
-        // console.log('formatted end_date: ', formatted_end_date.toISOString().split('T')[0])
-        // values['start_date'] = formatted_start_date
-        // values['end_date'] = formatted_end_date
-        // console.log("Submitted values:", values);
-        console.log(values)
 
         // let body: IReminder = {
         //     'medicine_name': values.medicine_name,
@@ -206,13 +196,13 @@ interface ReminderFieldsProps {
 
 const ReminderFields: React.FC<ReminderFieldsProps> = ({ form, reminderType }) => {
     const weekdaysOptions = [
+        { value: 0, label: "Sunday" },
         { value: 1, label: "Monday" },
         { value: 2, label: "Tuesday" },
         { value: 3, label: "Wednesday" },
         { value: 4, label: "Thursday" },
         { value: 5, label: "Friday" },
         { value: 6, label: "Saturday" },
-        { value: 7, label: "Sunday" },
     ];
 
     return (

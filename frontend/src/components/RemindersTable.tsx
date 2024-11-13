@@ -23,7 +23,6 @@ import { useState } from "react";
 import { Button } from "./ui/button";
 
 const COLUMNS = [
-    "ID",
     "Image",
     "Medicine",
     "Dosage",
@@ -68,9 +67,6 @@ const RemindersTable = (
                     {reminders.map((data) => {
                         return (
                             <TableRow key={data.id}>
-                                <TableCell>
-                                    {data.id}
-                                </TableCell>
                                 <TableCell>
                                     <Avatar>
                                         <AvatarImage src={data.image} />
