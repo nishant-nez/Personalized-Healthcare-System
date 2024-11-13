@@ -18,8 +18,8 @@ import { useAuth } from "@/contexts/AuthContext";
 import axios from "@/api/axios";
 import { useToast } from "./ui/use-toast";
 import { isAxiosError } from "axios";
-import { useState } from "react";
-import { Textarea } from "./ui/textarea";
+import { useEffect, useState } from "react";
+import { Tiptap } from "./TipTap";
 
 const formSchema = z.object({
     title: z.string().min(1).max(255),
@@ -30,11 +30,16 @@ const formSchema = z.object({
 
 const BlogAddForm = ({ categories, setModalOpen, fetchBlogs, }: { categories: ICategory[], setModalOpen: (arg0: boolean) => void, fetchBlogs: () => void, }) => {
     const { user, access } = useAuth();
+    const [tiptapContent, setTiptapContent] = useState<string>('');
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const { toast } = useToast();
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
     });
+
+    useEffect(() => {
+        console.log(tiptapContent)
+    }, [tiptapContent])
 
     async function onSubmit(values: z.infer<typeof formSchema>) {
         setIsLoading(true);
@@ -109,8 +114,13 @@ const BlogAddForm = ({ categories, setModalOpen, fetchBlogs, }: { categories: IC
                             <FormItem>
                                 <FormLabel>Content</FormLabel>
                                 <FormControl>
-                                    <Textarea placeholder="Blog Content" {...field} rows={12} />
+                                    {/* <Textarea placeholder="Blog Content" {...field} rows={12} /> */}
+                                    <Tiptap setDescription={(value) => {
+                                        setTiptapContent(value);
+                                        field.onChange(value); // Update react-hook-form content field value
+                                    }} />
                                 </FormControl>
+
                                 <FormDescription></FormDescription>
                                 <FormMessage />
                             </FormItem>
