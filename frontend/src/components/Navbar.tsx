@@ -18,7 +18,7 @@ import { useTheme } from "@/contexts/theme-provider";
 
 const LINKS = [
   { label: "Home", to: "/" },
-  { label: "Hospitals", to: "/hospitals" },
+  // { label: "Hospitals", to: "/hospitals" },
   { label: "Blogs", to: "/blogs" },
 ];
 
@@ -28,7 +28,7 @@ const AUTH_LINKS = [
 ];
 
 const Navbar = () => {
-  const { logout, isLoggedIn, user } = useAuth();
+  const { logout, isLoggedIn, user, isAuthLoading } = useAuth();
   const navigate = useNavigate();
 
   const logout_user = () => {
@@ -105,8 +105,12 @@ const Navbar = () => {
             </NavigationMenu>
           </div>
 
-          {isLoggedIn
-            ?
+          {isAuthLoading ? (
+            <div className="flex items-center gap-4">
+              <ModeToggle />
+              <div className="h-8 w-20 bg-gray-200 dark:bg-gray-700 animate-pulse rounded"></div>
+            </div>
+          ) : isLoggedIn ? (
             <div className="flex gap-3 items-center cursor-pointer">
               <ModeToggle />
               <Sheet>
@@ -126,7 +130,7 @@ const Navbar = () => {
                 </SheetContent>
               </Sheet>
             </div>
-            :
+          ) : (
             <div className="flex items-center gap-4">
               <ModeToggle />
               <Link to={'/login'}>
@@ -136,7 +140,7 @@ const Navbar = () => {
                 <Button className="text-white dark:text-black dark:bg-white">Signup</Button>
               </Link>
             </div>
-          }
+          )}
 
         </div>
       </header>

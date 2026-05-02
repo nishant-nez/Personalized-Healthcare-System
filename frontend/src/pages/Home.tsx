@@ -87,6 +87,7 @@ const Home = () => {
             const formattedSymptoms = response.data.map((symptom: string) => {
                 return { value: symptom, label: symptom[0].toUpperCase() + symptom.slice(1).replace(/_/g, ' ') }
             });
+            console.log(formattedSymptoms)
             setSymptoms(formattedSymptoms);
         } catch (err: unknown) {
             console.log('Error', err);

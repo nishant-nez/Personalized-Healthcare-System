@@ -2,7 +2,7 @@ const HomeFeatures = () => {
     return (
         <section className="w-full py-18 md:py-18 lg:py-24 bg-gray-100 bottom-0 dark:bg-gray-900">
             <div className="container px-4 md:px-6">
-                <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
                     <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
                         <div className="p-3 bg-black bg-opacity-50 rounded-full">
                             <svg
@@ -71,7 +71,7 @@ const HomeFeatures = () => {
                             Get disease predictions and medical insights in seconds.
                         </p>
                     </div>
-                    <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
+                    {/* <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
                         <div className="p-3 bg-black bg-opacity-50 rounded-full">
                             <svg
                                 className="text-white h-6 w-6 opacity-75"
@@ -99,7 +99,7 @@ const HomeFeatures = () => {
                         <p className="text-sm text-gray-500 text-center">
                             Get location, distance and travel time for the Hospital nearest to your location.
                         </p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

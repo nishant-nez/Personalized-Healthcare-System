@@ -48,6 +48,7 @@ const DiseasePredictionModal = ({ modalOpen, setModalOpen, data }: { modalOpen: 
     }
 
     const fetchNearestHospital = async () => {
+        return;
         setIsLoading(true);
         const params: { limit: number; lat?: number, lng?: number } = {
             limit: 1,
@@ -187,7 +188,7 @@ const DiseasePredictionModal = ({ modalOpen, setModalOpen, data }: { modalOpen: 
                         {/* Hospital Sheet */}
                         <Sheet>
                             <SheetTrigger>
-                                <Button className="mr-16 mb-2" type="submit">Get Nearest Hospital</Button>
+                                {/* <Button className="mr-16 mb-2" type="submit">Get Nearest Hospital</Button> */}
                             </SheetTrigger>
                             <SheetContent style={{ maxWidth: '30vw' }}>
                                 <SheetHeader>

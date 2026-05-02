@@ -14,10 +14,10 @@ interface AuthContextProps {
     checkAuthenticated: () => Promise<void>;
     load_user: () => Promise<void>;
     googleAuthenticate: (state: string, code: string) => Promise<void>;
-    // register: (name: string, email: string, password: string, re_pasword: string) => Promise<void>;
     access: string;
     refresh: string;
     isLoading: boolean;
+    isAuthLoading: boolean;
 };
 
 
@@ -30,6 +30,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     const [access, setAccess] = useState<string>('');
     const [refresh, setRefresh] = useState<string>('');
     const [isLoading, setIsLoading] = useState<boolean>(false);
+    const [isAuthLoading, setIsAuthLoading] = useState<boolean>(true);
     const { toast } = useToast();
 
     const setValues = (isLoggedIn: boolean, access: string, refresh: string) => {
@@ -55,6 +56,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
                 setAccess(cookies.access);
                 setRefresh(cookies.refresh);
                 setUser(response.data);
+                setIsLoggedIn(true);
             } catch (error: unknown) {
                 setValues(false, '', '');
                 setUser(null);
@@ -63,9 +65,12 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
                 } else {
                     console.error("User loading failed", (error as Error).message);
                 }
+            } finally {
+                setIsAuthLoading(false);
             }
         } else {
             setValues(false, '', '');
+            setIsAuthLoading(false);
         }
     };
 
@@ -141,10 +146,12 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
             const formBody = Object.keys(details).map(key => encodeURIComponent(key) + '=' + encodeURIComponent(details[key as keyof typeof details])).join('&');
 
             try {
-                const response = await axios.post(`/api/auth/o/google-oauth2/?${formBody}`, config);
+                const response = await axios.post('/api/auth/o/google-oauth2/', formBody, config);
                 setValues(true, response.data.access, response.data.refresh);
+                setIsAuthLoading(false);
             } catch (err) {
                 setValues(false, '', '');
+                setIsAuthLoading(false);
                 console.log('err from googleAuthenticate', err);
             }
         }
@@ -168,7 +175,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     // }, [user])
 
     return (
-        <AuthContext.Provider value={{ isLoggedIn, login, user, access, refresh, checkAuthenticated, logout, load_user, isLoading, googleAuthenticate }}>
+        <AuthContext.Provider value={{ isLoggedIn, login, user, access, refresh, checkAuthenticated, logout, load_user, isLoading, isAuthLoading, googleAuthenticate }}>
             {children}
         </AuthContext.Provider>
     );

@@ -41,9 +41,8 @@ const Login = () => {
             const response = await axios.get(`/api/auth/o/google-oauth2/?redirect_uri=${import.meta.env.VITE_FRONTEND_URL}`);
 
             window.location.replace(response.data.authorization_url)
-            // setIsGoogleLoading(false);
         } catch (err) {
-            // setIsGoogleLoading(false);
+            setIsGoogleLoading(false);
             console.error(err);
         }
     };

@@ -16,7 +16,7 @@ const Layout = ({ children }: LayoutProps) => {
     useEffect(() => {
         const values = queryString.parse(location.search);
         const state = values.state ? values.state : '';
-        const code = values.state ? values.code : '';
+        const code = values.code ? values.code : '';
 
         if (state && code) {
             googleAuthenticate(String(state), String(code));
