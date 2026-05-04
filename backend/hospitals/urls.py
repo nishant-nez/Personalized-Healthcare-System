@@ -3,8 +3,8 @@ from rest_framework.urlpatterns import format_suffix_patterns
 from hospitals import views
 
 urlpatterns = [
-    path('', views.HospitalList.as_view()),
-    path('nearest/', views.NearestHospital.as_view()),
+    path('nearby/', views.NearbyHospitals.as_view()),
+    path('nearby/distance/', views.NearbyHospitalsWithDistance.as_view()),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)

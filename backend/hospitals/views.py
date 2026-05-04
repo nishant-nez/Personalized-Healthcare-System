@@ -1,113 +1,161 @@
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from rest_framework import mixins, generics, permissions
-from django.views.decorators.csrf import csrf_exempt
-from personalized_healthcare_system.settings.base import BASE_DIR
 from rest_framework.exceptions import ValidationError
 import requests
 import os
-import math
 from dotenv import load_dotenv
-import json
 
 load_dotenv()
 
-with open(os.path.join(BASE_DIR, 'hospitals_json', 'combined_hospitals.json'), encoding='utf-8') as f:
-    hospital_data = json.load(f)
-hospitals = hospital_data['results']
-
-def search_hospitals(keyword, hospitals):
-    keyword = keyword.lower()
-    matching_hospitals = []
-    
-    for query in keyword.split(' '):
-        for hospital in hospitals:
-            # Check if the keyword is in the hospital's name, types, or address
-            if (query.lower() != 'hospital' and query.lower() != 'clinic'):
-                if (query in hospital.get('name', '').lower() or
-                    any(query in t.lower() for t in hospital.get('types', [])) or
-                    query in hospital.get('formatted_address', '').lower()):
-                    matching_hospitals.append(hospital)
-    return matching_hospitals
+GOOGLE_MAP_API_KEY = os.environ.get('GOOGLE_MAP_API_KEY')
 
 
-def nearest_hospitals_by_coordinates(lat, lng, hospitals):
-    # Create a new list of hospitals with their distances
-    hospitals_with_distance = [(hospital, math.sqrt((lat - hospital['geometry']['location']['lat']) ** 2 + (lng - hospital['geometry']['location']['lng']) ** 2)) for hospital in hospitals]
+def fetch_nearby_hospitals(lat, lng, radius=5000, keyword=None, page_token=None):
+    url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json'
+    params = {
+        'location': f'{lat},{lng}',
+        'radius': radius,
+        'type': 'hospital',
+        'key': GOOGLE_MAP_API_KEY,
+    }
+    if keyword:
+        params['keyword'] = keyword
+    if page_token:
+        params['pagetoken'] = page_token
 
-    # Sort the hospitals based on their distance
-    hospitals_with_distance.sort(key=lambda x: x[1])
-
-    # Create a new list of hospitals without the distance
-    nearest_hospitals = [hospital for hospital, distance in hospitals_with_distance]
-
-    return nearest_hospitals
+    response = requests.get(url, params=params)
+    return response.json()
 
 
+def get_photo_url(photo_reference, max_width=800):
+    return f'https://maps.googleapis.com/maps/api/place/photo?maxwidth={max_width}&photoreference={photo_reference}&key={GOOGLE_MAP_API_KEY}'
 
-class HospitalList(APIView):
+
+def get_distance_matrix(origin_lat, origin_lng, destinations):
+    dest_str = '|'.join(
+        f'{h["geometry"]["location"]["lat"]},{h["geometry"]["location"]["lng"]}'
+        for h in destinations
+    )
+    url = 'https://maps.googleapis.com/maps/api/distancematrix/json'
+    params = {
+        'origins': f'{origin_lat},{origin_lng}',
+        'destinations': dest_str,
+        'key': GOOGLE_MAP_API_KEY,
+    }
+    response = requests.get(url, params=params)
+    return response.json()
+
+
+def format_hospital(hospital):
+    result = {
+        'place_id': hospital.get('place_id', ''),
+        'name': hospital.get('name', ''),
+        'formatted_address': hospital.get('vicinity', ''),
+        'geometry': hospital.get('geometry', {}),
+        'rating': hospital.get('rating', 0),
+        'user_ratings_total': hospital.get('user_ratings_total', 0),
+        'business_status': hospital.get('business_status', ''),
+        'types': hospital.get('types', []),
+        'opening_hours': hospital.get('opening_hours', {}),
+        'icon': hospital.get('icon', ''),
+        'photo_url': '',
+    }
+    photos = hospital.get('photos', [])
+    if photos:
+        result['photo_url'] = get_photo_url(photos[0].get('photo_reference', ''))
+    return result
+
+
+class NearbyHospitals(APIView):
     """
-    Get all available hospitals within Kathmandu.
+    Fetch nearby hospitals using Google Places API based on live coordinates.
+    Works for any country.
     """
-
     permission_classes = []
 
-    def get(self, request, format=None):
-        filtered_hospitals = hospitals
-        if request.query_params.get('search'):
-            filtered_hospitals = search_hospitals(request.query_params.get('search'), hospitals)
-        if request.query_params.get('limit'):
-            filtered_hospitals = filtered_hospitals[:int(request.query_params.get('limit'))]
-        return Response(filtered_hospitals, status=status.HTTP_200_OK)
-
-
-class NearestHospital(APIView):
-    """
-    Get the nearest hospital based on given coordinates and/or type.
-    """
-
-    permission_classes = []
-
-    def get(self, request, format=None):
-        lat = request.query_params.get('lat', None)
-        lng = request.query_params.get('lng', None)
-        type = request.query_params.get('type', None)
-        limit = request.query_params.get('limit', None)
-
-        filtered_hospitals = hospitals
+    def get(self, request):
+        lat = request.query_params.get('lat')
+        lng = request.query_params.get('lng')
+        keyword = request.query_params.get('search', None)
+        radius = request.query_params.get('radius', 5000)
+        limit = int(request.query_params.get('limit', 20))
 
         if not lat or not lng:
             raise ValidationError('Latitude and longitude are required.')
-        
-        if type:
-            filtered_hospitals = search_hospitals(type, hospitals)
-            if not filtered_hospitals:
-                filtered_hospitals = hospitals
-        # if request.query_params.get('limit'):
-        #     filtered_hospitals = filtered_hospitals[:int(request.query_params.get('limit'))]
-        nearest_hospitals = nearest_hospitals_by_coordinates(float(lat), float(lng), filtered_hospitals)
-        
-        if limit:
-            limit = int(limit)
-            nearest_hospitals = nearest_hospitals[:int(limit + 5)]
 
-        # Calculate distance matrix from Maps API
-        if nearest_hospitals:
-            for i in range(0, len(nearest_hospitals)):
-                url = f'https://maps.googleapis.com/maps/api/distancematrix/json?origins={lat},{lng}&destinations={nearest_hospitals[i]["geometry"]["location"]["lat"]},{nearest_hospitals[i]["geometry"]["location"]["lng"]}&key={os.environ.get("GOOGLE_MAP_API_KEY")}'
-                response = requests.get(url)
-                data = response.json()
+        data = fetch_nearby_hospitals(lat, lng, radius=radius, keyword=keyword)
 
-                if data['status'] != 'OK':
-                    raise ValidationError('Failed to calculate distance matrix.')
-                nearest_hospitals[i]['origin_address'] = data['origin_addresses']
-                nearest_hospitals[i]['destination_address'] = data['destination_addresses']
-                nearest_hospitals[i]['distance'] = data['rows'][0]['elements'][0]['distance']
-                nearest_hospitals[i]['duration'] = data['rows'][0]['elements'][0]['duration']
-        
-        nearest_hospitals.sort(key=lambda x: x['distance']['value'])
-        if limit:
-            nearest_hospitals = nearest_hospitals[:int(limit)]
+        if data.get('status') not in ('OK', 'ZERO_RESULTS'):
+            return Response(
+                {'error': f'Google Places API error: {data.get("status")}'},
+                status=status.HTTP_502_BAD_GATEWAY,
+            )
 
-        return Response(nearest_hospitals, status=status.HTTP_200_OK)
+        raw_hospitals = data.get('results', [])[:limit]
+        hospitals = [format_hospital(h) for h in raw_hospitals]
+
+        return Response(hospitals, status=status.HTTP_200_OK)
+
+
+class NearbyHospitalsWithDistance(APIView):
+    """
+    Fetch nearby hospitals with distance/duration from user's location.
+    Works for any country.
+    """
+    permission_classes = []
+
+    def get(self, request):
+        lat = request.query_params.get('lat')
+        lng = request.query_params.get('lng')
+        keyword = request.query_params.get('search', None)
+        radius = request.query_params.get('radius', 5000)
+        limit = int(request.query_params.get('limit', 10))
+
+        if not lat or not lng:
+            raise ValidationError('Latitude and longitude are required.')
+
+        data = fetch_nearby_hospitals(lat, lng, radius=radius, keyword=keyword)
+
+        if data.get('status') not in ('OK', 'ZERO_RESULTS'):
+            return Response(
+                {'error': f'Google Places API error: {data.get("status")}'},
+                status=status.HTTP_502_BAD_GATEWAY,
+            )
+
+        raw_hospitals = data.get('results', [])
+        hospitals = [format_hospital(h) for h in raw_hospitals]
+
+        if not hospitals:
+            return Response([], status=status.HTTP_200_OK)
+
+        # Distance Matrix API supports max 25 destinations per request
+        batch_size = 25
+        for i in range(0, len(hospitals), batch_size):
+            batch = raw_hospitals[i:i + batch_size]
+            dm_data = get_distance_matrix(lat, lng, batch)
+
+            if dm_data.get('status') != 'OK':
+                continue
+
+            origin_address = dm_data.get('origin_addresses', [''])[0]
+            elements = dm_data['rows'][0]['elements']
+
+            for j, element in enumerate(elements):
+                idx = i + j
+                if idx >= len(hospitals):
+                    break
+                hospitals[idx]['origin_address'] = [origin_address]
+                hospitals[idx]['destination_address'] = dm_data.get('destination_addresses', [''])[j:j+1]
+                if element.get('status') == 'OK':
+                    hospitals[idx]['distance'] = element.get('distance', {})
+                    hospitals[idx]['duration'] = element.get('duration', {})
+                else:
+                    hospitals[idx]['distance'] = {'text': 'N/A', 'value': 999999}
+                    hospitals[idx]['duration'] = {'text': 'N/A', 'value': 999999}
+
+        # Sort by distance and apply limit
+        hospitals.sort(key=lambda x: x.get('distance', {}).get('value', 999999))
+        hospitals = hospitals[:limit]
+
+        return Response(hospitals, status=status.HTTP_200_OK)

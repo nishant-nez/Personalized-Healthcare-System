@@ -18,7 +18,7 @@ import { useTheme } from "@/contexts/theme-provider";
 
 const LINKS = [
   { label: "Home", to: "/" },
-  // { label: "Hospitals", to: "/hospitals" },
+  { label: "Hospitals", to: "/hospitals" },
   { label: "Blogs", to: "/blogs" },
 ];
 
